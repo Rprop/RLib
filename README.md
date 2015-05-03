@@ -1,8 +1,6 @@
 RLib
 ====
 
-RLib is a lightweight framework of useful toolkit for C++ programming.
+CppFrame(also named RLib) is a lightweight, highly cohesive and low coupling framework of useful toolkit that aims to make common cpp development more effectively and easily. 
 
-The standardization of RLib‘s internal name and naming convention is similar to C#.NET.
-
-Warning: Using Windows Native API, it can only run in windows platform at present.
+Currently, CppFrame has covered a range of modules including IO, Net, XML, Text, Memory, Thread, Collection, and other high performance, reuseable tasks.             
