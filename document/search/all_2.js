@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['b',['b',['../da/db3/struct_system_1_1_big_int_1_1_big_int_div_result.html#a2eb151d8b62322ee5de4d4071d0ebd37',1,'System::BigInt::BigIntDivResult']]],
+  ['b64map',['b64map',['../da/d3f/_r_lib___hex_8cpp.html#af57827e5b5a494594c645903f31635c7',1,'RLib_Hex.cpp']]],
+  ['b64tohex',['b64tohex',['../d5/d69/class_system_1_1_security_1_1_cryptography_1_1_hex.html#a3f28b819710d1d0a7e28d037c139e2c9',1,'System::Security::Cryptography::Hex']]],
+  ['base64',['Base64',['../d8/dcb/class_system_1_1_security_1_1_cryptography_1_1_base64.html',1,'System::Security::Cryptography']]],
+  ['base_5fptr',['base_ptr',['../da/d74/class_system_1_1_i_o_1_1_memory_page.html#abda2224a421d3fdc3f9f4b89bbb48598',1,'System::IO::MemoryPage']]],
+  ['baseaddress',['BaseAddress',['../d6/d46/struct_system_1_1_i_o_1_1___m_e_m_o_r_y___i_n_f_o_r_m_a_t_i_o_n.html#a43d885beadadc89d9e7cc50a718308c8',1,'System::IO::_MEMORY_INFORMATION']]],
+  ['baselist',['BaseList',['../d0/d97/class_system_1_1_collections_1_1_generic_1_1_stack.html#a2b2576cb01c0c83baef5eefc8c110239',1,'System::Collections::Generic::Stack']]],
+  ['begintimer',['BeginTimer',['../de/da9/class_system_1_1_timer.html#a84bc91e2dd8b9a7ca39b5eb2d8733cd6',1,'System::Timer']]],
+  ['bestcompression',['BestCompression',['../d6/d80/namespace_system_1_1_i_o_1_1_compression.html#a893de1c505bb182c7f2569c6efafe394aa5b1c8fa42458bf2977e2f8f6d7da1fe',1,'System::IO::Compression']]],
+  ['bestspeed',['BestSpeed',['../d6/d80/namespace_system_1_1_i_o_1_1_compression.html#a893de1c505bb182c7f2569c6efafe394a9921a84c5fcabc135fd322cef4fc4857',1,'System::IO::Compression']]],
+  ['bigint',['BigInt',['../d1/dcf/class_system_1_1_big_int.html#a763ff0c23500d403084f335d86b5aa39',1,'System::BigInt::BigInt(const BigInt &amp;t=0)'],['../d1/dcf/class_system_1_1_big_int.html#a0399409a2ab2f9c239994ce033367536',1,'System::BigInt::BigInt(LPCTSTR s)'],['../d1/dcf/class_system_1_1_big_int.html#ae53b196d5f56ae43a9bb34fb2fc264e0',1,'System::BigInt::BigInt(const int n)']]],
+  ['bigint',['BigInt',['../d1/dcf/class_system_1_1_big_int.html',1,'System']]],
+  ['bigintdivresult',['BigIntDivResult',['../da/db3/struct_system_1_1_big_int_1_1_big_int_div_result.html',1,'System::BigInt']]],
+  ['binarysearch',['BinarySearch',['../db/d4e/class_system_1_1_collections_1_1_generic_1_1_array.html#a1d046861b1efaef9323e1a623fb392f4',1,'System::Collections::Generic::Array']]],
+  ['bind',['Bind',['../db/d3d/class_system_1_1_net_1_1_sockets.html#aae144fd71c783e05a722d14390cef59b',1,'System::Net::Sockets::Bind(ULONG addr, unsigned short port)'],['../db/d3d/class_system_1_1_net_1_1_sockets.html#a68a14490dc2cf61d67c08edb6c40947e',1,'System::Net::Sockets::Bind(unsigned short port)']]],
+  ['blank',['Blank',['../d1/db6/class_system_1_1_xml_1_1_xml_text.html#a70867afc3ec7b71a80b3121201fa741d',1,'System::Xml::XmlText']]],
+  ['boolean',['Boolean',['../d8/dd0/namespace_system.html#adeceef0bfefda6bc270a7179dc858174',1,'System']]],
+  ['bubble_5fup',['bubble_up',['../d3/de2/class_system_1_1_collections_1_1_generic_1_1_priority_queue.html#a0d1b2df0c71152aeb2e9dfcbfeaaa834',1,'System::Collections::Generic::PriorityQueue']]],
+  ['buffer',['Buffer',['../de/d90/struct___u_n_i_c_o_d_e___s_t_r_i_n_g___s_t_r_u_c_t.html#a2f4b81f8e3daaf1dc88d185f5feef153',1,'_UNICODE_STRING_STRUCT::Buffer()'],['../d3/d3c/struct_m_d5_context.html#adb656cb8790c884aa02e1080145e2391',1,'MD5Context::buffer()']]],
+  ['bufferedstream',['BufferedStream',['../de/d77/class_system_1_1_i_o_1_1_buffered_stream.html#a1637d1ee10f1012c361f02781029bfad',1,'System::IO::BufferedStream']]],
+  ['bufferedstream',['BufferedStream',['../de/d77/class_system_1_1_i_o_1_1_buffered_stream.html',1,'System::IO']]],
+  ['byte',['Byte',['../d8/dd0/namespace_system.html#a59d94afc6c802ebb26ec02e84c77bab7',1,'System']]]
+];
