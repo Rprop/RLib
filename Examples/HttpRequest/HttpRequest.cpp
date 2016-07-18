@@ -15,13 +15,13 @@ int __stdcall WinMain(__in HINSTANCE /*hInstance*/, __in_opt HINSTANCE /*hPrevIn
 	// and platform-independent in a sense.
 
 	// performs a HTTP GET request and gets response as string
-	string blog = WebClient::GetResponseText(_R("http://rlib.cf/"));
+	String page = WebClient::GetResponseText(_R("http://rlib.cf/"));
 
 	// also, HTTPS/SSL is supported.
-	string ssl_page = WebClient::GetResponseText(_R("https://www.alipay.com/"));
+	String ssl_page = WebClient::GetResponseText(_R("https://www.alipay.com/"));
 
 	// performs a HTTP POST request with string data
-	string page = WebClient::PostResponseText(_R("http://rlib.cf/"), _R("post data"));
+	String post_page = WebClient::PostResponseText(_R("http://rlib.cf/"), _R("post data"));
 
 	return STATUS_SUCCESS;
 }
