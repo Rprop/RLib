@@ -1,4 +1,4 @@
-/********************************************************************
+ï»¿/********************************************************************
 	Created:	2012/05/26  16:08
 	Filename: 	ThreadPool.cpp
 	Author:		rrrfff
@@ -24,11 +24,11 @@ public:
 
 		Int64 i  = reinterpret_cast<intptr_t>(stateInfo);
 		Int32 t  = AppBase::GetCurrentThreadId();
-		String s = _R("ID: ") + i.ToString() + _R("  Ïß³Ì: ") + t.ToString() +
-			_R("  ×ÜÊý: ") + Int64(pool->GetThreads()).ToString() +
-			_R("  ¿ÕÏÐ: ") + Int64(pool->GetAvailableThreads()).ToString() +
-			_R("  ×î´ó: ") + Int64(pool->GetMaxThreads()).ToString() +
-			_R("  ×îÐ¡: ") + Int64(pool->GetMinThreads()).ToString() +
+		String s = _R("ID: ") + i.ToString() + _R("  çº¿ç¨‹: ") + t.ToString() +
+			_R("  æ€»æ•°: ") + Int64(pool->GetThreads()).ToString() +
+			_R("  ç©ºé—²: ") + Int64(pool->GetAvailableThreads()).ToString() +
+			_R("  æœ€å¤§: ") + Int64(pool->GetMaxThreads()).ToString() +
+			_R("  æœ€å°: ") + Int64(pool->GetMinThreads()).ToString() +
 			_R("\n");
 		printf("%s", GlobalizeString(s).toGBK());
 	}
