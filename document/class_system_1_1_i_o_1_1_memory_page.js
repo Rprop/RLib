@@ -1,0 +1,35 @@
+var class_system_1_1_i_o_1_1_memory_page =
+[
+    [ "BLOCK_INFO", "struct_system_1_1_i_o_1_1_memory_page_1_1_b_l_o_c_k___i_n_f_o.html", "struct_system_1_1_i_o_1_1_memory_page_1_1_b_l_o_c_k___i_n_f_o" ],
+    [ "PBLOCK_INFO", "class_system_1_1_i_o_1_1_memory_page.html#ae68736399e83ba7fcf42c28c899fe102", null ],
+    [ "PTR_STATUS", "class_system_1_1_i_o_1_1_memory_page.html#a03342893c75afad53515fdbb33fa9e4a", [
+      [ "PTR_IN", "class_system_1_1_i_o_1_1_memory_page.html#a03342893c75afad53515fdbb33fa9e4aa57fba814a6dddbc6ff5fba2da9b37af9", null ],
+      [ "PTR_HIGH", "class_system_1_1_i_o_1_1_memory_page.html#a03342893c75afad53515fdbb33fa9e4aa2e11030e0ae1ac733742ed10934acf43", null ],
+      [ "PTR_LOW", "class_system_1_1_i_o_1_1_memory_page.html#a03342893c75afad53515fdbb33fa9e4aa27ef36d7e71d2c7b7f6d0b22875801b2", null ]
+    ] ],
+    [ "MemoryPage", "class_system_1_1_i_o_1_1_memory_page.html#aaa8276bfd67d7e77cd6c5a1a745268d1", null ],
+    [ "MemoryPage", "class_system_1_1_i_o_1_1_memory_page.html#a195ec6778d78fdbe79542b0bdf248157", null ],
+    [ "~MemoryPage", "class_system_1_1_i_o_1_1_memory_page.html#af36184392b610b6755719213891e5b91", null ],
+    [ "AllocByte", "class_system_1_1_i_o_1_1_memory_page.html#a8e34707abf4103b6dd735a59b30ce2ab", null ],
+    [ "Collect", "class_system_1_1_i_o_1_1_memory_page.html#adc2f94858aab375a5d57838904237471", null ],
+    [ "DumpToFile", "class_system_1_1_i_o_1_1_memory_page.html#af78e60ce4c0d1a9b41ea4a3e2711d34a", null ],
+    [ "free_block", "class_system_1_1_i_o_1_1_memory_page.html#aa0d7a278f5ba190142f1c706838b9774", null ],
+    [ "GetMaxAllocSize", "class_system_1_1_i_o_1_1_memory_page.html#a683345645351dd1585c665365afd1181", null ],
+    [ "GetMemorySize", "class_system_1_1_i_o_1_1_memory_page.html#a5c3770462583d22a5e72be5927b23bc0", null ],
+    [ "GetSize", "class_system_1_1_i_o_1_1_memory_page.html#ad0e15f8c10e8034223f3da3e3958c369", null ],
+    [ "GetUnusedSize", "class_system_1_1_i_o_1_1_memory_page.html#a62b7dd651c70eb8fc2acb70a2e5231bb", null ],
+    [ "GetUsage", "class_system_1_1_i_o_1_1_memory_page.html#a2eeb43f97a9aae38f427d8976e728daf", null ],
+    [ "IsAvailable", "class_system_1_1_i_o_1_1_memory_page.html#abdd03c46788a9008af66297f1d7d8ac9", null ],
+    [ "ReAlloc", "class_system_1_1_i_o_1_1_memory_page.html#aedec9d792cc356a26ea6c878ef7aafdc", null ],
+    [ "ReSize", "class_system_1_1_i_o_1_1_memory_page.html#a99b4f4e8332282821d585f902ad9e3d8", null ],
+    [ "Shrink", "class_system_1_1_i_o_1_1_memory_page.html#a14b75388633ca5eab68ca33d2cdcb107", null ],
+    [ "Validate", "class_system_1_1_i_o_1_1_memory_page.html#ad830192c1380e28fc0b575d529712f5b", null ],
+    [ "MemoryPool", "class_system_1_1_i_o_1_1_memory_page.html#a270735d3eecf0a2a2abf0c5e6b252dd6", null ],
+    [ "m_base_ptr", "class_system_1_1_i_o_1_1_memory_page.html#a8e42de4de7705a365f9fbaacdcbc30f4", null ],
+    [ "m_first_ptr", "class_system_1_1_i_o_1_1_memory_page.html#a3646523ce5d408cc735f67b93cb3c6cb", null ],
+    [ "m_last_ptr", "class_system_1_1_i_o_1_1_memory_page.html#ae35e3deb4d5dcb5446f62fe419ffd97f", null ],
+    [ "m_now", "class_system_1_1_i_o_1_1_memory_page.html#a1260a46b3a1f8be9f92305b2e1789ce9", null ],
+    [ "m_reserved", "class_system_1_1_i_o_1_1_memory_page.html#a1ebeef021e159e34d17ea819530c623f", null ],
+    [ "m_used", "class_system_1_1_i_o_1_1_memory_page.html#adc79283848cb2c4781b0e91098ec1d91", null ],
+    [ "RLIB_DECLARE_DYNCREATE", "class_system_1_1_i_o_1_1_memory_page.html#ad190f575ec4fa0fd1294df310724b6e9", null ]
+];
