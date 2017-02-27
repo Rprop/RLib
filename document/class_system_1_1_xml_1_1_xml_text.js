@@ -14,6 +14,6 @@ var class_system_1_1_xml_1_1_xml_text =
     [ "SetCDATA", "class_system_1_1_xml_1_1_xml_text.html#af56eaad94f535d65101de80ff025020d", null ],
     [ "ToText", "class_system_1_1_xml_1_1_xml_text.html#acf25011c3e7d1b98308cc81bf1738672", null ],
     [ "ToText", "class_system_1_1_xml_1_1_xml_text.html#aa722a552c11432016480b1cc5c228b02", null ],
-    [ "XmlElement", "class_system_1_1_xml_1_1_xml_text.html#a63396a203b743fe6f6e13e06f86ad8aa", null ],
+    [ "XmlElement", "class_system_1_1_xml_1_1_xml_text.html#aa8eb39ceb4553b460f93d4c7f99bf348", null ],
     [ "RLIB_DECLARE_DYNCREATE", "class_system_1_1_xml_1_1_xml_text.html#a07ca4e4fb8f6e063f8dc249fa31b1125", null ]
 ];

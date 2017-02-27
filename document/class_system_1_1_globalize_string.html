@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -131,9 +131,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a51cfac0a8250d28c61d59d25a35c6cbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_1_1_globalize_string.html">GlobalizeString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_globalize_string.html#a51cfac0a8250d28c61d59d25a35c6cbc">operator=</a> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;str)</td></tr>
 <tr class="memdesc:a51cfac0a8250d28c61d59d25a35c6cbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">set string  <a href="#a51cfac0a8250d28c61d59d25a35c6cbc">More...</a><br /></td></tr>
 <tr class="separator:a51cfac0a8250d28c61d59d25a35c6cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a4a01f9bbac7664678a0e5c039bea92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_1_1_globalize_string.html">GlobalizeString</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_globalize_string.html#a5a4a01f9bbac7664678a0e5c039bea92">operator=</a> (const <a class="el" href="class_system_1_1_globalize_string.html">GlobalizeString</a> &amp;gstr)</td></tr>
-<tr class="memdesc:a5a4a01f9bbac7664678a0e5c039bea92"><td class="mdescLeft">&#160;</td><td class="mdescRight">set string  <a href="#a5a4a01f9bbac7664678a0e5c039bea92">More...</a><br /></td></tr>
-<tr class="separator:a5a4a01f9bbac7664678a0e5c039bea92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af027354808c98903066ec52a8b68d4b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_globalize_string.html#af027354808c98903066ec52a8b68d4b4">operator char *</a> () const </td></tr>
 <tr class="memdesc:af027354808c98903066ec52a8b68d4b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">return as gbk string  <a href="#af027354808c98903066ec52a8b68d4b4">More...</a><br /></td></tr>
 <tr class="separator:af027354808c98903066ec52a8b68d4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,16 +160,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad0f05e7ea14c6bb6e8d373497325887f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5570305f4463adcd5d5dabadd432249d"><td class="memTemplParams" colspan="2">template&lt;typename char_t &gt; </td></tr>
 <tr class="memitem:a5570305f4463adcd5d5dabadd432249d"><td class="memTemplItemLeft" align="right" valign="top">char_t *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_globalize_string.html#a5570305f4463adcd5d5dabadd432249d">SuppressFinalize</a> (char_t *pstr) const </td></tr>
-<tr class="memdesc:a5570305f4463adcd5d5dabadd432249d"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消对返回的数据进行自动释放 因此, 必须手动调用 <a class="el" href="class_system_1_1_string.html#adcbe10a28b5819ab4bf806e4b7b56c7f" title="String 内存统一回收接口 必须调用该方法才能正确释放含引用计数的字符串 ">String::Collect()</a> 方法来释放内存  <a href="#a5570305f4463adcd5d5dabadd432249d">More...</a><br /></td></tr>
+<tr class="memdesc:a5570305f4463adcd5d5dabadd432249d"><td class="mdescLeft">&#160;</td><td class="mdescRight">取消对返回的数据进行自动释放 因此, 必须手动调用 <a class="el" href="class_system_1_1_string.html#adcbe10a28b5819ab4bf806e4b7b56c7f" title="Releases string with reference count ">String::Collect()</a> 方法来释放内存  <a href="#a5570305f4463adcd5d5dabadd432249d">More...</a><br /></td></tr>
 <tr class="separator:a5570305f4463adcd5d5dabadd432249d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa5b38066d4ddf4d07c7ae2de031464c1"><td class="memItemLeft" align="right" valign="top">static LPSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_globalize_string.html#aa5b38066d4ddf4d07c7ae2de031464c1">ConvertToMultiByte</a> (LPCWSTR, intptr_t length=-1, intptr_t *out_size=nullptr, <a class="el" href="namespace_system_1_1_text.html#acefe31680d1dffb11daf1490de078eed">Text::Encoding</a> to_codepage=Text::ASCIIEncoding)</td></tr>
-<tr class="memdesc:aa5b38066d4ddf4d07c7ae2de031464c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">转换为多字符格式字符串 必须手动调用 <a class="el" href="class_system_1_1_string.html#adcbe10a28b5819ab4bf806e4b7b56c7f" title="String 内存统一回收接口 必须调用该方法才能正确释放含引用计数的字符串 ">String::Collect()</a> 方法以释放内存  <a href="#aa5b38066d4ddf4d07c7ae2de031464c1">More...</a><br /></td></tr>
+<tr class="memdesc:aa5b38066d4ddf4d07c7ae2de031464c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">转换为多字符格式字符串 必须手动调用 <a class="el" href="class_system_1_1_string.html#adcbe10a28b5819ab4bf806e4b7b56c7f" title="Releases string with reference count ">String::Collect()</a> 方法以释放内存  <a href="#aa5b38066d4ddf4d07c7ae2de031464c1">More...</a><br /></td></tr>
 <tr class="separator:aa5b38066d4ddf4d07c7ae2de031464c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71eb5794fd7e2c952a9ed5b2ffa0c80d"><td class="memItemLeft" align="right" valign="top">static LPWSTR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_globalize_string.html#a71eb5794fd7e2c952a9ed5b2ffa0c80d">ConvertToWideChar</a> (LPCSTR, intptr_t length=-1, intptr_t *out_size=nullptr, <a class="el" href="namespace_system_1_1_text.html#acefe31680d1dffb11daf1490de078eed">Text::Encoding</a> from_codepage=Text::ASCIIEncoding)</td></tr>
-<tr class="memdesc:a71eb5794fd7e2c952a9ed5b2ffa0c80d"><td class="mdescLeft">&#160;</td><td class="mdescRight">转换为宽字符格式字符串 必须手动调用 <a class="el" href="class_system_1_1_string.html#adcbe10a28b5819ab4bf806e4b7b56c7f" title="String 内存统一回收接口 必须调用该方法才能正确释放含引用计数的字符串 ">String::Collect()</a> 方法以释放内存  <a href="#a71eb5794fd7e2c952a9ed5b2ffa0c80d">More...</a><br /></td></tr>
+<tr class="memdesc:a71eb5794fd7e2c952a9ed5b2ffa0c80d"><td class="mdescLeft">&#160;</td><td class="mdescRight">转换为宽字符格式字符串 必须手动调用 <a class="el" href="class_system_1_1_string.html#adcbe10a28b5819ab4bf806e4b7b56c7f" title="Releases string with reference count ">String::Collect()</a> 方法以释放内存  <a href="#a71eb5794fd7e2c952a9ed5b2ffa0c80d">More...</a><br /></td></tr>
 <tr class="separator:a71eb5794fd7e2c952a9ed5b2ffa0c80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -180,9 +177,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a1f2673dbaa435e4b57f8652ed5a9a232"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f2673dbaa435e4b57f8652ed5a9a232"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>RLIB_DECLARE_DYNCREATE</b></td></tr>
 <tr class="separator:a1f2673dbaa435e4b57f8652ed5a9a232"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a678cb662b5c159f70ee91251dbbc9a7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a678cb662b5c159f70ee91251dbbc9a7d"></a>
-StringInfo&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>data</b> [3]</td></tr>
-<tr class="separator:a678cb662b5c159f70ee91251dbbc9a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08b90413caa78f7dc6a8fc90ed2689ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08b90413caa78f7dc6a8fc90ed2689ed"></a>
+StringInfo&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_data</b> [3]</td></tr>
+<tr class="separator:a08b90413caa78f7dc6a8fc90ed2689ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad27dd01d6741e7628db8fc0c18a5f825"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad27dd01d6741e7628db8fc0c18a5f825"></a>
 StringInfo&lt; wchar_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>unicode</b></td></tr>
 <tr class="separator:ad27dd01d6741e7628db8fc0c18a5f825"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -204,30 +201,26 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:adda9ef6d18571a124d9bb46079a056bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adda9ef6d18571a124d9bb46079a056bb"></a>
 <a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_str</b></td></tr>
 <tr class="separator:adda9ef6d18571a124d9bb46079a056bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb43c5fff8379e0689c7fd5d9b46aeec"><td class="memItemLeft" ><a class="anchor" id="afb43c5fff8379e0689c7fd5d9b46aeec"></a>
+<tr class="memitem:ab4d647b9dbbe57b841149e6bff552873"><td class="memItemLeft" ><a class="anchor" id="ab4d647b9dbbe57b841149e6bff552873"></a>
 union {</td></tr>
-<tr class="memitem:a35ee3a392d9676a712e77d629abc4307"><td class="memItemLeft" ><a class="anchor" id="a35ee3a392d9676a712e77d629abc4307"></a>
+<tr class="memitem:a50504744ebd304d564eb8c3dfb0e2ee6"><td class="memItemLeft" >
+&#160;&#160;&#160;StringInfo&lt; void &gt;&#160;&#160;&#160;<b>m_data</b> [3]</td></tr>
+<tr class="separator:a50504744ebd304d564eb8c3dfb0e2ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabffb7c0f80dec6bc3b738d3c2d2d289"><td class="memItemLeft" ><a class="anchor" id="aabffb7c0f80dec6bc3b738d3c2d2d289"></a>
 &#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a1c3a4ff7e41683e43b2e051ced87f4dd"><td class="memItemLeft" >
-&#160;&#160;&#160;&#160;&#160;&#160;StringInfo&lt; void &gt;&#160;&#160;&#160;<b>data</b> [3]</td></tr>
-<tr class="separator:a1c3a4ff7e41683e43b2e051ced87f4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ee3a392d9676a712e77d629abc4307"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a35ee3a392d9676a712e77d629abc4307"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a995bed3f1635eb82cc8118fe5d5cee2c"><td class="memItemLeft" ><a class="anchor" id="a995bed3f1635eb82cc8118fe5d5cee2c"></a>
-&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:ab20d52b07a6f44319958cfab7dee4c77"><td class="memItemLeft" >
+<tr class="memitem:a76ca0a08028c390698f4d8da4d569769"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;StringInfo&lt; wchar_t &gt;&#160;&#160;&#160;<b>unicode</b></td></tr>
-<tr class="separator:ab20d52b07a6f44319958cfab7dee4c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa67ba279de0826e2b88372611409c00a"><td class="memItemLeft" >
+<tr class="separator:a76ca0a08028c390698f4d8da4d569769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b428e5f37ea2215f6e1b60e3cf47369"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;StringInfo&lt; char &gt;&#160;&#160;&#160;<b>gbk</b></td></tr>
-<tr class="separator:aa67ba279de0826e2b88372611409c00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a905e3fb2b302c27b321655e11f7bbd40"><td class="memItemLeft" >
+<tr class="separator:a0b428e5f37ea2215f6e1b60e3cf47369"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51afcb48fc86417be00bdb70752b0e50"><td class="memItemLeft" >
 &#160;&#160;&#160;&#160;&#160;&#160;StringInfo&lt; char &gt;&#160;&#160;&#160;<b>utf8</b></td></tr>
-<tr class="separator:a905e3fb2b302c27b321655e11f7bbd40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a995bed3f1635eb82cc8118fe5d5cee2c"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a995bed3f1635eb82cc8118fe5d5cee2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb43c5fff8379e0689c7fd5d9b46aeec"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:afb43c5fff8379e0689c7fd5d9b46aeec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a51afcb48fc86417be00bdb70752b0e50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabffb7c0f80dec6bc3b738d3c2d2d289"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:aabffb7c0f80dec6bc3b738d3c2d2d289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4d647b9dbbe57b841149e6bff552873"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:ab4d647b9dbbe57b841149e6bff552873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aa5b38066d4ddf4d07c7ae2de031464c1"></a>
@@ -274,7 +267,7 @@ union {</td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>转换为多字符格式字符串 必须手动调用 <a class="el" href="class_system_1_1_string.html#adcbe10a28b5819ab4bf806e4b7b56c7f" title="String 内存统一回收接口 必须调用该方法才能正确释放含引用计数的字符串 ">String::Collect()</a> 方法以释放内存 </p>
+<p>转换为多字符格式字符串 必须手动调用 <a class="el" href="class_system_1_1_string.html#adcbe10a28b5819ab4bf806e4b7b56c7f" title="Releases string with reference count ">String::Collect()</a> 方法以释放内存 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">out_size</td><td>不包括 \0 结尾符大小, in bytes</td></tr>
@@ -328,7 +321,7 @@ union {</td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>转换为宽字符格式字符串 必须手动调用 <a class="el" href="class_system_1_1_string.html#adcbe10a28b5819ab4bf806e4b7b56c7f" title="String 内存统一回收接口 必须调用该方法才能正确释放含引用计数的字符串 ">String::Collect()</a> 方法以释放内存 </p>
+<p>转换为宽字符格式字符串 必须手动调用 <a class="el" href="class_system_1_1_string.html#adcbe10a28b5819ab4bf806e4b7b56c7f" title="Releases string with reference count ">String::Collect()</a> 方法以释放内存 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">out_size</td><td>不包括 \0 结尾符大小, in bytes</td></tr>
@@ -397,24 +390,6 @@ union {</td></tr>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_system_1_1_string.html">String</a> &amp;&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>set string </p>
-
-</div>
-</div>
-<a class="anchor" id="a5a4a01f9bbac7664678a0e5c039bea92"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_system_1_1_globalize_string.html">GlobalizeString</a> &amp; GlobalizeString::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_system_1_1_globalize_string.html">GlobalizeString</a> &amp;&#160;</td>
-          <td class="paramname"><em>gstr</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -499,7 +474,7 @@ template&lt;typename char_t &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>取消对返回的数据进行自动释放 因此, 必须手动调用 <a class="el" href="class_system_1_1_string.html#adcbe10a28b5819ab4bf806e4b7b56c7f" title="String 内存统一回收接口 必须调用该方法才能正确释放含引用计数的字符串 ">String::Collect()</a> 方法来释放内存 </p>
+<p>取消对返回的数据进行自动释放 因此, 必须手动调用 <a class="el" href="class_system_1_1_string.html#adcbe10a28b5819ab4bf806e4b7b56c7f" title="Releases string with reference count ">String::Collect()</a> 方法来释放内存 </p>
 
 </div>
 </div>
@@ -589,7 +564,7 @@ template&lt;typename char_t &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="class_system_1_1_globalize_string.html">GlobalizeString</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:31 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:37 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

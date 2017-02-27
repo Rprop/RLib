@@ -6,7 +6,6 @@ var NAVTREE =
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
         [ "Enumerations", "namespacemembers_enum.html", null ],
         [ "Enumerator", "namespacemembers_eval.html", null ]
@@ -22,8 +21,7 @@ var NAVTREE =
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
-        [ "Enumerator", "functions_eval.html", null ],
-        [ "Related Functions", "functions_rela.html", null ]
+        [ "Enumerator", "functions_eval.html", null ]
       ] ]
     ] ]
   ] ]
@@ -31,14 +29,14 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html",
-"class_system_1_1_collections_1_1_generic_1_1_queue.html",
-"class_system_1_1_i_o_1_1_stream.html#a3f9029a7d0d6c3d0ad812cff851a4fe0",
-"class_system_1_1_net_1_1_sockets.html#ac2a823f199f8954762f5b5b331bce0a3",
-"class_system_1_1_threading_1_1_interlocked.html#a7032707b2d3f9dc5b351f1842b945173",
-"class_system_1_1_xml_1_1_xml_attribute_set.html#ad88b16c18d3cddf42e417644a765de99",
-"class_system_1_1_xml_1_1_xml_text.html#a07ca4e4fb8f6e063f8dc249fa31b1125",
-"struct_system_1_1_s_t_r_info_a.html"
+".html",
+"class_system_1_1_collections_1_1_generic_1_1_priority_queue.html#a496664511702471c65d7f8518f33244d",
+"class_system_1_1_i_o_1_1_memory_pool.html#a8e06e6260fb489646453e16b48fdaf91",
+"class_system_1_1_net_1_1_http_response.html#a7dc8102dcf63b07b9bf3c3dfed468857",
+"class_system_1_1_string.html#a5ca1209e41a7ae1cacfa918caa5533d7",
+"class_system_1_1_threading_1_1_thread_pool.html#a2e9c2f8b051ce807a1d0b6b80b9f2cca",
+"class_system_1_1_xml_1_1_xml_element.html#af66fb8d3b4552afc5dbb2ff7bf3849c9",
+"namespace_system_1_1_text.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

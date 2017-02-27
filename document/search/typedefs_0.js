@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lpuri',['LPURI',['../namespace_system_1_1_net.html#a18482d519ba35578512c0a49d401da45',1,'System::Net']]]
+  ['discretionaryacl',['DiscretionaryAcl',['../namespace_system_1_1_security_1_1_access_control.html#a825200ee50a94faa91ab5c76a748c188',1,'System::Security::AccessControl']]]
 ];

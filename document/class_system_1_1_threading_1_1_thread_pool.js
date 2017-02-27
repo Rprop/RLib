@@ -33,11 +33,13 @@ var class_system_1_1_threading_1_1_thread_pool =
     [ "SetMaxThreads", "class_system_1_1_threading_1_1_thread_pool.html#a66e33541106197ee63e31ec0c386e117", null ],
     [ "SetMinThreads", "class_system_1_1_threading_1_1_thread_pool.html#a03460fe25623422578d6c0e95cf1c63f", null ],
     [ "WaitForTasksComplete", "class_system_1_1_threading_1_1_thread_pool.html#a70a511e25cd671cb5ac0661e58aa8987", null ],
+    [ "m_avail_workers", "class_system_1_1_threading_1_1_thread_pool.html#a08385e5dd817c400b92be5fc5cba9291", null ],
     [ "m_nDestroying", "class_system_1_1_threading_1_1_thread_pool.html#acb6641dfe3e86e808beabaf152b4505f", null ],
     [ "m_nMaxIdleTime", "class_system_1_1_threading_1_1_thread_pool.html#a4464becded3ef1b1bbc85f702165ea8c", null ],
     [ "m_nMaxThreads", "class_system_1_1_threading_1_1_thread_pool.html#aa6155e59ff8b8fda29b3d3e8629895ed", null ],
     [ "m_nMinThreads", "class_system_1_1_threading_1_1_thread_pool.html#a617ac9ee962692b3f7c2e1d5ca160f4e", null ],
     [ "m_nPending", "class_system_1_1_threading_1_1_thread_pool.html#ac1948ad6011033f59a4b21320502006d", null ],
-    [ "RLIB_DECLARE_DYNCREATE", "class_system_1_1_threading_1_1_thread_pool.html#ab74c4084dda90b8c9c82395e4144e109", null ],
-    [ "ThreadPoolWorker", "class_system_1_1_threading_1_1_thread_pool.html#a6f94b7aa12ca9ffad58aa320e67cb04c", null ]
+    [ "m_tasks", "class_system_1_1_threading_1_1_thread_pool.html#ab6efeadfe393e84e4230153b36fdff5b", null ],
+    [ "m_workers", "class_system_1_1_threading_1_1_thread_pool.html#abb4b3b99cafe5ccbbf6c957784ba731a", null ],
+    [ "RLIB_DECLARE_DYNCREATE", "class_system_1_1_threading_1_1_thread_pool.html#ab74c4084dda90b8c9c82395e4144e109", null ]
 ];

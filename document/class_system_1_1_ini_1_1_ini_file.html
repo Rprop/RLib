@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -117,7 +117,7 @@ $(document).ready(function(){initNavTree('class_system_1_1_ini_1_1_ini_file.html
 </div><!--header-->
 <div class="contents">
 
-<p>表示对ini文件的访问  
+<p>Represents ini file(reader/writer/formatter)  
  <a href="class_system_1_1_ini_1_1_ini_file.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -128,30 +128,30 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adf9b9d78a3ad594b5c30a77031653b38"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf9b9d78a3ad594b5c30a77031653b38"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
 <tr class="separator:adf9b9d78a3ad594b5c30a77031653b38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa648878eb391bbd0dc2453ce48b52dc8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa648878eb391bbd0dc2453ce48b52dc8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAt</b> (intptr_t index)</td></tr>
+<tr class="separator:aa648878eb391bbd0dc2453ce48b52dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ad136be4e189cbb3c6207d4c9091855"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ad136be4e189cbb3c6207d4c9091855"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadFromString</b> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;ini_string)</td></tr>
 <tr class="separator:a5ad136be4e189cbb3c6207d4c9091855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d66a0c77b8b2b5ab8bab8a56198dc79"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d66a0c77b8b2b5ab8bab8a56198dc79"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadFromStream</b> (<a class="el" href="class_system_1_1_i_o_1_1_stream.html">System::IO::Stream</a> *ini_data, intptr_t ini_data_size)</td></tr>
-<tr class="separator:a9d66a0c77b8b2b5ab8bab8a56198dc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a034279d534342c1ef256bd7cd998d926"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a034279d534342c1ef256bd7cd998d926"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadFromStream</b> (const <a class="el" href="class_system_1_1_i_o_1_1_stream.html">System::IO::Stream</a> &amp;ini_data, intptr_t ini_data_size)</td></tr>
+<tr class="separator:a034279d534342c1ef256bd7cd998d926"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abadaf84cb9938c48c5d7d766e7bc1bdc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abadaf84cb9938c48c5d7d766e7bc1bdc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadFromFile</b> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;ini_file)</td></tr>
 <tr class="separator:abadaf84cb9938c48c5d7d766e7bc1bdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9eabb9a4fbb6193b8079c8d24a6fb373"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9eabb9a4fbb6193b8079c8d24a6fb373"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveFile</b> (<a class="el" href="namespace_system_1_1_text.html#acefe31680d1dffb11daf1490de078eed">Text::Encoding</a> codepage=Text::UnknownEncoding) const </td></tr>
 <tr class="separator:a9eabb9a4fbb6193b8079c8d24a6fb373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e7c2c2e19dbd5519e3b29de91180d98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e7c2c2e19dbd5519e3b29de91180d98"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveFile</b> (const TCHAR *filename, <a class="el" href="namespace_system_1_1_text.html#acefe31680d1dffb11daf1490de078eed">Text::Encoding</a> codepage=Text::UnknownEncoding) const </td></tr>
-<tr class="separator:a4e7c2c2e19dbd5519e3b29de91180d98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1144710a886e4aa7f5260d3d05b7e112"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1144710a886e4aa7f5260d3d05b7e112"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveFile</b> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;filename, <a class="el" href="namespace_system_1_1_text.html#acefe31680d1dffb11daf1490de078eed">Text::Encoding</a> codepage=Text::UnknownEncoding) const </td></tr>
+<tr class="separator:a1144710a886e4aa7f5260d3d05b7e112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf61d19b12f84825add6f95a5dc392a5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf61d19b12f84825add6f95a5dc392a5"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>SaveFile</b> (<a class="el" href="class_system_1_1_i_o_1_1_stream.html">System::IO::Stream</a> *, <a class="el" href="namespace_system_1_1_text.html#acefe31680d1dffb11daf1490de078eed">Text::Encoding</a> codepage=Text::UnknownEncoding) const </td></tr>
 <tr class="separator:abf61d19b12f84825add6f95a5dc392a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66be116a7c2f68c4f3a3ccd86d366818"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66be116a7c2f68c4f3a3ccd86d366818"></a>
 const IniException *&#160;</td><td class="memItemRight" valign="bottom"><b>GetLastException</b> () const </td></tr>
 <tr class="separator:a66be116a7c2f68c4f3a3ccd86d366818"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa648878eb391bbd0dc2453ce48b52dc8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa648878eb391bbd0dc2453ce48b52dc8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAt</b> (intptr_t index)</td></tr>
-<tr class="separator:aa648878eb391bbd0dc2453ce48b52dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2b2621b2e10316e91b00284b58e19b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae2b2621b2e10316e91b00284b58e19b3"></a>
 <a class="el" href="class_system_1_1_ini_1_1_ini_section.html">IniSection</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetSection</b> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;section_name) const </td></tr>
 <tr class="separator:ae2b2621b2e10316e91b00284b58e19b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,6 +161,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveSection</b> (co
 <tr class="memitem:ac7f229ec8dad699af39e0875d5d44e1e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7f229ec8dad699af39e0875d5d44e1e"></a>
 <a class="el" href="class_system_1_1_ini_1_1_ini_section.html">IniSection</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AddSection</b> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;section_name)</td></tr>
 <tr class="separator:ac7f229ec8dad699af39e0875d5d44e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48ab94ad593187bc1e3eb5834e87a0d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48ab94ad593187bc1e3eb5834e87a0d5"></a>
+<a class="el" href="class_system_1_1_ini_1_1_ini_key.html">IniKey</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetKey</b> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;key_name) const </td></tr>
+<tr class="separator:a48ab94ad593187bc1e3eb5834e87a0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab582a2ef64e27d00c833536856ef080a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab582a2ef64e27d00c833536856ef080a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveKey</b> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;key_name)</td></tr>
+<tr class="separator:ab582a2ef64e27d00c833536856ef080a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a847d940a86a0bc7619d3b44149a8aa0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a847d940a86a0bc7619d3b44149a8aa0c"></a>
+<a class="el" href="class_system_1_1_ini_1_1_ini_key.html">IniKey</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>AddKey</b> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;key_name, const <a class="el" href="class_system_1_1_string.html">String</a> &amp;val=Nothing)</td></tr>
+<tr class="separator:a847d940a86a0bc7619d3b44149a8aa0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaba9c5b0dab0c2b0427f8743723417f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaba9c5b0dab0c2b0427f8743723417f8"></a>
 <a class="el" href="class_system_1_1_ini_1_1_ini_section.html">IniSection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;section_name)</td></tr>
 <tr class="separator:aaba9c5b0dab0c2b0427f8743723417f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,15 +179,21 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveSection</b> (co
 <tr class="memitem:ae66e49ee6a582ae46bec710816085e0b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae66e49ee6a582ae46bec710816085e0b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Write</b> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;section_name, const <a class="el" href="class_system_1_1_string.html">String</a> &amp;key_name, const <a class="el" href="class_system_1_1_string.html">String</a> &amp;val)</td></tr>
 <tr class="separator:ae66e49ee6a582ae46bec710816085e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0b384afd88350a2d10d03855aa65084"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0b384afd88350a2d10d03855aa65084"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>ReadInt</b> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;section_name, const <a class="el" href="class_system_1_1_string.html">String</a> &amp;key_name, int def_val=0) const </td></tr>
+<tr class="separator:ab0b384afd88350a2d10d03855aa65084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae312699c077ca67e737ccca0d50940b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae312699c077ca67e737ccca0d50940b2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteInt</b> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;section_name, const <a class="el" href="class_system_1_1_string.html">String</a> &amp;key_name, int val)</td></tr>
+<tr class="separator:ae312699c077ca67e737ccca0d50940b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aaa85c2c68de02866714b55a7a0543058"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa85c2c68de02866714b55a7a0543058"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RLIB_DECLARE_DYNCREATE</b></td></tr>
-<tr class="separator:aaa85c2c68de02866714b55a7a0543058"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae295fa130b49e6c8644b1ed58ae4263d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae295fa130b49e6c8644b1ed58ae4263d"></a>
 <a class="el" href="class_system_1_1_ini_1_1_ini_element_collection.html">IniElementCollection</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Items</b></td></tr>
 <tr class="separator:ae295fa130b49e6c8644b1ed58ae4263d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa85c2c68de02866714b55a7a0543058"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaa85c2c68de02866714b55a7a0543058"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RLIB_DECLARE_DYNCREATE</b></td></tr>
+<tr class="separator:aaa85c2c68de02866714b55a7a0543058"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -193,7 +208,7 @@ IniException&#160;</td><td class="memItemRight" valign="bottom"><b>m_error</b></
 <tr class="separator:a4f379a928cbc90da7ddd7b5319130315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>表示对ini文件的访问 </p>
+<div class="textblock"><p>Represents ini file(reader/writer/formatter) </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>RLib_Ini.h</li>
 <li>RLib_Ini.cpp</li>
@@ -203,8 +218,8 @@ IniException&#160;</td><td class="memItemRight" valign="bottom"><b>m_error</b></
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_ini.html">Ini</a></li><li class="navelem"><a class="el" href="class_system_1_1_ini_1_1_ini_file.html">IniFile</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:35 for RLib by
+    <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><b>Ini</b></li><li class="navelem"><a class="el" href="class_system_1_1_ini_1_1_ini_file.html">IniFile</a></li>
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:40 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

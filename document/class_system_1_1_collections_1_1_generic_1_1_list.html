@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -108,7 +108,6 @@ $(document).ready(function(){initNavTree('class_system_1_1_collections_1_1_gener
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -136,17 +135,17 @@ typedef <a class="el" href="struct_system_1_1_collections_1_1_generic_1_1_list_i
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a88b66c346cd6935eb30c8350e8ee3745"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88b66c346cd6935eb30c8350e8ee3745"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>List</b> (intptr_t cache_capcity)</td></tr>
-<tr class="separator:a88b66c346cd6935eb30c8350e8ee3745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11568c517291f67e5d9b48cbfc7c6cba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11568c517291f67e5d9b48cbfc7c6cba"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>List</b> (intptr_t cache_capcity=RLIB_DEFAULT_CAPACITY)</td></tr>
+<tr class="separator:a11568c517291f67e5d9b48cbfc7c6cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2925f5af320e791f6545632c3ace2d24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2925f5af320e791f6545632c3ace2d24"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>List</b> (const <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html">List</a>&lt; R &gt; &amp;list_from)</td></tr>
 <tr class="separator:a2925f5af320e791f6545632c3ace2d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fc508be872d3581ba144b3c92db010f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fc508be872d3581ba144b3c92db010f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>List</b> (const std::initializer_list&lt; const R &gt; &amp;data)</td></tr>
-<tr class="separator:a0fc508be872d3581ba144b3c92db010f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10668718710ec08b598623a5f5a16052"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10668718710ec08b598623a5f5a16052"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>List</b> (const Standard::initializer_list&lt; const R &gt; &amp;data)</td></tr>
+<tr class="separator:a10668718710ec08b598623a5f5a16052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae932df08d59a5d9331b9719fbc7e88a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#ae932df08d59a5d9331b9719fbc7e88a1">InitStorage</a> (intptr_t cache_count)</td></tr>
-<tr class="memdesc:ae932df08d59a5d9331b9719fbc7e88a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">create back storage for caching  <a href="#ae932df08d59a5d9331b9719fbc7e88a1">More...</a><br /></td></tr>
+<tr class="memdesc:ae932df08d59a5d9331b9719fbc7e88a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates back storage for caching. This function helps speed up the insertion of <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a> that have a large number of elements, by avoiding the frequent memory allocation  <a href="#ae932df08d59a5d9331b9719fbc7e88a1">More...</a><br /></td></tr>
 <tr class="separator:ae932df08d59a5d9331b9719fbc7e88a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a22d68cf50b51066321d55c40e5852e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a3a22d68cf50b51066321d55c40e5852e">ReleaseStorage</a> ()</td></tr>
 <tr class="memdesc:a3a22d68cf50b51066321d55c40e5852e"><td class="mdescLeft">&#160;</td><td class="mdescRight">destroy back storage  <a href="#a3a22d68cf50b51066321d55c40e5852e">More...</a><br /></td></tr>
@@ -176,15 +175,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2cdae87f8f03ed381e031356c91b6901"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html">List</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a2cdae87f8f03ed381e031356c91b6901">operator+=</a> (const R &amp;item)</td></tr>
 <tr class="memdesc:a2cdae87f8f03ed381e031356c91b6901"><td class="mdescLeft">&#160;</td><td class="mdescRight">拓展运算符 添加对象  <a href="#a2cdae87f8f03ed381e031356c91b6901">More...</a><br /></td></tr>
 <tr class="separator:a2cdae87f8f03ed381e031356c91b6901"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad429048ca17ff51edc131d01f1835a39"><td class="memItemLeft" align="right" valign="top">ListNodePointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#ad429048ca17ff51edc131d01f1835a39">Add</a> (const R &amp;item)</td></tr>
-<tr class="memdesc:ad429048ca17ff51edc131d01f1835a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加指定元素到 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 并返回该元素链节点指针 如果添加多次元素, 返回首个元素链节点指针  <a href="#ad429048ca17ff51edc131d01f1835a39">More...</a><br /></td></tr>
-<tr class="separator:ad429048ca17ff51edc131d01f1835a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add9e4d56c2429cebcd9234ee2228bf2c"><td class="memItemLeft" align="right" valign="top">ListNodePointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#add9e4d56c2429cebcd9234ee2228bf2c">AddFirst</a> (const R &amp;item)</td></tr>
-<tr class="memdesc:add9e4d56c2429cebcd9234ee2228bf2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">将对象添加到 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 的开始处  <a href="#add9e4d56c2429cebcd9234ee2228bf2c">More...</a><br /></td></tr>
-<tr class="separator:add9e4d56c2429cebcd9234ee2228bf2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57cb4bdcf0611bee9a958d9b63948bb4"><td class="memItemLeft" align="right" valign="top">ListNodePointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a57cb4bdcf0611bee9a958d9b63948bb4">AddLast</a> (const R &amp;item)</td></tr>
-<tr class="memdesc:a57cb4bdcf0611bee9a958d9b63948bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">将对象添加到 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 的结尾处  <a href="#a57cb4bdcf0611bee9a958d9b63948bb4">More...</a><br /></td></tr>
-<tr class="separator:a57cb4bdcf0611bee9a958d9b63948bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9864b7aafcce20602f3ad33bbbd82208"><td class="memTemplParams" colspan="2">template&lt;class... P&gt; </td></tr>
+<tr class="memitem:a9864b7aafcce20602f3ad33bbbd82208"><td class="memTemplItemLeft" align="right" valign="top">ListNodePointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a9864b7aafcce20602f3ad33bbbd82208">Add</a> (P &amp;&amp;...args)</td></tr>
+<tr class="separator:a9864b7aafcce20602f3ad33bbbd82208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1588660b5d5e8503bc01f56bf5c1c5f5"><td class="memTemplParams" colspan="2">template&lt;class... P&gt; </td></tr>
+<tr class="memitem:a1588660b5d5e8503bc01f56bf5c1c5f5"><td class="memTemplItemLeft" align="right" valign="top">ListNodePointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a1588660b5d5e8503bc01f56bf5c1c5f5">AddFirst</a> (P &amp;&amp;...args)</td></tr>
+<tr class="memdesc:a1588660b5d5e8503bc01f56bf5c1c5f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">将对象添加到 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 的开始处  <a href="#a1588660b5d5e8503bc01f56bf5c1c5f5">More...</a><br /></td></tr>
+<tr class="separator:a1588660b5d5e8503bc01f56bf5c1c5f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99a4f38acf17ae8d3b93216ead3d1124"><td class="memTemplParams" colspan="2">template&lt;class... P&gt; </td></tr>
+<tr class="memitem:a99a4f38acf17ae8d3b93216ead3d1124"><td class="memTemplItemLeft" align="right" valign="top">ListNodePointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a99a4f38acf17ae8d3b93216ead3d1124">AddLast</a> (P &amp;&amp;...args)</td></tr>
+<tr class="memdesc:a99a4f38acf17ae8d3b93216ead3d1124"><td class="mdescLeft">&#160;</td><td class="mdescRight">将对象添加到 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 的结尾处  <a href="#a99a4f38acf17ae8d3b93216ead3d1124">More...</a><br /></td></tr>
+<tr class="separator:a99a4f38acf17ae8d3b93216ead3d1124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b12446998cd2bbca4d6cf94c8a91b8e"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:a5b12446998cd2bbca4d6cf94c8a91b8e"><td class="memTemplItemLeft" align="right" valign="top">ListNodePointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a5b12446998cd2bbca4d6cf94c8a91b8e">AddRange</a> (const R &amp;item)</td></tr>
 <tr class="memdesc:a5b12446998cd2bbca4d6cf94c8a91b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加指定元素到 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 的末尾, 并返回首元素链节点指针  <a href="#a5b12446998cd2bbca4d6cf94c8a91b8e">More...</a><br /></td></tr>
@@ -193,6 +194,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acae082293135bfed0062dfa3dcd7fae2"><td class="memTemplItemLeft" align="right" valign="top">ListNodePointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#acae082293135bfed0062dfa3dcd7fae2">AddRange</a> (const R &amp;item, const Args &amp;...args)</td></tr>
 <tr class="memdesc:acae082293135bfed0062dfa3dcd7fae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">添加指定元素到 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 的末尾, 并返回首元素链节点指针  <a href="#acae082293135bfed0062dfa3dcd7fae2">More...</a><br /></td></tr>
 <tr class="separator:acae082293135bfed0062dfa3dcd7fae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f7380cf17836ae5b3372ef848f73910"><td class="memTemplParams" colspan="2">template&lt;intptr_t N&gt; </td></tr>
+<tr class="memitem:a7f7380cf17836ae5b3372ef848f73910"><td class="memTemplItemLeft" align="right" valign="top">ListNodePointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a7f7380cf17836ae5b3372ef848f73910">AddRange</a> (const R(&amp;items)[N])</td></tr>
+<tr class="memdesc:a7f7380cf17836ae5b3372ef848f73910"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定集合的元素添加到 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 的末尾, 并返回首元素链节点指针  <a href="#a7f7380cf17836ae5b3372ef848f73910">More...</a><br /></td></tr>
+<tr class="separator:a7f7380cf17836ae5b3372ef848f73910"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a191191d2b485758047424a64b4862ef6"><td class="memItemLeft" align="right" valign="top">ListNodePointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a191191d2b485758047424a64b4862ef6">AddRange</a> (const R items[], intptr_t count)</td></tr>
 <tr class="memdesc:a191191d2b485758047424a64b4862ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定集合的元素添加到 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 的末尾, 并返回首元素链节点指针  <a href="#a191191d2b485758047424a64b4862ef6">More...</a><br /></td></tr>
 <tr class="separator:a191191d2b485758047424a64b4862ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,10 +207,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aebb467fa4ddd9165b2bc1105dfd74886"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#aebb467fa4ddd9165b2bc1105dfd74886">Contains</a> (const R &amp;item) const </td></tr>
 <tr class="memdesc:aebb467fa4ddd9165b2bc1105dfd74886"><td class="mdescLeft">&#160;</td><td class="mdescRight">确定某元素是否在 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中  <a href="#aebb467fa4ddd9165b2bc1105dfd74886">More...</a><br /></td></tr>
 <tr class="separator:aebb467fa4ddd9165b2bc1105dfd74886"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65dc9d14f233a8a9857d54b9bf880f53"><td class="memItemLeft" align="right" valign="top">ListNodePointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a65dc9d14f233a8a9857d54b9bf880f53">Insert</a> (const R &amp;item, const R &amp;itemToInsert, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate comparer=<a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Compare)</td></tr>
-<tr class="memdesc:a65dc9d14f233a8a9857d54b9bf880f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">将元素插入 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 的指定元素前面, 否则插入末尾  <a href="#a65dc9d14f233a8a9857d54b9bf880f53">More...</a><br /></td></tr>
-<tr class="separator:a65dc9d14f233a8a9857d54b9bf880f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8850cc6db6aa06cf7dd25831d7c3d647"><td class="memTemplParams" colspan="2">template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </td></tr>
+<tr class="memitem:a44f20a2f0ce0c84bfa5347eafb5de47e"><td class="memItemLeft" align="right" valign="top">ListNodePointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a44f20a2f0ce0c84bfa5347eafb5de47e">Insert</a> (const R &amp;item, const R &amp;itemToInsert, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::EqualsDelegate equals)</td></tr>
+<tr class="memdesc:a44f20a2f0ce0c84bfa5347eafb5de47e"><td class="mdescLeft">&#160;</td><td class="mdescRight">将元素插入 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 的指定元素前面, 否则插入末尾  <a href="#a44f20a2f0ce0c84bfa5347eafb5de47e">More...</a><br /></td></tr>
+<tr class="separator:a44f20a2f0ce0c84bfa5347eafb5de47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8850cc6db6aa06cf7dd25831d7c3d647"><td class="memTemplParams" colspan="2">template&lt;typename IComparer&lt; R &gt;::EqualsDelegate equals = IComparer&lt;R&gt;::Equals&gt; </td></tr>
 <tr class="memitem:a8850cc6db6aa06cf7dd25831d7c3d647"><td class="memTemplItemLeft" align="right" valign="top">ListNodePointer&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a8850cc6db6aa06cf7dd25831d7c3d647">Insert</a> (const R &amp;item, const R &amp;itemToInsert)</td></tr>
 <tr class="memdesc:a8850cc6db6aa06cf7dd25831d7c3d647"><td class="mdescLeft">&#160;</td><td class="mdescRight">将元素插入 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 的指定元素前面  <a href="#a8850cc6db6aa06cf7dd25831d7c3d647">More...</a><br /></td></tr>
 <tr class="separator:a8850cc6db6aa06cf7dd25831d7c3d647"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,16 +223,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2049f7a47979fdd9d5273fefbdf06e42"><td class="memItemLeft" align="right" valign="top">ListNodePointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a2049f7a47979fdd9d5273fefbdf06e42">InsertRange</a> (const R &amp;item, const R *itemsToInsert, intptr_t count)</td></tr>
 <tr class="memdesc:a2049f7a47979fdd9d5273fefbdf06e42"><td class="mdescLeft">&#160;</td><td class="mdescRight">将集合中的某个元素插入 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 的指定指定元素前面  <a href="#a2049f7a47979fdd9d5273fefbdf06e42">More...</a><br /></td></tr>
 <tr class="separator:a2049f7a47979fdd9d5273fefbdf06e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb99fb7aea7c5bcbf8c2b3771071f922"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#acb99fb7aea7c5bcbf8c2b3771071f922">Remove</a> (const R &amp;item, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate comparer=<a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Compare)</td></tr>
-<tr class="memdesc:acb99fb7aea7c5bcbf8c2b3771071f922"><td class="mdescLeft">&#160;</td><td class="mdescRight">从 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中移除特定对象的第一个匹配项  <a href="#acb99fb7aea7c5bcbf8c2b3771071f922">More...</a><br /></td></tr>
-<tr class="separator:acb99fb7aea7c5bcbf8c2b3771071f922"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbdbc978a9eceefc171bd035363da970"><td class="memTemplParams" colspan="2">template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </td></tr>
+<tr class="memitem:a7ada16cbd1f5b84a157e107d21f065ff"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a7ada16cbd1f5b84a157e107d21f065ff">Remove</a> (const R &amp;item, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::EqualsDelegate equals)</td></tr>
+<tr class="memdesc:a7ada16cbd1f5b84a157e107d21f065ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">从 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中移除特定对象的第一个匹配项  <a href="#a7ada16cbd1f5b84a157e107d21f065ff">More...</a><br /></td></tr>
+<tr class="separator:a7ada16cbd1f5b84a157e107d21f065ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbdbc978a9eceefc171bd035363da970"><td class="memTemplParams" colspan="2">template&lt;typename IComparer&lt; R &gt;::EqualsDelegate equals = IComparer&lt;R&gt;::Equals&gt; </td></tr>
 <tr class="memitem:afbdbc978a9eceefc171bd035363da970"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#afbdbc978a9eceefc171bd035363da970">Remove</a> (const R &amp;item)</td></tr>
 <tr class="memdesc:afbdbc978a9eceefc171bd035363da970"><td class="mdescLeft">&#160;</td><td class="mdescRight">从 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中移除特定对象的第一个匹配项  <a href="#afbdbc978a9eceefc171bd035363da970">More...</a><br /></td></tr>
 <tr class="separator:afbdbc978a9eceefc171bd035363da970"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae1df2e304d4f4394239f415201fc151"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#aae1df2e304d4f4394239f415201fc151">Remove</a> (ListNodePointer pNode)</td></tr>
-<tr class="memdesc:aae1df2e304d4f4394239f415201fc151"><td class="mdescLeft">&#160;</td><td class="mdescRight">从 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中移除特定链节点  <a href="#aae1df2e304d4f4394239f415201fc151">More...</a><br /></td></tr>
-<tr class="separator:aae1df2e304d4f4394239f415201fc151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac255ccb74b81b0a2108e448c6aab5c92"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#ac255ccb74b81b0a2108e448c6aab5c92">Remove</a> (ListNodePointer pNode)</td></tr>
+<tr class="memdesc:ac255ccb74b81b0a2108e448c6aab5c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">从 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中移除特定链节点  <a href="#ac255ccb74b81b0a2108e448c6aab5c92">More...</a><br /></td></tr>
+<tr class="separator:ac255ccb74b81b0a2108e448c6aab5c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a315616c07c98046e496d70a7742411e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a315616c07c98046e496d70a7742411e0">RemoveAt</a> (intptr_t order)</td></tr>
 <tr class="memdesc:a315616c07c98046e496d70a7742411e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">从 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中移除指定位置顺序的对象  <a href="#a315616c07c98046e496d70a7742411e0">More...</a><br /></td></tr>
 <tr class="separator:a315616c07c98046e496d70a7742411e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -255,16 +260,20 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a01ffa56c26281fef656ef572f10aaad5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a01ffa56c26281fef656ef572f10aaad5">Reverse</a> (intptr_t order=0, intptr_t count=0)</td></tr>
 <tr class="memdesc:a01ffa56c26281fef656ef572f10aaad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定范围中元素的顺序反转  <a href="#a01ffa56c26281fef656ef572f10aaad5">More...</a><br /></td></tr>
 <tr class="separator:a01ffa56c26281fef656ef572f10aaad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e7c771ada647ea27de61e1b156983cd"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a8e7c771ada647ea27de61e1b156983cd">IndexOf</a> (const R &amp;item, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate comparer=<a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Compare) const </td></tr>
-<tr class="memdesc:a8e7c771ada647ea27de61e1b156983cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索指定的对象，并返回整个 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中第一个匹配项的从零开始的位置顺序  <a href="#a8e7c771ada647ea27de61e1b156983cd">More...</a><br /></td></tr>
-<tr class="separator:a8e7c771ada647ea27de61e1b156983cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae610a2a4c8a735062eab2d08dd92be3f"><td class="memTemplParams" colspan="2">template&lt;typename comparer  = IComparer&lt;R&gt;::Compare&gt; </td></tr>
+<tr class="memitem:a70175198d734a7e577f516cfda8cdb54"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a70175198d734a7e577f516cfda8cdb54">IndexOf</a> (const R &amp;item, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::EqualsDelegate equals) const </td></tr>
+<tr class="memdesc:a70175198d734a7e577f516cfda8cdb54"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索指定的对象，并返回整个 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中第一个匹配项的从零开始的位置顺序  <a href="#a70175198d734a7e577f516cfda8cdb54">More...</a><br /></td></tr>
+<tr class="separator:a70175198d734a7e577f516cfda8cdb54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae610a2a4c8a735062eab2d08dd92be3f"><td class="memTemplParams" colspan="2">template&lt;typename IComparer&lt; R &gt;::EqualsDelegate equals = IComparer&lt;R&gt;::Equals&gt; </td></tr>
 <tr class="memitem:ae610a2a4c8a735062eab2d08dd92be3f"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#ae610a2a4c8a735062eab2d08dd92be3f">IndexOf</a> (const R &amp;item) const </td></tr>
 <tr class="memdesc:ae610a2a4c8a735062eab2d08dd92be3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索指定的对象，并返回整个 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中第一个匹配项的从零开始的位置顺序  <a href="#ae610a2a4c8a735062eab2d08dd92be3f">More...</a><br /></td></tr>
 <tr class="separator:ae610a2a4c8a735062eab2d08dd92be3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b824feb473a6f02de3b5333e216e80d"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a6b824feb473a6f02de3b5333e216e80d">LastIndexOf</a> (const R &amp;item) const </td></tr>
-<tr class="memdesc:a6b824feb473a6f02de3b5333e216e80d"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索指定的对象，并返回整个 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中最后一个匹配项的从零开始的位置顺序  <a href="#a6b824feb473a6f02de3b5333e216e80d">More...</a><br /></td></tr>
-<tr class="separator:a6b824feb473a6f02de3b5333e216e80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21be0d5bdc24ee8f3f29aa31c9564b59"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a21be0d5bdc24ee8f3f29aa31c9564b59">LastIndexOf</a> (const R &amp;item, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::EqualsDelegate equals) const </td></tr>
+<tr class="memdesc:a21be0d5bdc24ee8f3f29aa31c9564b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索指定的对象，并返回整个 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中最后一个匹配项的从零开始的位置顺序  <a href="#a21be0d5bdc24ee8f3f29aa31c9564b59">More...</a><br /></td></tr>
+<tr class="separator:a21be0d5bdc24ee8f3f29aa31c9564b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af46e7bfed17f31e3f6529e03c537d023"><td class="memTemplParams" colspan="2">template&lt;typename IComparer&lt; R &gt;::EqualsDelegate equals = IComparer&lt;R&gt;::Equals&gt; </td></tr>
+<tr class="memitem:af46e7bfed17f31e3f6529e03c537d023"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#af46e7bfed17f31e3f6529e03c537d023">LastIndexOf</a> (const R &amp;item) const </td></tr>
+<tr class="memdesc:af46e7bfed17f31e3f6529e03c537d023"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索指定的对象，并返回整个 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中最后一个匹配项的从零开始的位置顺序  <a href="#af46e7bfed17f31e3f6529e03c537d023">More...</a><br /></td></tr>
+<tr class="separator:af46e7bfed17f31e3f6529e03c537d023"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2342bd638f22a36d4e80868b3eecbcc5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a2342bd638f22a36d4e80868b3eecbcc5">Unique</a> ()</td></tr>
 <tr class="memdesc:a2342bd638f22a36d4e80868b3eecbcc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中所有重复的相邻元素  <a href="#a2342bd638f22a36d4e80868b3eecbcc5">More...</a><br /></td></tr>
 <tr class="separator:a2342bd638f22a36d4e80868b3eecbcc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,6 +291,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4619d66a7e66058ee9593d567c5f084c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a4619d66a7e66058ee9593d567c5f084c">MoveTo</a> (<a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html">List</a>&lt; R &gt; &amp;obj)</td></tr>
 <tr class="memdesc:a4619d66a7e66058ee9593d567c5f084c"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 完全转移至另一 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 处  <a href="#a4619d66a7e66058ee9593d567c5f084c">More...</a><br /></td></tr>
 <tr class="separator:a4619d66a7e66058ee9593d567c5f084c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e6906e61f8bedb6fa7d18ce4c3d1db9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a9e6906e61f8bedb6fa7d18ce4c3d1db9">MoveFirst</a> (ListNodePointer pNode)</td></tr>
+<tr class="memdesc:a9e6906e61f8bedb6fa7d18ce4c3d1db9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the specified element to the first place  <a href="#a9e6906e61f8bedb6fa7d18ce4c3d1db9">More...</a><br /></td></tr>
+<tr class="separator:a9e6906e61f8bedb6fa7d18ce4c3d1db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec355386378cefacc744045faa1be8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a9ec355386378cefacc744045faa1be8d">MoveLast</a> (ListNodePointer pNode)</td></tr>
+<tr class="memdesc:a9ec355386378cefacc744045faa1be8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves the specified element to the last place  <a href="#a9ec355386378cefacc744045faa1be8d">More...</a><br /></td></tr>
+<tr class="separator:a9ec355386378cefacc744045faa1be8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9daedadfd24ed3836724faffce0f338"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_system_1_1_collections_1_1_generic_1_1_list_iterator.html">Iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#af9daedadfd24ed3836724faffce0f338">begin</a> ()</td></tr>
 <tr class="memdesc:af9daedadfd24ed3836724faffce0f338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator to the first element of the container. If the container is empty or nothing, the returned iterator will be equal to <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a071c50b5f13e0e42e2846484ee63266a" title="Returns an iterator to the element following the last element of the container. This element acts as ...">end()</a>  <a href="#af9daedadfd24ed3836724faffce0f338">More...</a><br /></td></tr>
 <tr class="separator:af9daedadfd24ed3836724faffce0f338"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,8 +318,8 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a00905521eafd53ed922d46eb33e2899d"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a00905521eafd53ed922d46eb33e2899d">Count</a></td></tr>
-<tr class="memdesc:a00905521eafd53ed922d46eb33e2899d"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中实际包含的元素数  <a href="#a00905521eafd53ed922d46eb33e2899d">More...</a><br /></td></tr>
+<tr class="memitem:a00905521eafd53ed922d46eb33e2899d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00905521eafd53ed922d46eb33e2899d"></a>
+intptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>Count</b></td></tr>
 <tr class="separator:a00905521eafd53ed922d46eb33e2899d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -330,11 +345,13 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad429048ca17ff51edc131d01f1835a39"></a>
+<a class="anchor" id="a9864b7aafcce20602f3ad33bbbd82208"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
+<div class="memtemplate">
+template&lt;class... P&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -342,8 +359,8 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
         <tr>
           <td class="memname">ListNodePointer <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html">System::Collections::Generic::List</a>&lt; R, disposer, allocator &gt;::Add </td>
           <td>(</td>
-          <td class="paramtype">const R &amp;&#160;</td>
-          <td class="paramname"><em>item</em></td><td>)</td>
+          <td class="paramtype">P &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -354,15 +371,18 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
 </table>
 </div><div class="memdoc">
 
-<p>添加指定元素到 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 并返回该元素链节点指针 如果添加多次元素, 返回首个元素链节点指针 </p>
+<p></p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html#a99a4f38acf17ae8d3b93216ead3d1124" title="将对象添加到 List<Of R> 的结尾处 ">AddLast</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="add9e4d56c2429cebcd9234ee2228bf2c"></a>
+<a class="anchor" id="a1588660b5d5e8503bc01f56bf5c1c5f5"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
+<div class="memtemplate">
+template&lt;class... P&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -370,8 +390,8 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
         <tr>
           <td class="memname">ListNodePointer <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html">System::Collections::Generic::List</a>&lt; R, disposer, allocator &gt;::AddFirst </td>
           <td>(</td>
-          <td class="paramtype">const R &amp;&#160;</td>
-          <td class="paramname"><em>item</em></td><td>)</td>
+          <td class="paramtype">P &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -386,11 +406,13 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
 
 </div>
 </div>
-<a class="anchor" id="a57cb4bdcf0611bee9a958d9b63948bb4"></a>
+<a class="anchor" id="a99a4f38acf17ae8d3b93216ead3d1124"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
+<div class="memtemplate">
+template&lt;class... P&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -398,8 +420,8 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
         <tr>
           <td class="memname">ListNodePointer <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html">System::Collections::Generic::List</a>&lt; R, disposer, allocator &gt;::AddLast </td>
           <td>(</td>
-          <td class="paramtype">const R &amp;&#160;</td>
-          <td class="paramname"><em>item</em></td><td>)</td>
+          <td class="paramtype">P &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -481,6 +503,36 @@ template&lt;typename... Args&gt; </div>
 </div><div class="memdoc">
 
 <p>添加指定元素到 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 的末尾, 并返回首元素链节点指针 </p>
+
+</div>
+</div>
+<a class="anchor" id="a7f7380cf17836ae5b3372ef848f73910"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
+<div class="memtemplate">
+template&lt;intptr_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ListNodePointer <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html">System::Collections::Generic::List</a>&lt; R, disposer, allocator &gt;::AddRange </td>
+          <td>(</td>
+          <td class="paramtype">const R(&amp;)&#160;</td>
+          <td class="paramname"><em>items</em>[N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>将指定集合的元素添加到 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 的末尾, 并返回首元素链节点指针 </p>
 
 </div>
 </div>
@@ -800,7 +852,7 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
 
 </div>
 </div>
-<a class="anchor" id="a8e7c771ada647ea27de61e1b156983cd"></a>
+<a class="anchor" id="a70175198d734a7e577f516cfda8cdb54"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -818,8 +870,8 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate&#160;</td>
-          <td class="paramname"><em>comparer</em> = <code><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt;R&gt;::Compare</code>&#160;</td>
+          <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::EqualsDelegate&#160;</td>
+          <td class="paramname"><em>equals</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -845,7 +897,7 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
 <div class="memtemplate">
 template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
 <div class="memtemplate">
-template&lt;typename comparer  = IComparer&lt;R&gt;::Compare&gt; </div>
+template&lt;typename IComparer&lt; R &gt;::EqualsDelegate equals = IComparer&lt;R&gt;::Equals&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -894,11 +946,11 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
 </table>
 </div><div class="memdoc">
 
-<p>create back storage for caching </p>
+<p>Creates back storage for caching. This function helps speed up the insertion of <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a> that have a large number of elements, by avoiding the frequent memory allocation </p>
 
 </div>
 </div>
-<a class="anchor" id="a65dc9d14f233a8a9857d54b9bf880f53"></a>
+<a class="anchor" id="a44f20a2f0ce0c84bfa5347eafb5de47e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -922,8 +974,8 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate&#160;</td>
-          <td class="paramname"><em>comparer</em> = <code><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt;R&gt;::Compare</code>&#160;</td>
+          <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::EqualsDelegate&#160;</td>
+          <td class="paramname"><em>equals</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -948,7 +1000,7 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
 <div class="memtemplate">
 template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
 <div class="memtemplate">
-template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </div>
+template&lt;typename IComparer&lt; R &gt;::EqualsDelegate equals = IComparer&lt;R&gt;::Equals&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1130,11 +1182,52 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
 
 </div>
 </div>
-<a class="anchor" id="a6b824feb473a6f02de3b5333e216e80d"></a>
+<a class="anchor" id="a21be0d5bdc24ee8f3f29aa31c9564b59"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html">System::Collections::Generic::List</a>&lt; R, disposer, allocator &gt;::LastIndexOf </td>
+          <td>(</td>
+          <td class="paramtype">const R &amp;&#160;</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::EqualsDelegate&#160;</td>
+          <td class="paramname"><em>equals</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>搜索指定的对象，并返回整个 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中最后一个匹配项的从零开始的位置顺序 </p>
+<dl class="section return"><dt>Returns</dt><dd>失败返回-1</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af46e7bfed17f31e3f6529e03c537d023"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
+<div class="memtemplate">
+template&lt;typename IComparer&lt; R &gt;::EqualsDelegate equals = IComparer&lt;R&gt;::Equals&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1156,6 +1249,62 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
 
 <p>搜索指定的对象，并返回整个 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中最后一个匹配项的从零开始的位置顺序 </p>
 <dl class="section return"><dt>Returns</dt><dd>失败返回-1</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9e6906e61f8bedb6fa7d18ce4c3d1db9"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html">System::Collections::Generic::List</a>&lt; R, disposer, allocator &gt;::MoveFirst </td>
+          <td>(</td>
+          <td class="paramtype">ListNodePointer&#160;</td>
+          <td class="paramname"><em>pNode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Moves the specified element to the first place </p>
+
+</div>
+</div>
+<a class="anchor" id="a9ec355386378cefacc744045faa1be8d"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html">System::Collections::Generic::List</a>&lt; R, disposer, allocator &gt;::MoveLast </td>
+          <td>(</td>
+          <td class="paramtype">ListNodePointer&#160;</td>
+          <td class="paramname"><em>pNode</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Moves the specified element to the last place </p>
 
 </div>
 </div>
@@ -1298,7 +1447,7 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
 
 </div>
 </div>
-<a class="anchor" id="acb99fb7aea7c5bcbf8c2b3771071f922"></a>
+<a class="anchor" id="a7ada16cbd1f5b84a157e107d21f065ff"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1316,8 +1465,8 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate&#160;</td>
-          <td class="paramname"><em>comparer</em> = <code><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt;R&gt;::Compare</code>&#160;</td>
+          <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::EqualsDelegate&#160;</td>
+          <td class="paramname"><em>equals</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1343,7 +1492,7 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
 <div class="memtemplate">
 template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
 <div class="memtemplate">
-template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </div>
+template&lt;typename IComparer&lt; R &gt;::EqualsDelegate equals = IComparer&lt;R&gt;::Equals&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1368,7 +1517,7 @@ template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aae1df2e304d4f4394239f415201fc151"></a>
+<a class="anchor" id="ac255ccb74b81b0a2108e448c6aab5c92"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1378,7 +1527,7 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html">System::Collections::Generic::List</a>&lt; R, disposer, allocator &gt;::Remove </td>
+          <td class="memname">void <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html">System::Collections::Generic::List</a>&lt; R, disposer, allocator &gt;::Remove </td>
           <td>(</td>
           <td class="paramtype">ListNodePointer&#160;</td>
           <td class="paramname"><em>pNode</em></td><td>)</td>
@@ -1752,31 +1901,6 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a00905521eafd53ed922d46eb33e2899d"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html">System::Collections::Generic::List</a>&lt; R, disposer, allocator &gt;::Count</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>获取 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html" title="Represents a doubly linked list. Provides methods to search, sort, and manipulate lists ...">List</a>&lt;Of R&gt; 中实际包含的元素数 </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>RLib_List.h</li>
 </ul>
@@ -1786,7 +1910,7 @@ template&lt;class R, class disposer = IDisposable&lt;R&gt;, class allocator = IO
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_collections.html">Collections</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_collections_1_1_generic.html">Generic</a></li><li class="navelem"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_list.html">List</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:35 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:39 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

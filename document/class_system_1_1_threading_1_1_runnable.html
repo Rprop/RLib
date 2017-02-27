@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -128,30 +128,18 @@ Public Types</h2></td></tr>
 <a class="el" href="class_system_1_1_threading_1_1_runnable.html#afff2a3fe99bd38475d74bacf4fc4ba7faba5afe1fb8634c4f83b410926eb1ca86">Cpp</a>
  }</td></tr>
 <tr class="separator:afff2a3fe99bd38475d74bacf4fc4ba7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb9988a428015b44e453675451b8f6b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb9988a428015b44e453675451b8f6b3"></a>
-typedef DWORD(_stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>__r1</b>) (LPVOID lpThreadParameter)</td></tr>
-<tr class="separator:adb9988a428015b44e453675451b8f6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd487fbcefdcdd4d0118b979e51c73e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd487fbcefdcdd4d0118b979e51c73e6"></a>
-typedef DWORD(_stdcall *&#160;</td><td class="memItemRight" valign="bottom"><b>__r2</b>) ()</td></tr>
-<tr class="separator:acd487fbcefdcdd4d0118b979e51c73e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bee9497beb2dc30a3aa695a88c81398"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bee9497beb2dc30a3aa695a88c81398"></a>
-typedef void(_cdecl *&#160;</td><td class="memItemRight" valign="bottom"><b>__r3</b>) (LPVOID lpThreadParameter)</td></tr>
-<tr class="separator:a3bee9497beb2dc30a3aa695a88c81398"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71fb9ad348f3556fb8a654ceba205ff7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71fb9ad348f3556fb8a654ceba205ff7"></a>
-typedef void(_cdecl *&#160;</td><td class="memItemRight" valign="bottom"><b>__r4</b>) ()</td></tr>
-<tr class="separator:a71fb9ad348f3556fb8a654ceba205ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a640472abb90cafa624053d30aa1094f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a640472abb90cafa624053d30aa1094f7"></a>
-typedef __r1&#160;</td><td class="memItemRight" valign="bottom"><b>StdParameterizedThreadStart</b></td></tr>
-<tr class="separator:a640472abb90cafa624053d30aa1094f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43f87960ad7e092c4bd5dd7f121409a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43f87960ad7e092c4bd5dd7f121409a1"></a>
-typedef __r2&#160;</td><td class="memItemRight" valign="bottom"><b>StdThreadStart</b></td></tr>
-<tr class="separator:a43f87960ad7e092c4bd5dd7f121409a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92308935864e843e727aec0ee54c5d3c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92308935864e843e727aec0ee54c5d3c"></a>
-typedef __r3&#160;</td><td class="memItemRight" valign="bottom"><b>CppParameterizedThreadStart</b></td></tr>
-<tr class="separator:a92308935864e843e727aec0ee54c5d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadd382106b3428e938fb55c0d64830d5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aadd382106b3428e938fb55c0d64830d5"></a>
-typedef __r4&#160;</td><td class="memItemRight" valign="bottom"><b>CppThreadStart</b></td></tr>
-<tr class="separator:aadd382106b3428e938fb55c0d64830d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700747cb99de6fe48a38c81eb094e9f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a700747cb99de6fe48a38c81eb094e9f3"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>StdParameterizedThreadStart</b> = DWORD(_stdcall *)(LPVOID lpThreadParameter)</td></tr>
+<tr class="separator:a700747cb99de6fe48a38c81eb094e9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c13bc603a40bd720c9ed25d187cc4c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5c13bc603a40bd720c9ed25d187cc4c5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>StdThreadStart</b>) = DWORD(_stdcall *)(</td></tr>
+<tr class="separator:a5c13bc603a40bd720c9ed25d187cc4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5bad9123ba9da736064997e8f1f17f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5bad9123ba9da736064997e8f1f17f8"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>CppParameterizedThreadStart</b> = void(_cdecl *)(LPVOID lpThreadParameter)</td></tr>
+<tr class="separator:ae5bad9123ba9da736064997e8f1f17f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977317b6892ab3c90ee1d56e0bdcaedc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a977317b6892ab3c90ee1d56e0bdcaedc"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>CppThreadStart</b>) = void(_cdecl *)(</td></tr>
+<tr class="separator:a977317b6892ab3c90ee1d56e0bdcaedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -207,7 +195,7 @@ LPVOID&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_threading.html">Threading</a></li><li class="navelem"><a class="el" href="class_system_1_1_threading_1_1_runnable.html">Runnable</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:39 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:43 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

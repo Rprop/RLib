@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -121,18 +121,15 @@ $(document).ready(function(){initNavTree('class_system_1_1_collections_1_1_gener
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a5816e9910f090b637071ec555aba07ec"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5816e9910f090b637071ec555aba07ec"></a>
-typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><b>__DisposableDelegate</b>) (R *)</td></tr>
-<tr class="separator:a5816e9910f090b637071ec555aba07ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a169841925849774845d7a91a57a3b3e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a169841925849774845d7a91a57a3b3e2"></a>
-typedef __DisposableDelegate&#160;</td><td class="memItemRight" valign="bottom"><b>Delegate</b></td></tr>
-<tr class="separator:a169841925849774845d7a91a57a3b3e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a789679ff96855901127f016723e7f29d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a789679ff96855901127f016723e7f29d"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Delegate</b> = void(*)(R *)</td></tr>
+<tr class="separator:a789679ff96855901127f016723e7f29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a57257fd47d65e51062adef62b8467293"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_disposable.html#a57257fd47d65e51062adef62b8467293">Dispose</a> (R *obj)</td></tr>
-<tr class="memdesc:a57257fd47d65e51062adef62b8467293"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor caller  <a href="#a57257fd47d65e51062adef62b8467293">More...</a><br /></td></tr>
-<tr class="separator:a57257fd47d65e51062adef62b8467293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8b83d7d133ab326d4e8c222eeb663d"><td class="memItemLeft" align="right" valign="top">static RLIB_INLINE void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_disposable.html#abd8b83d7d133ab326d4e8c222eeb663d">Dispose</a> (R *obj)</td></tr>
+<tr class="memdesc:abd8b83d7d133ab326d4e8c222eeb663d"><td class="mdescLeft">&#160;</td><td class="mdescRight">default constructor caller  <a href="#abd8b83d7d133ab326d4e8c222eeb663d">More...</a><br /></td></tr>
+<tr class="separator:abd8b83d7d133ab326d4e8c222eeb663d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;class R&gt;<br />
@@ -140,7 +137,7 @@ class System::Collections::Generic::IDisposable&lt; R &gt;</h3>
 
 <p>Defines a method that a type implements to dispose </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a57257fd47d65e51062adef62b8467293"></a>
+<a class="anchor" id="abd8b83d7d133ab326d4e8c222eeb663d"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -150,7 +147,7 @@ template&lt;class R &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_disposable.html">System::Collections::Generic::IDisposable</a>&lt; R &gt;::Dispose </td>
+          <td class="memname">static RLIB_INLINE void <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_disposable.html">System::Collections::Generic::IDisposable</a>&lt; R &gt;::Dispose </td>
           <td>(</td>
           <td class="paramtype">R *&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
@@ -177,7 +174,7 @@ template&lt;class R &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_collections.html">Collections</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_collections_1_1_generic.html">Generic</a></li><li class="navelem"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_disposable.html">IDisposable</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:34 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:39 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

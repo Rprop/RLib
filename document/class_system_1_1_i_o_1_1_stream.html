@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -115,76 +115,89 @@ $(document).ready(function(){initNavTree('class_system_1_1_i_o_1_1_stream.html',
 </div><!--header-->
 <div class="contents">
 
-<p>提供字节序列的一般视图, 充当所有流的抽象基类  
+<p>Provides a generic view of a sequence of bytes. This is an abstract class  
  <a href="class_system_1_1_i_o_1_1_stream.html#details">More...</a></p>
-
-<p>Inherited by <a class="el" href="class_system_1_1_i_o_1_1_compression_1_1_compression_stream.html">System::IO::Compression::CompressionStream</a>, <a class="el" href="class_system_1_1_i_o_1_1_file_stream.html">System::IO::FileStream</a>, and <a class="el" href="class_system_1_1_i_o_1_1_memory_stream.html">System::IO::MemoryStream</a>.</p>
+<div class="dynheader">
+Inheritance diagram for System::IO::Stream:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_system_1_1_i_o_1_1_stream.png" usemap="#System::IO::Stream_map" alt=""/>
+  <map id="System::IO::Stream_map" name="System::IO::Stream_map">
+<area href="class_system_1_1_i_o_1_1_compression_1_1_compression_stream.html" title="Provides methods and properties used to compress and decompress streams " alt="System::IO::Compression::CompressionStream" shape="rect" coords="139,56,407,80"/>
+<area href="class_system_1_1_i_o_1_1_file_stream.html" title="Provides a Stream for a file, supporting both synchronous and asynchronous read and write operations ..." alt="System::IO::FileStream" shape="rect" coords="417,56,685,80"/>
+<area href="class_system_1_1_i_o_1_1_memory_stream.html" title="Creates a stream whose backing store is memory. This is an abstract class " alt="System::IO::MemoryStream" shape="rect" coords="695,56,963,80"/>
+<area href="class_system_1_1_i_o_1_1_compression_1_1_deflate_stream.html" title="Provides methods and properties used to compress and decompress streams. " alt="System::IO::Compression::DeflateStream" shape="rect" coords="0,112,268,136"/>
+<area href="class_system_1_1_i_o_1_1_compression_1_1_g_zip_stream.html" title="Provides methods and properties used to compress and decompress streams. " alt="System::IO::Compression::GZipStream" shape="rect" coords="278,112,546,136"/>
+<area href="class_system_1_1_i_o_1_1_buffered_stream.html" title="Creates a stream whose backing store is memory " alt="System::IO::BufferedStream" shape="rect" coords="556,112,824,136"/>
+<area href="class_system_1_1_i_o_1_1_unmanaged_memory_stream.html" title="Provides access to unmanaged blocks of memory " alt="System::IO::UnmanagedMemoryStream" shape="rect" coords="834,112,1102,136"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8bf44017124ecbe1fb8e6733038c061d"><td class="memItemLeft" align="right" valign="top">virtual intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#a8bf44017124ecbe1fb8e6733038c061d">GetPos</a> () const =0</td></tr>
-<tr class="memdesc:a8bf44017124ecbe1fb8e6733038c061d"><td class="mdescLeft">&#160;</td><td class="mdescRight">当在派生类中重写时, 获取当前流中的位置  <a href="#a8bf44017124ecbe1fb8e6733038c061d">More...</a><br /></td></tr>
+<tr class="memdesc:a8bf44017124ecbe1fb8e6733038c061d"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a derived class, gets the position within the current stream  <a href="#a8bf44017124ecbe1fb8e6733038c061d">More...</a><br /></td></tr>
 <tr class="separator:a8bf44017124ecbe1fb8e6733038c061d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6061b8d693206d980679624cd1dcbc9f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#a6061b8d693206d980679624cd1dcbc9f">SetPos</a> (intptr_t Pos)=0</td></tr>
-<tr class="memdesc:a6061b8d693206d980679624cd1dcbc9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">当在派生类中重写时, 设置当前流中的位置  <a href="#a6061b8d693206d980679624cd1dcbc9f">More...</a><br /></td></tr>
+<tr class="memdesc:a6061b8d693206d980679624cd1dcbc9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a derived class, sets the position within the current stream  <a href="#a6061b8d693206d980679624cd1dcbc9f">More...</a><br /></td></tr>
 <tr class="separator:a6061b8d693206d980679624cd1dcbc9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81d2d6e823bb41b98723b8f9562ab125"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#a81d2d6e823bb41b98723b8f9562ab125">RLIB_PROPERTY_GET_SET</a> (intptr_t Position, <a class="el" href="class_system_1_1_i_o_1_1_stream.html#a8bf44017124ecbe1fb8e6733038c061d">GetPos</a>, <a class="el" href="class_system_1_1_i_o_1_1_stream.html#a6061b8d693206d980679624cd1dcbc9f">SetPos</a>)</td></tr>
-<tr class="memdesc:a81d2d6e823bb41b98723b8f9562ab125"><td class="mdescLeft">&#160;</td><td class="mdescRight">当在派生类中重写时, 获取或设置当前流中的位置 约定: 如果是返回新流缓冲对象, Position必须置为0  <a href="#a81d2d6e823bb41b98723b8f9562ab125">More...</a><br /></td></tr>
+<tr class="memdesc:a81d2d6e823bb41b98723b8f9562ab125"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a derived class, gets or sets the position within the current stream  <a href="#a81d2d6e823bb41b98723b8f9562ab125">More...</a><br /></td></tr>
 <tr class="separator:a81d2d6e823bb41b98723b8f9562ab125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9703bc52a0ce505ef9d2658e156585b"><td class="memItemLeft" align="right" valign="top">virtual intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#ac9703bc52a0ce505ef9d2658e156585b">GetSize</a> () const =0</td></tr>
-<tr class="memdesc:ac9703bc52a0ce505ef9d2658e156585b"><td class="mdescLeft">&#160;</td><td class="mdescRight">当在派生类中重写时, 获取用字节表示的流大小  <a href="#ac9703bc52a0ce505ef9d2658e156585b">More...</a><br /></td></tr>
+<tr class="memdesc:ac9703bc52a0ce505ef9d2658e156585b"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a derived class, gets the capacity in bytes of the stream  <a href="#ac9703bc52a0ce505ef9d2658e156585b">More...</a><br /></td></tr>
 <tr class="separator:ac9703bc52a0ce505ef9d2658e156585b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66d965671313ec0b107a2f3affe82cd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#ae66d965671313ec0b107a2f3affe82cd">SetSize</a> (intptr_t size)=0</td></tr>
-<tr class="memdesc:ae66d965671313ec0b107a2f3affe82cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">当在派生类中重写时, 设置用字节表示的流大小  <a href="#ae66d965671313ec0b107a2f3affe82cd">More...</a><br /></td></tr>
+<tr class="memdesc:ae66d965671313ec0b107a2f3affe82cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a derived class, sets the capacity in bytes of the stream  <a href="#ae66d965671313ec0b107a2f3affe82cd">More...</a><br /></td></tr>
 <tr class="separator:ae66d965671313ec0b107a2f3affe82cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad73853b498f6fefff1ec5a29d27fe206"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#ad73853b498f6fefff1ec5a29d27fe206">RLIB_PROPERTY_GET_SET</a> (intptr_t Size, <a class="el" href="class_system_1_1_i_o_1_1_stream.html#ac9703bc52a0ce505ef9d2658e156585b">GetSize</a>, <a class="el" href="class_system_1_1_i_o_1_1_stream.html#ae66d965671313ec0b107a2f3affe82cd">SetSize</a>)</td></tr>
-<tr class="memdesc:ad73853b498f6fefff1ec5a29d27fe206"><td class="mdescLeft">&#160;</td><td class="mdescRight">当在派生类中重写时, 获取或设置用字节表示的流大小  <a href="#ad73853b498f6fefff1ec5a29d27fe206">More...</a><br /></td></tr>
+<tr class="memdesc:ad73853b498f6fefff1ec5a29d27fe206"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a derived class, gets or sets the capacity in bytes of the stream  <a href="#ad73853b498f6fefff1ec5a29d27fe206">More...</a><br /></td></tr>
 <tr class="separator:ad73853b498f6fefff1ec5a29d27fe206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a554f473d7453f24842fa468ff551600a"><td class="memItemLeft" align="right" valign="top">virtual intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#a554f473d7453f24842fa468ff551600a">GetLength</a> () const =0</td></tr>
-<tr class="memdesc:a554f473d7453f24842fa468ff551600a"><td class="mdescLeft">&#160;</td><td class="mdescRight">当在派生类中重写时, 获取用字节表示的流已写长度  <a href="#a554f473d7453f24842fa468ff551600a">More...</a><br /></td></tr>
+<tr class="memdesc:a554f473d7453f24842fa468ff551600a"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a derived class, gets the length in bytes of the stream  <a href="#a554f473d7453f24842fa468ff551600a">More...</a><br /></td></tr>
 <tr class="separator:a554f473d7453f24842fa468ff551600a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fea81d74a7748da186ef0c1a0c786ea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#a7fea81d74a7748da186ef0c1a0c786ea">SetLength</a> (intptr_t len)=0</td></tr>
-<tr class="memdesc:a7fea81d74a7748da186ef0c1a0c786ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">当在派生类中重写时, 设置用字节表示的流已写长度  <a href="#a7fea81d74a7748da186ef0c1a0c786ea">More...</a><br /></td></tr>
+<tr class="memdesc:a7fea81d74a7748da186ef0c1a0c786ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a derived class, sets the length in bytes of the stream  <a href="#a7fea81d74a7748da186ef0c1a0c786ea">More...</a><br /></td></tr>
 <tr class="separator:a7fea81d74a7748da186ef0c1a0c786ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a434ac1617001ce2c56da20af80eeee7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#a434ac1617001ce2c56da20af80eeee7d">RLIB_PROPERTY_GET_SET</a> (intptr_t Length, <a class="el" href="class_system_1_1_i_o_1_1_stream.html#a554f473d7453f24842fa468ff551600a">GetLength</a>, <a class="el" href="class_system_1_1_i_o_1_1_stream.html#a7fea81d74a7748da186ef0c1a0c786ea">SetLength</a>)</td></tr>
-<tr class="memdesc:a434ac1617001ce2c56da20af80eeee7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">当在派生类中重写时, 获取或设置用字节表示的流已写长度  <a href="#a434ac1617001ce2c56da20af80eeee7d">More...</a><br /></td></tr>
+<tr class="memdesc:a434ac1617001ce2c56da20af80eeee7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a derived class, gets or sets the length in bytes of the stream  <a href="#a434ac1617001ce2c56da20af80eeee7d">More...</a><br /></td></tr>
 <tr class="separator:a434ac1617001ce2c56da20af80eeee7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cff2ef08e2d80795ce7c5e5404aa4bd"><td class="memItemLeft" align="right" valign="top">virtual intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#a5cff2ef08e2d80795ce7c5e5404aa4bd">Read</a> (LPVOID buffer, intptr_t count) const =0</td></tr>
-<tr class="memdesc:a5cff2ef08e2d80795ce7c5e5404aa4bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">当在派生类中重写时, 从当前流中读取字节块并将数据写入 buffer 中  <a href="#a5cff2ef08e2d80795ce7c5e5404aa4bd">More...</a><br /></td></tr>
+<tr class="memdesc:a5cff2ef08e2d80795ce7c5e5404aa4bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a derived class, reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read  <a href="#a5cff2ef08e2d80795ce7c5e5404aa4bd">More...</a><br /></td></tr>
 <tr class="separator:a5cff2ef08e2d80795ce7c5e5404aa4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a684262605da777a6398db08b178cf5ec"><td class="memItemLeft" align="right" valign="top">virtual intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#a684262605da777a6398db08b178cf5ec">Write</a> (LPCVOID buffer, intptr_t count)=0</td></tr>
-<tr class="memdesc:a684262605da777a6398db08b178cf5ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">当在派生类中重写时, 使用从缓冲区读取的数据将字节块写入当前流  <a href="#a684262605da777a6398db08b178cf5ec">More...</a><br /></td></tr>
+<tr class="memdesc:a684262605da777a6398db08b178cf5ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a derived class, writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written  <a href="#a684262605da777a6398db08b178cf5ec">More...</a><br /></td></tr>
 <tr class="separator:a684262605da777a6398db08b178cf5ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab566fe724550aefa44e7d889002d1d6d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#ab566fe724550aefa44e7d889002d1d6d">Flush</a> ()=0</td></tr>
 <tr class="memdesc:ab566fe724550aefa44e7d889002d1d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a derived class, clears all buffers for this stream and causes any buffered data to be written to the underlying device.  <a href="#ab566fe724550aefa44e7d889002d1d6d">More...</a><br /></td></tr>
 <tr class="separator:ab566fe724550aefa44e7d889002d1d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aca54cb94583085db1ef2181d1facc2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#a5aca54cb94583085db1ef2181d1facc2">Close</a> ()=0</td></tr>
-<tr class="memdesc:a5aca54cb94583085db1ef2181d1facc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">当在派生类中重写时, 关闭当前流并释放与之关联的所有资源  <a href="#a5aca54cb94583085db1ef2181d1facc2">More...</a><br /></td></tr>
+<tr class="memdesc:a5aca54cb94583085db1ef2181d1facc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a derived class, Closes the current stream and releases any resources associated with the current stream  <a href="#a5aca54cb94583085db1ef2181d1facc2">More...</a><br /></td></tr>
 <tr class="separator:a5aca54cb94583085db1ef2181d1facc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a833842294f51775c13bf2ad1245184cb"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#a833842294f51775c13bf2ad1245184cb">InheritFromMemoryStream</a> () const =0</td></tr>
-<tr class="memdesc:a833842294f51775c13bf2ad1245184cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">当在派生类中重写时, 指示当前实例是否继承自 <a class="el" href="class_system_1_1_i_o_1_1_memory_stream.html" title="创建其支持存储区为内存的流, 该流不能被实例化 ">MemoryStream</a>  <a href="#a833842294f51775c13bf2ad1245184cb">More...</a><br /></td></tr>
+<tr class="memdesc:a833842294f51775c13bf2ad1245184cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a derived class, identifies whether current class is a derived class of (or the same class as) <a class="el" href="class_system_1_1_i_o_1_1_memory_stream.html" title="Creates a stream whose backing store is memory. This is an abstract class ">MemoryStream</a>  <a href="#a833842294f51775c13bf2ad1245184cb">More...</a><br /></td></tr>
 <tr class="separator:a833842294f51775c13bf2ad1245184cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f9029a7d0d6c3d0ad812cff851a4fe0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#a3f9029a7d0d6c3d0ad812cff851a4fe0">InheritFromBufferedStream</a> () const =0</td></tr>
-<tr class="memdesc:a3f9029a7d0d6c3d0ad812cff851a4fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">当在派生类中重写时, 指示当前实例是否继承自 <a class="el" href="class_system_1_1_i_o_1_1_buffered_stream.html" title="创建其支持存储区为内存的缓存流 ">BufferedStream</a>  <a href="#a3f9029a7d0d6c3d0ad812cff851a4fe0">More...</a><br /></td></tr>
+<tr class="memdesc:a3f9029a7d0d6c3d0ad812cff851a4fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">When overridden in a derived class, identifies whether current class is a derived class of (or the same class as) <a class="el" href="class_system_1_1_i_o_1_1_buffered_stream.html" title="Creates a stream whose backing store is memory ">BufferedStream</a>  <a href="#a3f9029a7d0d6c3d0ad812cff851a4fe0">More...</a><br /></td></tr>
 <tr class="separator:a3f9029a7d0d6c3d0ad812cff851a4fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ae4b6c2dc135207a36da7de122c9f76"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#a6ae4b6c2dc135207a36da7de122c9f76">GetMaxReadSize</a> () const </td></tr>
-<tr class="memdesc:a6ae4b6c2dc135207a36da7de122c9f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取流当前位置起最大可读取长度  <a href="#a6ae4b6c2dc135207a36da7de122c9f76">More...</a><br /></td></tr>
+<tr class="memdesc:a6ae4b6c2dc135207a36da7de122c9f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the maximum bytes of readable data from current position  <a href="#a6ae4b6c2dc135207a36da7de122c9f76">More...</a><br /></td></tr>
 <tr class="separator:a6ae4b6c2dc135207a36da7de122c9f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fb358c83a58493a53a61668490275e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#a3fb358c83a58493a53a61668490275e8">RLIB_PROPERTY_GET</a> (intptr_t MaxReadSize, <a class="el" href="class_system_1_1_i_o_1_1_stream.html#a6ae4b6c2dc135207a36da7de122c9f76">GetMaxReadSize</a>)</td></tr>
-<tr class="memdesc:a3fb358c83a58493a53a61668490275e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取流当前位置起最大可读取长度  <a href="#a3fb358c83a58493a53a61668490275e8">More...</a><br /></td></tr>
+<tr class="memdesc:a3fb358c83a58493a53a61668490275e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the maximum bytes of readable data from current position  <a href="#a3fb358c83a58493a53a61668490275e8">More...</a><br /></td></tr>
 <tr class="separator:a3fb358c83a58493a53a61668490275e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a523e1fc4052b88b3281055c91f60d5fd"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#a523e1fc4052b88b3281055c91f60d5fd">GetMaxWriteSize</a> () const </td></tr>
-<tr class="memdesc:a523e1fc4052b88b3281055c91f60d5fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取流当前位置起不进行内存重新分配时最大可写入长度  <a href="#a523e1fc4052b88b3281055c91f60d5fd">More...</a><br /></td></tr>
+<tr class="memdesc:a523e1fc4052b88b3281055c91f60d5fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the maximum writeable bytes from current position, based on current capacity  <a href="#a523e1fc4052b88b3281055c91f60d5fd">More...</a><br /></td></tr>
 <tr class="separator:a523e1fc4052b88b3281055c91f60d5fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e236fe7603624f6e03770f03658eba4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#a5e236fe7603624f6e03770f03658eba4">RLIB_PROPERTY_GET</a> (intptr_t MaxWriteSize, <a class="el" href="class_system_1_1_i_o_1_1_stream.html#a523e1fc4052b88b3281055c91f60d5fd">GetMaxWriteSize</a>)</td></tr>
-<tr class="memdesc:a5e236fe7603624f6e03770f03658eba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取流当前位置起不进行内存重新分配时最大可写入长度  <a href="#a5e236fe7603624f6e03770f03658eba4">More...</a><br /></td></tr>
+<tr class="memdesc:a5e236fe7603624f6e03770f03658eba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the maximum writeable bytes from current position, based on current capacity  <a href="#a5e236fe7603624f6e03770f03658eba4">More...</a><br /></td></tr>
 <tr class="separator:a5e236fe7603624f6e03770f03658eba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a35734b413d5998f20a113198169b06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_stream.html#a9a35734b413d5998f20a113198169b06">CopyTo</a> (<a class="el" href="class_system_1_1_i_o_1_1_stream.html">Stream</a> *destination, intptr_t bufferSize=RLIB_DEFAULT_BUFFER_SIZE) const </td></tr>
 <tr class="memdesc:a9a35734b413d5998f20a113198169b06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the bytes from the current stream and writes them to another stream, using a specified buffer size  <a href="#a9a35734b413d5998f20a113198169b06">More...</a><br /></td></tr>
 <tr class="separator:a9a35734b413d5998f20a113198169b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>提供字节序列的一般视图, 充当所有流的抽象基类 </p>
+<div class="textblock"><p>Provides a generic view of a sequence of bytes. This is an abstract class </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a5aca54cb94583085db1ef2181d1facc2"></a>
 <div class="memitem">
@@ -207,7 +220,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>当在派生类中重写时, 关闭当前流并释放与之关联的所有资源 </p>
+<p>When overridden in a derived class, Closes the current stream and releases any resources associated with the current stream </p>
 
 <p>Implemented in <a class="el" href="class_system_1_1_i_o_1_1_file_stream.html#a66a22e08429d6489442c9a9b845c1e85">System::IO::FileStream</a>, <a class="el" href="class_system_1_1_i_o_1_1_compression_1_1_compression_stream.html#a3091bcbfe83752a1c6709040212bbec2">System::IO::Compression::CompressionStream</a>, <a class="el" href="class_system_1_1_i_o_1_1_unmanaged_memory_stream.html#abc3f3972e475aca2ed13a42648b73f51">System::IO::UnmanagedMemoryStream</a>, and <a class="el" href="class_system_1_1_i_o_1_1_buffered_stream.html#aab87f9a96053993a837730f026466d0a">System::IO::BufferedStream</a>.</p>
 
@@ -297,7 +310,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>当在派生类中重写时, 获取用字节表示的流已写长度 </p>
+<p>When overridden in a derived class, gets the length in bytes of the stream </p>
 
 <p>Implemented in <a class="el" href="class_system_1_1_i_o_1_1_file_stream.html#a350f64835b273b06ae756edc5e178cac">System::IO::FileStream</a>, and <a class="el" href="class_system_1_1_i_o_1_1_memory_stream.html#a927fd4e6c72cd1e0880fd511eb3ab0e1">System::IO::MemoryStream</a>.</p>
 
@@ -324,7 +337,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>获取流当前位置起最大可读取长度 </p>
+<p>Gets the maximum bytes of readable data from current position </p>
 
 </div>
 </div>
@@ -349,7 +362,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>获取流当前位置起不进行内存重新分配时最大可写入长度 </p>
+<p>Gets the maximum writeable bytes from current position, based on current capacity </p>
 
 </div>
 </div>
@@ -374,7 +387,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>当在派生类中重写时, 获取当前流中的位置 </p>
+<p>When overridden in a derived class, gets the position within the current stream </p>
 
 <p>Implemented in <a class="el" href="class_system_1_1_i_o_1_1_file_stream.html#a5d8825fb9151b2697b7e8eee10c4c7bb">System::IO::FileStream</a>, and <a class="el" href="class_system_1_1_i_o_1_1_memory_stream.html#a212d6a9c3c2c0777215629990ee1d7c8">System::IO::MemoryStream</a>.</p>
 
@@ -401,7 +414,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>当在派生类中重写时, 获取用字节表示的流大小 </p>
+<p>When overridden in a derived class, gets the capacity in bytes of the stream </p>
 
 <p>Implemented in <a class="el" href="class_system_1_1_i_o_1_1_memory_stream.html#a3a335b3b0345c352333476f2c78a5edb">System::IO::MemoryStream</a>.</p>
 
@@ -428,7 +441,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>当在派生类中重写时, 指示当前实例是否继承自 <a class="el" href="class_system_1_1_i_o_1_1_buffered_stream.html" title="创建其支持存储区为内存的缓存流 ">BufferedStream</a> </p>
+<p>When overridden in a derived class, identifies whether current class is a derived class of (or the same class as) <a class="el" href="class_system_1_1_i_o_1_1_buffered_stream.html" title="Creates a stream whose backing store is memory ">BufferedStream</a> </p>
 
 <p>Implemented in <a class="el" href="class_system_1_1_i_o_1_1_file_stream.html#a15dd95155525e865a2ed6258689e3af0">System::IO::FileStream</a>, <a class="el" href="class_system_1_1_i_o_1_1_compression_1_1_compression_stream.html#a8a25151a2c55f594825df27b1a6e4000">System::IO::Compression::CompressionStream</a>, <a class="el" href="class_system_1_1_i_o_1_1_unmanaged_memory_stream.html#a441d7cf58c9023612b3be45c61776a86">System::IO::UnmanagedMemoryStream</a>, and <a class="el" href="class_system_1_1_i_o_1_1_buffered_stream.html#a030fb51d0871912b547f7ef12d1c4794">System::IO::BufferedStream</a>.</p>
 
@@ -455,7 +468,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>当在派生类中重写时, 指示当前实例是否继承自 <a class="el" href="class_system_1_1_i_o_1_1_memory_stream.html" title="创建其支持存储区为内存的流, 该流不能被实例化 ">MemoryStream</a> </p>
+<p>When overridden in a derived class, identifies whether current class is a derived class of (or the same class as) <a class="el" href="class_system_1_1_i_o_1_1_memory_stream.html" title="Creates a stream whose backing store is memory. This is an abstract class ">MemoryStream</a> </p>
 
 <p>Implemented in <a class="el" href="class_system_1_1_i_o_1_1_file_stream.html#aa23829dc4e28d73de48396d968e933da">System::IO::FileStream</a>, <a class="el" href="class_system_1_1_i_o_1_1_compression_1_1_compression_stream.html#abce71d2b504df1878edbc2903dcb61a4">System::IO::Compression::CompressionStream</a>, and <a class="el" href="class_system_1_1_i_o_1_1_memory_stream.html#a50e0f1a2a9700827fcf2cb0b71bc53c7">System::IO::MemoryStream</a>.</p>
 
@@ -493,7 +506,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>当在派生类中重写时, 从当前流中读取字节块并将数据写入 buffer 中 </p>
+<p>When overridden in a derived class, reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read </p>
 
 <p>Implemented in <a class="el" href="class_system_1_1_i_o_1_1_file_stream.html#a1293cfc08237819868d003059a3bb617">System::IO::FileStream</a>, <a class="el" href="class_system_1_1_i_o_1_1_compression_1_1_compression_stream.html#a2e447665a45387645db05ad6ff9b2536">System::IO::Compression::CompressionStream</a>, and <a class="el" href="class_system_1_1_i_o_1_1_memory_stream.html#a3a1191690de57bda4a64f98a9d0e16e3">System::IO::MemoryStream</a>.</p>
 
@@ -523,7 +536,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>获取流当前位置起最大可读取长度 </p>
+<p>Gets the maximum bytes of readable data from current position </p>
 
 </div>
 </div>
@@ -551,7 +564,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>获取流当前位置起不进行内存重新分配时最大可写入长度 </p>
+<p>Gets the maximum writeable bytes from current position, based on current capacity </p>
 
 </div>
 </div>
@@ -585,7 +598,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>当在派生类中重写时, 获取或设置当前流中的位置 约定: 如果是返回新流缓冲对象, Position必须置为0 </p>
+<p>When overridden in a derived class, gets or sets the position within the current stream </p>
 
 </div>
 </div>
@@ -619,7 +632,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>当在派生类中重写时, 获取或设置用字节表示的流大小 </p>
+<p>When overridden in a derived class, gets or sets the capacity in bytes of the stream </p>
 
 </div>
 </div>
@@ -653,7 +666,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>当在派生类中重写时, 获取或设置用字节表示的流已写长度 </p>
+<p>When overridden in a derived class, gets or sets the length in bytes of the stream </p>
 
 </div>
 </div>
@@ -679,7 +692,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>当在派生类中重写时, 设置用字节表示的流已写长度 </p>
+<p>When overridden in a derived class, sets the length in bytes of the stream </p>
 
 <p>Implemented in <a class="el" href="class_system_1_1_i_o_1_1_file_stream.html#a2f1edfb066485b820f070a0a1a986df7">System::IO::FileStream</a>, <a class="el" href="class_system_1_1_i_o_1_1_unmanaged_memory_stream.html#aa61ae022a1f100b0257cf86796df94c7">System::IO::UnmanagedMemoryStream</a>, and <a class="el" href="class_system_1_1_i_o_1_1_buffered_stream.html#a774f6d183417ca1dd5c6359fb7bc5120">System::IO::BufferedStream</a>.</p>
 
@@ -707,7 +720,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>当在派生类中重写时, 设置当前流中的位置 </p>
+<p>When overridden in a derived class, sets the position within the current stream </p>
 
 <p>Implemented in <a class="el" href="class_system_1_1_i_o_1_1_file_stream.html#a8bbeaa6674c1d63a62a017cde81784e7">System::IO::FileStream</a>, and <a class="el" href="class_system_1_1_i_o_1_1_memory_stream.html#a43eb031d85cd4a350b1a06e55bb3c3bf">System::IO::MemoryStream</a>.</p>
 
@@ -735,7 +748,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>当在派生类中重写时, 设置用字节表示的流大小 </p>
+<p>When overridden in a derived class, sets the capacity in bytes of the stream </p>
 
 <p>Implemented in <a class="el" href="class_system_1_1_i_o_1_1_unmanaged_memory_stream.html#aea4f364504b60e88baffa2ceb0fc24d2">System::IO::UnmanagedMemoryStream</a>, and <a class="el" href="class_system_1_1_i_o_1_1_buffered_stream.html#ae45be92f6e4f04a3e0954f606a3b0365">System::IO::BufferedStream</a>.</p>
 
@@ -773,7 +786,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>当在派生类中重写时, 使用从缓冲区读取的数据将字节块写入当前流 </p>
+<p>When overridden in a derived class, writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written </p>
 
 <p>Implemented in <a class="el" href="class_system_1_1_i_o_1_1_compression_1_1_compression_stream.html#a8fcafaa7fb0fbb99893bafb9895f7ecc">System::IO::Compression::CompressionStream</a>, <a class="el" href="class_system_1_1_i_o_1_1_unmanaged_memory_stream.html#a9433e02f80a670a78eea0df46debe0ec">System::IO::UnmanagedMemoryStream</a>, and <a class="el" href="class_system_1_1_i_o_1_1_buffered_stream.html#a4b9144c734e1fc70a6cf50d9e745af49">System::IO::BufferedStream</a>.</p>
 
@@ -789,7 +802,7 @@ Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_i_o.html">IO</a></li><li class="navelem"><a class="el" href="class_system_1_1_i_o_1_1_stream.html">Stream</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:36 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:41 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

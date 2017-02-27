@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -114,187 +114,29 @@ $(document).ready(function(){initNavTree('class_system_1_1_i_o_1_1_memory_alloca
 <div class="title">System::IO::MemoryAllocator Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>虚拟内存申请接口  
- <a href="class_system_1_1_i_o_1_1_memory_allocator.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4ec6b4edf2931a5ec87336621c022cad"><td class="memItemLeft" align="right" valign="top">static RLIB_RESTRICT_RETURN LPVOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_memory_allocator.html#a4ec6b4edf2931a5ec87336621c022cad">Allocate</a> (HANDLE ProcessHandle, PVOID BaseAddress, SIZE_T RegionSize, ULONG AllocationType, ULONG <a class="el" href="class_system_1_1_i_o_1_1_memory_allocator.html#aeb47d55058b2f33c2746d4c15ec96434">Protect</a>)</td></tr>
-<tr class="memdesc:a4ec6b4edf2931a5ec87336621c022cad"><td class="mdescLeft">&#160;</td><td class="mdescRight">分配内存 按页对齐  <a href="#a4ec6b4edf2931a5ec87336621c022cad">More...</a><br /></td></tr>
+<tr class="memitem:a4ec6b4edf2931a5ec87336621c022cad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ec6b4edf2931a5ec87336621c022cad"></a>
+static RLIB_RESTRICT_RETURN LPVOID&#160;</td><td class="memItemRight" valign="bottom"><b>Allocate</b> (HANDLE ProcessHandle, PVOID BaseAddress, SIZE_T RegionSize, ULONG AllocationType, ULONG <a class="el" href="class_system_1_1_i_o_1_1_memory_allocator.html#aeb47d55058b2f33c2746d4c15ec96434">Protect</a>)</td></tr>
 <tr class="separator:a4ec6b4edf2931a5ec87336621c022cad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a270d273dc4814cd0a7f7919adc52c18e"><td class="memItemLeft" align="right" valign="top">static LPVOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_memory_allocator.html#a270d273dc4814cd0a7f7919adc52c18e">Free</a> (HANDLE ProcessHandle, PVOID BaseAddress, SIZE_T RegionSize, ULONG FreeType)</td></tr>
-<tr class="memdesc:a270d273dc4814cd0a7f7919adc52c18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">释放内存  <a href="#a270d273dc4814cd0a7f7919adc52c18e">More...</a><br /></td></tr>
+<tr class="memitem:a270d273dc4814cd0a7f7919adc52c18e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a270d273dc4814cd0a7f7919adc52c18e"></a>
+static LPVOID&#160;</td><td class="memItemRight" valign="bottom"><b>Free</b> (HANDLE ProcessHandle, PVOID BaseAddress, SIZE_T RegionSize, ULONG FreeType)</td></tr>
 <tr class="separator:a270d273dc4814cd0a7f7919adc52c18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb47d55058b2f33c2746d4c15ec96434"><td class="memItemLeft" align="right" valign="top">static ULONG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_memory_allocator.html#aeb47d55058b2f33c2746d4c15ec96434">Protect</a> (HANDLE ProcessHandle, PVOID BaseAddress, SIZE_T RegionSize, ULONG NewAccessProtection)</td></tr>
 <tr class="memdesc:aeb47d55058b2f33c2746d4c15ec96434"><td class="mdescLeft">&#160;</td><td class="mdescRight">changes the access protection on a region of committed pages in the virtual address space of the calling process return OldAccessProtection, and zero if failed  <a href="#aeb47d55058b2f33c2746d4c15ec96434">More...</a><br /></td></tr>
 <tr class="separator:aeb47d55058b2f33c2746d4c15ec96434"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76e9fa589aea7341b57b80e1cef92dc2"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="struct_system_1_1_i_o_1_1___m_e_m_o_r_y___i_n_f_o_r_m_a_t_i_o_n.html">PMEMORY_INFORMATION</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_memory_allocator.html#a76e9fa589aea7341b57b80e1cef92dc2">Query</a> (HANDLE ProcessHandle, PVOID BaseAddress)</td></tr>
-<tr class="memdesc:a76e9fa589aea7341b57b80e1cef92dc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves parameters of queried memory block 方法返回静态缓冲区指针, 非线程安全, 失败时返回空结构指针(非nullptr)  <a href="#a76e9fa589aea7341b57b80e1cef92dc2">More...</a><br /></td></tr>
+<tr class="memitem:a76e9fa589aea7341b57b80e1cef92dc2"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="struct_system_1_1_i_o_1_1_m_e_m_o_r_y___i_n_f_o_r_m_a_t_i_o_n.html">MEMORY_INFORMATION</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_memory_allocator.html#a76e9fa589aea7341b57b80e1cef92dc2">Query</a> (HANDLE ProcessHandle, PVOID BaseAddress)</td></tr>
+<tr class="memdesc:a76e9fa589aea7341b57b80e1cef92dc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves parameters of queried memory block(thread-unsafe) and returns nullptr if failed  <a href="#a76e9fa589aea7341b57b80e1cef92dc2">More...</a><br /></td></tr>
 <tr class="separator:a76e9fa589aea7341b57b80e1cef92dc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a627477db357d3a5a5bee37d3a9363320"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_memory_allocator.html#a627477db357d3a5a5bee37d3a9363320">GetPageSize</a> ()</td></tr>
-<tr class="memdesc:a627477db357d3a5a5bee37d3a9363320"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取对齐的分页大小  <a href="#a627477db357d3a5a5bee37d3a9363320">More...</a><br /></td></tr>
+<tr class="memitem:a627477db357d3a5a5bee37d3a9363320"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a627477db357d3a5a5bee37d3a9363320"></a>
+static size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetPageSize</b> ()</td></tr>
 <tr class="separator:a627477db357d3a5a5bee37d3a9363320"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0baab4b26acb173fcf0e98eb92b7c20"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_memory_allocator.html#ac0baab4b26acb173fcf0e98eb92b7c20">GetPhysicalPages</a> ()</td></tr>
-<tr class="memdesc:ac0baab4b26acb173fcf0e98eb92b7c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取最大可分配页数量  <a href="#ac0baab4b26acb173fcf0e98eb92b7c20">More...</a><br /></td></tr>
+<tr class="memitem:ac0baab4b26acb173fcf0e98eb92b7c20"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0baab4b26acb173fcf0e98eb92b7c20"></a>
+static size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetPhysicalPages</b> ()</td></tr>
 <tr class="separator:ac0baab4b26acb173fcf0e98eb92b7c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>虚拟内存申请接口 </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a4ec6b4edf2931a5ec87336621c022cad"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">RLIB_RESTRICT_RETURN LPVOID MemoryAllocator::Allocate </td>
-          <td>(</td>
-          <td class="paramtype">HANDLE&#160;</td>
-          <td class="paramname"><em>ProcessHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">PVOID&#160;</td>
-          <td class="paramname"><em>BaseAddress</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SIZE_T&#160;</td>
-          <td class="paramname"><em>RegionSize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ULONG&#160;</td>
-          <td class="paramname"><em>AllocationType</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ULONG&#160;</td>
-          <td class="paramname"><em>Protect</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>分配内存 按页对齐 </p>
-
-</div>
-</div>
-<a class="anchor" id="a270d273dc4814cd0a7f7919adc52c18e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">LPVOID MemoryAllocator::Free </td>
-          <td>(</td>
-          <td class="paramtype">HANDLE&#160;</td>
-          <td class="paramname"><em>ProcessHandle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">PVOID&#160;</td>
-          <td class="paramname"><em>BaseAddress</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SIZE_T&#160;</td>
-          <td class="paramname"><em>RegionSize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ULONG&#160;</td>
-          <td class="paramname"><em>FreeType</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>释放内存 </p>
-<dl class="section return"><dt>Returns</dt><dd>被释放内存页地址</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a627477db357d3a5a5bee37d3a9363320"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t MemoryAllocator::GetPageSize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>获取对齐的分页大小 </p>
-
-</div>
-</div>
-<a class="anchor" id="ac0baab4b26acb173fcf0e98eb92b7c20"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t MemoryAllocator::GetPhysicalPages </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>获取最大可分配页数量 </p>
-
-</div>
-</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aeb47d55058b2f33c2746d4c15ec96434"></a>
 <div class="memitem">
 <div class="memproto">
@@ -351,7 +193,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_system_1_1_i_o_1_1___m_e_m_o_r_y___i_n_f_o_r_m_a_t_i_o_n.html">PMEMORY_INFORMATION</a> MemoryAllocator::Query </td>
+          <td class="memname"><a class="el" href="struct_system_1_1_i_o_1_1_m_e_m_o_r_y___i_n_f_o_r_m_a_t_i_o_n.html">PMEMORY_INFORMATION</a> MemoryAllocator::Query </td>
           <td>(</td>
           <td class="paramtype">HANDLE&#160;</td>
           <td class="paramname"><em>ProcessHandle</em>, </td>
@@ -375,7 +217,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>retrieves parameters of queried memory block 方法返回静态缓冲区指针, 非线程安全, 失败时返回空结构指针(非nullptr) </p>
+<p>retrieves parameters of queried memory block(thread-unsafe) and returns nullptr if failed </p>
 
 </div>
 </div>
@@ -389,7 +231,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_i_o.html">IO</a></li><li class="navelem"><a class="el" href="class_system_1_1_i_o_1_1_memory_allocator.html">MemoryAllocator</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:36 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:40 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

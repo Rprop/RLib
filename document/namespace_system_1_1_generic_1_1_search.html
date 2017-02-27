@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -117,60 +117,72 @@ $(document).ready(function(){initNavTree('namespace_system_1_1_generic_1_1_searc
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a82bb127f530cf8ce88594cee8df06479"><td class="memTemplParams" colspan="2">template&lt;typename R  = int&gt; </td></tr>
-<tr class="memitem:a82bb127f530cf8ce88594cee8df06479"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_system_1_1_generic_1_1_search.html#a82bb127f530cf8ce88594cee8df06479">SequentialSearch</a> (const R *list, int _lower, int _upper, const R &amp;key)</td></tr>
-<tr class="memdesc:a82bb127f530cf8ce88594cee8df06479"><td class="mdescLeft">&#160;</td><td class="mdescRight">顺序搜索法(Sequential Search) 优点: 该方法对数据无事先排序(Sorting)要求, 容易实现 缺点: 搜索效率差(平均搜索 (N + 1) / 2 次), 不管是否排序, 每次都必须从头到尾遍历一次 时间复杂度: 如果没有重复数据，线性查找在找到任一元素时就终止，否则需要全部遍历. 在最差情況下, 需作N次比较, O(N) 在平均狀況下(各元素出现与分布的概率相等)需 (N + 1) / 2次比较，所以最差时间为O(N), 最好时间为O(1) = 1次  <a href="#a82bb127f530cf8ce88594cee8df06479">More...</a><br /></td></tr>
-<tr class="separator:a82bb127f530cf8ce88594cee8df06479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a635e52f87a1a608a8b849c51bdf59f04"><td class="memTemplParams" colspan="2"><a class="anchor" id="a635e52f87a1a608a8b849c51bdf59f04"></a>
-template&lt;typename R  = int&gt; </td></tr>
-<tr class="memitem:a635e52f87a1a608a8b849c51bdf59f04"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><b>sequential_search_last</b> (const R *list, int _lower, int _upper, const R &amp;key)</td></tr>
-<tr class="separator:a635e52f87a1a608a8b849c51bdf59f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af28e99dc337e04818a499c34a7b1d788"><td class="memTemplParams" colspan="2">template&lt;typename R  = int&gt; </td></tr>
-<tr class="memitem:af28e99dc337e04818a499c34a7b1d788"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_system_1_1_generic_1_1_search.html#af28e99dc337e04818a499c34a7b1d788">BinarySearch</a> (const R *list, int _lower, int _upper, const R &amp;key)</td></tr>
-<tr class="memdesc:af28e99dc337e04818a499c34a7b1d788"><td class="mdescLeft">&#160;</td><td class="mdescRight">二分搜索法(Binary Search) 优点: 搜索效率优(平均搜索 Log2N 次) 缺点: 数据必需事先排序且必需可直接随机存取 时间复杂度: 每次比较都会比上一次少一半数据, 2^x = N, x = Log2N, 因此平均时间 O(LogN)  <a href="#af28e99dc337e04818a499c34a7b1d788">More...</a><br /></td></tr>
-<tr class="separator:af28e99dc337e04818a499c34a7b1d788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a185c09a549112777f69918f0d789f70c"><td class="memTemplParams" colspan="2"><a class="anchor" id="a185c09a549112777f69918f0d789f70c"></a>
-template&lt;typename R  = int&gt; </td></tr>
-<tr class="memitem:a185c09a549112777f69918f0d789f70c"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><b>binary_search_recursion</b> (const R *list, int _lower, int _upper, const R &amp;key)</td></tr>
-<tr class="separator:a185c09a549112777f69918f0d789f70c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21d7e520e22aa175aad7eb5830f2c646"><td class="memTemplParams" colspan="2">template&lt;typename R  = int&gt; </td></tr>
-<tr class="memitem:a21d7e520e22aa175aad7eb5830f2c646"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_system_1_1_generic_1_1_search.html#a21d7e520e22aa175aad7eb5830f2c646">InterpolationSearch</a> (const R *list, int _lower, int _upper, const R &amp;key)</td></tr>
-<tr class="memdesc:a21d7e520e22aa175aad7eb5830f2c646"><td class="mdescLeft">&#160;</td><td class="mdescRight">插值搜索法(Interpolation Search) 定义: 二分搜索法的一种改进, 依照数据位置分布, 运用插值预测数据所在位置, 再以二分法方式逼近 插值是离散函数逼近的重要方法, 利用它可通过函数在有限个点处的取值状况, 估算出函数在其他点处的近似值 优点: 数据分布均匀时搜索速度极快 缺点: 数据必需事先排序且需计算预测公式 时间复杂度: 取决于数据分布情形, 平均时间 O(LogLogN) 优于 二分搜索 O(LogN)  <a href="#a21d7e520e22aa175aad7eb5830f2c646">More...</a><br /></td></tr>
-<tr class="separator:a21d7e520e22aa175aad7eb5830f2c646"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17253263423d29c1473da0fe685eb47f"><td class="memTemplParams" colspan="2">template&lt;typename R  = int&gt; </td></tr>
-<tr class="memitem:a17253263423d29c1473da0fe685eb47f"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_system_1_1_generic_1_1_search.html#a17253263423d29c1473da0fe685eb47f">FbonacciSearch</a> (const R *list, int _lower, int _upper, const R &amp;key)</td></tr>
-<tr class="memdesc:a17253263423d29c1473da0fe685eb47f"><td class="mdescLeft">&#160;</td><td class="mdescRight">斐波那契搜索法(Fbonacci Search) 定义: 利用斐波那契数列的性质(黄金分割原理)预测数据所在位置, 再以二分法方式逼近 优点: 只涉及加法和减法运算 缺点: 数据必需事先排序且需计算或者预定义斐波那契数列 时间复杂度: 同于二分搜索 O(LogN), 平均情况下, 斐波那契查找优于二分查找, 但最坏情况下则劣于二分查找  <a href="#a17253263423d29c1473da0fe685eb47f">More...</a><br /></td></tr>
-<tr class="separator:a17253263423d29c1473da0fe685eb47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa373d6f3e29f84c46f97e091157d0c0b"><td class="memTemplParams" colspan="2">template&lt;typename R  = int&gt; </td></tr>
-<tr class="memitem:aa373d6f3e29f84c46f97e091157d0c0b"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_system_1_1_generic_1_1_search.html#aa373d6f3e29f84c46f97e091157d0c0b">TreeSearch</a> (const R *list, int _lower, int _upper, const R &amp;key)</td></tr>
-<tr class="memdesc:aa373d6f3e29f84c46f97e091157d0c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">二叉树搜索  <a href="#aa373d6f3e29f84c46f97e091157d0c0b">More...</a><br /></td></tr>
-<tr class="separator:aa373d6f3e29f84c46f97e091157d0c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba5d9a1230fd50ddc09d4f014cba9ee"><td class="memTemplParams" colspan="2">template&lt;typename R  = intptr_t, typename Collections::Generic::IComparer&lt; R &gt;::EqualsDelegate equals = Collections::Generic::IComparer&lt;R&gt;::Equals&gt; </td></tr>
+<tr class="memitem:a0ba5d9a1230fd50ddc09d4f014cba9ee"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_system_1_1_generic_1_1_search.html#a0ba5d9a1230fd50ddc09d4f014cba9ee">sequential_search</a> (const R list[], intptr_t _lower, intptr_t _upper, const R &amp;key)</td></tr>
+<tr class="memdesc:a0ba5d9a1230fd50ddc09d4f014cba9ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">顺序搜索法(Sequential Search) 优点: 该方法对数据无事先排序(Sorting)要求, 容易实现 缺点: 搜索效率差(平均搜索 (N + 1) / 2 次), 不管是否排序, 每次都必须从头到尾遍历一次 时间复杂度: 如果没有重复数据，线性查找在找到任一元素时就终止，否则需要全部遍历. 在最差情況下, 需作N次比较, O(N) 在平均狀況下(各元素出现与分布的概率相等)需 (N + 1) / 2次比较，所以最差时间为O(N), 最好时间为O(1) = 1次  <a href="#a0ba5d9a1230fd50ddc09d4f014cba9ee">More...</a><br /></td></tr>
+<tr class="separator:a0ba5d9a1230fd50ddc09d4f014cba9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee4d83c98c48603b3ef799234a9044dc"><td class="memTemplParams" colspan="2"><a class="anchor" id="aee4d83c98c48603b3ef799234a9044dc"></a>
+template&lt;typename R  = intptr_t&gt; </td></tr>
+<tr class="memitem:aee4d83c98c48603b3ef799234a9044dc"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>sequential_search</b> (const R list[], intptr_t _lower, intptr_t _upper, const R &amp;key, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">Collections::Generic::IComparer</a>&lt; R &gt;::EqualsDelegate equals)</td></tr>
+<tr class="separator:aee4d83c98c48603b3ef799234a9044dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab686578cbc383e94c2154351eb94a681"><td class="memTemplParams" colspan="2"><a class="anchor" id="ab686578cbc383e94c2154351eb94a681"></a>
+template&lt;typename R  = intptr_t, typename Collections::Generic::IComparer&lt; R &gt;::EqualsDelegate equals = Collections::Generic::IComparer&lt;R&gt;::Equals&gt; </td></tr>
+<tr class="memitem:ab686578cbc383e94c2154351eb94a681"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>sequential_search_end</b> (const R list[], intptr_t _lower, intptr_t _upper, const R &amp;key)</td></tr>
+<tr class="separator:ab686578cbc383e94c2154351eb94a681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a8f189c2338be13eea30d11b0190098"><td class="memTemplParams" colspan="2"><a class="anchor" id="a2a8f189c2338be13eea30d11b0190098"></a>
+template&lt;typename R  = intptr_t&gt; </td></tr>
+<tr class="memitem:a2a8f189c2338be13eea30d11b0190098"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>sequential_search_end</b> (const R list[], intptr_t _lower, intptr_t _upper, const R &amp;key, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">Collections::Generic::IComparer</a>&lt; R &gt;::EqualsDelegate equals)</td></tr>
+<tr class="separator:a2a8f189c2338be13eea30d11b0190098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d5efee16839e6092ce94197f1647eeb"><td class="memTemplParams" colspan="2">template&lt;typename R  = intptr_t, typename Collections::Generic::IComparer&lt; R &gt;::Delegate compare = Collections::Generic::IComparer&lt;R&gt;::Compare&gt; </td></tr>
+<tr class="memitem:a3d5efee16839e6092ce94197f1647eeb"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_system_1_1_generic_1_1_search.html#a3d5efee16839e6092ce94197f1647eeb">binary_search</a> (const R list[], intptr_t _lower, intptr_t _upper, const R &amp;key)</td></tr>
+<tr class="memdesc:a3d5efee16839e6092ce94197f1647eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">二分搜索法(Binary Search) 优点: 搜索效率优(平均搜索 Log2N 次) 缺点: 数据必需事先排序且必需可直接随机存取 时间复杂度: 每次比较都会比上一次少一半数据, 2^x = N, x = Log2N, 因此平均时间 O(LogN)  <a href="#a3d5efee16839e6092ce94197f1647eeb">More...</a><br /></td></tr>
+<tr class="separator:a3d5efee16839e6092ce94197f1647eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2cf0560ce57b688479127976d64c9d"><td class="memTemplParams" colspan="2"><a class="anchor" id="a5d2cf0560ce57b688479127976d64c9d"></a>
+template&lt;typename R  = intptr_t&gt; </td></tr>
+<tr class="memitem:a5d2cf0560ce57b688479127976d64c9d"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>binary_search</b> (const R list[], intptr_t _lower, intptr_t _upper, const R &amp;key, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">Collections::Generic::IComparer</a>&lt; R &gt;::Delegate compare)</td></tr>
+<tr class="separator:a5d2cf0560ce57b688479127976d64c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba74365f2d40fc0a466a3e735cec93cb"><td class="memTemplParams" colspan="2"><a class="anchor" id="aba74365f2d40fc0a466a3e735cec93cb"></a>
+template&lt;typename R  = intptr_t, typename Collections::Generic::IComparer&lt; R &gt;::Delegate compare = Collections::Generic::IComparer&lt;R&gt;::Compare&gt; </td></tr>
+<tr class="memitem:aba74365f2d40fc0a466a3e735cec93cb"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><b>binary_search_recursively</b> (const R *list, intptr_t _lower, intptr_t _upper, const R &amp;key)</td></tr>
+<tr class="separator:aba74365f2d40fc0a466a3e735cec93cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa936007251c069609ebe5204046d3cf4"><td class="memTemplParams" colspan="2">template&lt;typename R  = intptr_t&gt; </td></tr>
+<tr class="memitem:aa936007251c069609ebe5204046d3cf4"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_system_1_1_generic_1_1_search.html#aa936007251c069609ebe5204046d3cf4">interpolation_search</a> (const R *list, intptr_t _lower, intptr_t _upper, const R &amp;key)</td></tr>
+<tr class="memdesc:aa936007251c069609ebe5204046d3cf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">插值搜索法(Interpolation Search) 定义: 二分搜索法的一种改进, 依照数据位置分布, 运用插值预测数据所在位置, 再以二分法方式逼近 插值是离散函数逼近的重要方法, 利用它可通过函数在有限个点处的取值状况, 估算出函数在其他点处的近似值 优点: 数据分布均匀时搜索速度极快 缺点: 数据必需事先排序且需计算预测公式 时间复杂度: 取决于数据分布情形, 平均时间 O(LogLogN) 优于 二分搜索 O(LogN)  <a href="#aa936007251c069609ebe5204046d3cf4">More...</a><br /></td></tr>
+<tr class="separator:aa936007251c069609ebe5204046d3cf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a9ecb2bb31addcfff6e25fbe43842a"><td class="memTemplParams" colspan="2">template&lt;typename R  = intptr_t&gt; </td></tr>
+<tr class="memitem:a60a9ecb2bb31addcfff6e25fbe43842a"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_system_1_1_generic_1_1_search.html#a60a9ecb2bb31addcfff6e25fbe43842a">fbonacci_search</a> (const R *list, intptr_t _lower, intptr_t _upper, const R &amp;key)</td></tr>
+<tr class="memdesc:a60a9ecb2bb31addcfff6e25fbe43842a"><td class="mdescLeft">&#160;</td><td class="mdescRight">斐波那契搜索法(Fbonacci Search) 定义: 利用斐波那契数列的性质(黄金分割原理)预测数据所在位置, 再以二分法方式逼近 优点: 只涉及加法和减法运算 缺点: 数据必需事先排序且需计算或者预定义斐波那契数列 时间复杂度: 同于二分搜索 O(LogN), 平均情况下, 斐波那契查找优于二分查找, 但最坏情况下则劣于二分查找  <a href="#a60a9ecb2bb31addcfff6e25fbe43842a">More...</a><br /></td></tr>
+<tr class="separator:a60a9ecb2bb31addcfff6e25fbe43842a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af61763c5130a14267a831ee864abdfd3"><td class="memTemplParams" colspan="2">template&lt;typename R  = intptr_t&gt; </td></tr>
+<tr class="memitem:af61763c5130a14267a831ee864abdfd3"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespace_system_1_1_generic_1_1_search.html#af61763c5130a14267a831ee864abdfd3">tree_search</a> (const R *list, intptr_t _lower, intptr_t _upper, const R &amp;key)</td></tr>
+<tr class="memdesc:af61763c5130a14267a831ee864abdfd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">二叉树搜索  <a href="#af61763c5130a14267a831ee864abdfd3">More...</a><br /></td></tr>
+<tr class="separator:af61763c5130a14267a831ee864abdfd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides several static methods for searching </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="af28e99dc337e04818a499c34a7b1d788"></a>
+<a class="anchor" id="a3d5efee16839e6092ce94197f1647eeb"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename R  = int&gt; </div>
+template&lt;typename R  = intptr_t, typename Collections::Generic::IComparer&lt; R &gt;::Delegate compare = Collections::Generic::IComparer&lt;R&gt;::Compare&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int System::Generic::Search::BinarySearch </td>
+          <td class="memname">intptr_t System::Generic::Search::binary_search </td>
           <td>(</td>
-          <td class="paramtype">const R *&#160;</td>
-          <td class="paramname"><em>list</em>, </td>
+          <td class="paramtype">const R&#160;</td>
+          <td class="paramname"><em>list</em>[], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">intptr_t&#160;</td>
           <td class="paramname"><em>_lower</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">intptr_t&#160;</td>
           <td class="paramname"><em>_upper</em>, </td>
         </tr>
         <tr>
@@ -191,14 +203,14 @@ template&lt;typename R  = int&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a17253263423d29c1473da0fe685eb47f"></a>
+<a class="anchor" id="a60a9ecb2bb31addcfff6e25fbe43842a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename R  = int&gt; </div>
+template&lt;typename R  = intptr_t&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int System::Generic::Search::FbonacciSearch </td>
+          <td class="memname">intptr_t System::Generic::Search::fbonacci_search </td>
           <td>(</td>
           <td class="paramtype">const R *&#160;</td>
           <td class="paramname"><em>list</em>, </td>
@@ -206,13 +218,13 @@ template&lt;typename R  = int&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">intptr_t&#160;</td>
           <td class="paramname"><em>_lower</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">intptr_t&#160;</td>
           <td class="paramname"><em>_upper</em>, </td>
         </tr>
         <tr>
@@ -233,14 +245,14 @@ template&lt;typename R  = int&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a21d7e520e22aa175aad7eb5830f2c646"></a>
+<a class="anchor" id="aa936007251c069609ebe5204046d3cf4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename R  = int&gt; </div>
+template&lt;typename R  = intptr_t&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int System::Generic::Search::InterpolationSearch </td>
+          <td class="memname">intptr_t System::Generic::Search::interpolation_search </td>
           <td>(</td>
           <td class="paramtype">const R *&#160;</td>
           <td class="paramname"><em>list</em>, </td>
@@ -248,13 +260,13 @@ template&lt;typename R  = int&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">intptr_t&#160;</td>
           <td class="paramname"><em>_lower</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">intptr_t&#160;</td>
           <td class="paramname"><em>_upper</em>, </td>
         </tr>
         <tr>
@@ -275,28 +287,28 @@ template&lt;typename R  = int&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a82bb127f530cf8ce88594cee8df06479"></a>
+<a class="anchor" id="a0ba5d9a1230fd50ddc09d4f014cba9ee"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename R  = int&gt; </div>
+template&lt;typename R  = intptr_t, typename Collections::Generic::IComparer&lt; R &gt;::EqualsDelegate equals = Collections::Generic::IComparer&lt;R&gt;::Equals&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int System::Generic::Search::SequentialSearch </td>
+          <td class="memname">intptr_t System::Generic::Search::sequential_search </td>
           <td>(</td>
-          <td class="paramtype">const R *&#160;</td>
-          <td class="paramname"><em>list</em>, </td>
+          <td class="paramtype">const R&#160;</td>
+          <td class="paramname"><em>list</em>[], </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">intptr_t&#160;</td>
           <td class="paramname"><em>_lower</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">intptr_t&#160;</td>
           <td class="paramname"><em>_upper</em>, </td>
         </tr>
         <tr>
@@ -317,14 +329,14 @@ template&lt;typename R  = int&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="aa373d6f3e29f84c46f97e091157d0c0b"></a>
+<a class="anchor" id="af61763c5130a14267a831ee864abdfd3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename R  = int&gt; </div>
+template&lt;typename R  = intptr_t&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int System::Generic::Search::TreeSearch </td>
+          <td class="memname">intptr_t System::Generic::Search::tree_search </td>
           <td>(</td>
           <td class="paramtype">const R *&#160;</td>
           <td class="paramname"><em>list</em>, </td>
@@ -332,13 +344,13 @@ template&lt;typename R  = int&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">intptr_t&#160;</td>
           <td class="paramname"><em>_lower</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">intptr_t&#160;</td>
           <td class="paramname"><em>_upper</em>, </td>
         </tr>
         <tr>
@@ -364,8 +376,8 @@ template&lt;typename R  = int&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_generic.html">Generic</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_generic_1_1_search.html">Search</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:35 for RLib by
+    <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><b>Generic</b></li><li class="navelem"><a class="el" href="namespace_system_1_1_generic_1_1_search.html">Search</a></li>
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:40 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

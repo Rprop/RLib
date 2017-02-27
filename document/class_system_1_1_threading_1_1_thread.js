@@ -28,7 +28,7 @@ var class_system_1_1_threading_1_1_thread =
     [ "SetThreadName", "class_system_1_1_threading_1_1_thread.html#a958174d9a9a675ad1dff3dc639d55b8a", null ],
     [ "Start", "class_system_1_1_threading_1_1_thread.html#a279c2b78aa2bf43371f2462623588830", null ],
     [ "Suspend", "class_system_1_1_threading_1_1_thread.html#a15bd52265275f4832c1bd4c83d52c30d", null ],
-    [ "Wait", "class_system_1_1_threading_1_1_thread.html#a7b07536db4d6b0bbd1515946d25bb792", null ],
+    [ "Wait", "class_system_1_1_threading_1_1_thread.html#ab3ab3c8fec6850ed48d8d1549fb55125", null ],
     [ "IsBackground", "class_system_1_1_threading_1_1_thread.html#aed47ed4630f74302de0476f35e5cbf86", null ],
     [ "IsSuppressChangeState", "class_system_1_1_threading_1_1_thread.html#ac64f297dea64c94d5d6b1428ba763a51", null ],
     [ "RLIB_DECLARE_DYNCREATE", "class_system_1_1_threading_1_1_thread.html#a716c2710976dbeccd42f1f42c570c495", null ]

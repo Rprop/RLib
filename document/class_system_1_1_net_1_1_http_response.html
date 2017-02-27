@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -137,9 +137,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b0200ae20cad9b7607766d745e96696"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_1_1_i_o_1_1_buffered_stream.html">ResponseStream</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_net_1_1_http_response.html#a0b0200ae20cad9b7607766d745e96696">GetResponseStream</a> ()</td></tr>
 <tr class="memdesc:a0b0200ae20cad9b7607766d745e96696"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取流，该流用于读取来自服务器的响应体  <a href="#a0b0200ae20cad9b7607766d745e96696">More...</a><br /></td></tr>
 <tr class="separator:a0b0200ae20cad9b7607766d745e96696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18c21a1c127d1e299c94a7383635e5fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_net_1_1_http_response.html#a18c21a1c127d1e299c94a7383635e5fb">Close</a> ()</td></tr>
-<tr class="memdesc:a18c21a1c127d1e299c94a7383635e5fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭响应流  <a href="#a18c21a1c127d1e299c94a7383635e5fb">More...</a><br /></td></tr>
-<tr class="separator:a18c21a1c127d1e299c94a7383635e5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a830635003a087f94b2598f25d312aac1"><td class="memItemLeft" align="right" valign="top">RLIB_DEPRECATED void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_net_1_1_http_response.html#a830635003a087f94b2598f25d312aac1">Close</a> ()</td></tr>
+<tr class="memdesc:a830635003a087f94b2598f25d312aac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">关闭响应流  <a href="#a830635003a087f94b2598f25d312aac1">More...</a><br /></td></tr>
+<tr class="separator:a830635003a087f94b2598f25d312aac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a438205f67fdc103c27d93438cf00431a"><td class="memItemLeft" align="right" valign="top">HttpException *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_net_1_1_http_response.html#a438205f67fdc103c27d93438cf00431a">GetLastException</a> ()</td></tr>
 <tr class="memdesc:a438205f67fdc103c27d93438cf00431a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取HttpResponse发生的异常信息  <a href="#a438205f67fdc103c27d93438cf00431a">More...</a><br /></td></tr>
 <tr class="separator:a438205f67fdc103c27d93438cf00431a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,12 +149,15 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa19ce00d53a4dc4d3debb6c8dafcf9ac"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_system_1_1_net_1_1_http_response.html">HttpResponse</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_net_1_1_http_response.html#aa19ce00d53a4dc4d3debb6c8dafcf9ac">Create</a> (<a class="el" href="class_system_1_1_i_o_1_1_memory_stream.html">IO::MemoryStream</a> *responseData, bool ignoreStatus, bool ignoreHeaders)</td></tr>
 <tr class="memdesc:aa19ce00d53a4dc4d3debb6c8dafcf9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据指定的 MemoryStream 实例初始化 <a class="el" href="class_system_1_1_net_1_1_http_response.html" title="Provides an HTTP-specific implementation of the WebResponse class ">HttpResponse</a> 类的新实例  <a href="#aa19ce00d53a4dc4d3debb6c8dafcf9ac">More...</a><br /></td></tr>
 <tr class="separator:aa19ce00d53a4dc4d3debb6c8dafcf9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a760e4cfcc1f1ef36f08c7da6dd15cce9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_system_1_1_net_1_1_http_response.html">HttpResponse</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_net_1_1_http_response.html#a760e4cfcc1f1ef36f08c7da6dd15cce9">Create</a> (<a class="el" href="class_system_1_1_i_o_1_1_memory_stream.html">IO::MemoryStream</a> *responseData, int automaticDecompression, bool ignoreStatus, bool ignoreHeaders)</td></tr>
-<tr class="memdesc:a760e4cfcc1f1ef36f08c7da6dd15cce9"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据指定的 MemoryStream 实例和 解压缩类型 初始化 <a class="el" href="class_system_1_1_net_1_1_http_response.html" title="Provides an HTTP-specific implementation of the WebResponse class ">HttpResponse</a> 类的新实例  <a href="#a760e4cfcc1f1ef36f08c7da6dd15cce9">More...</a><br /></td></tr>
-<tr class="separator:a760e4cfcc1f1ef36f08c7da6dd15cce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f07c6be848bb0201f1b8e5da6f4ce3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_system_1_1_net_1_1_http_response.html">HttpResponse</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_net_1_1_http_response.html#a71f07c6be848bb0201f1b8e5da6f4ce3">Create</a> (<a class="el" href="class_system_1_1_i_o_1_1_memory_stream.html">IO::MemoryStream</a> *responseData, <a class="el" href="namespace_system_1_1_net.html#a4b9393d0c2858850701255dad3f85fbe">DecompressionMethod</a> automaticDecompression, bool ignoreStatus, bool ignoreHeaders)</td></tr>
+<tr class="memdesc:a71f07c6be848bb0201f1b8e5da6f4ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">根据指定的 MemoryStream 实例和 解压缩类型 初始化 <a class="el" href="class_system_1_1_net_1_1_http_response.html" title="Provides an HTTP-specific implementation of the WebResponse class ">HttpResponse</a> 类的新实例  <a href="#a71f07c6be848bb0201f1b8e5da6f4ce3">More...</a><br /></td></tr>
+<tr class="separator:a71f07c6be848bb0201f1b8e5da6f4ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a94f2cafe0098a18a1f4936d7972a1724"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a94f2cafe0098a18a1f4936d7972a1724"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>RLIB_DECLARE_DYNCREATE</b></td></tr>
+<tr class="separator:a94f2cafe0098a18a1f4936d7972a1724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a638bae2129cbeca2ff8be1df6a396426"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_net_1_1_http_response.html#a638bae2129cbeca2ff8be1df6a396426">ContentLength</a></td></tr>
 <tr class="memdesc:a638bae2129cbeca2ff8be1df6a396426"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取响应内容的长度  <a href="#a638bae2129cbeca2ff8be1df6a396426">More...</a><br /></td></tr>
 <tr class="separator:a638bae2129cbeca2ff8be1df6a396426"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -164,7 +167,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a1eee358d79541ac1e9fda38ec4460fe6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_net_1_1_http_response.html#a1eee358d79541ac1e9fda38ec4460fe6">ContentType</a></td></tr>
 <tr class="memdesc:a1eee358d79541ac1e9fda38ec4460fe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取响应的内容类型  <a href="#a1eee358d79541ac1e9fda38ec4460fe6">More...</a><br /></td></tr>
 <tr class="separator:a1eee358d79541ac1e9fda38ec4460fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4d632c05108e4d061bb8b0934f537ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_system_1_1_net_1_1_web_header_collection.html">WebHeaderCollection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_net_1_1_http_response.html#af4d632c05108e4d061bb8b0934f537ea">Headers</a></td></tr>
+<tr class="memitem:af4d632c05108e4d061bb8b0934f537ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_1_1_net_1_1_web_header_collection.html">WebHeaderCollection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_net_1_1_http_response.html#af4d632c05108e4d061bb8b0934f537ea">Headers</a></td></tr>
 <tr class="memdesc:af4d632c05108e4d061bb8b0934f537ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取来自服务器的与此响应关联的标头  <a href="#af4d632c05108e4d061bb8b0934f537ea">More...</a><br /></td></tr>
 <tr class="separator:af4d632c05108e4d061bb8b0934f537ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03df4415462f76e7eaad015e912f4c67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_net_1_1_http_response.html#a03df4415462f76e7eaad015e912f4c67">ProtocolVer</a></td></tr>
@@ -173,24 +176,32 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:afadcef3b4f8a631a4e597b98ef5fed8e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_net_1_1_http_response.html#afadcef3b4f8a631a4e597b98ef5fed8e">StatusDescription</a></td></tr>
 <tr class="memdesc:afadcef3b4f8a631a4e597b98ef5fed8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取与响应一起返回的状态说明  <a href="#afadcef3b4f8a631a4e597b98ef5fed8e">More...</a><br /></td></tr>
 <tr class="separator:afadcef3b4f8a631a4e597b98ef5fed8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb6d8e3b05c352a4cbd0b80a044f1018"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_system_1_1_net.html#a18482d519ba35578512c0a49d401da45">LPURI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_net_1_1_http_response.html#abb6d8e3b05c352a4cbd0b80a044f1018">ResponseUri</a></td></tr>
+<tr class="memitem:abb6d8e3b05c352a4cbd0b80a044f1018"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_system_1_1_net.html#abed6ade211fa023457323310450fd135">LPURI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_net_1_1_http_response.html#abb6d8e3b05c352a4cbd0b80a044f1018">ResponseUri</a></td></tr>
 <tr class="memdesc:abb6d8e3b05c352a4cbd0b80a044f1018"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取响应请求的 Internet 资源的 URI 如果请求被重定向, 将返回最终地址  <a href="#abb6d8e3b05c352a4cbd0b80a044f1018">More...</a><br /></td></tr>
 <tr class="separator:abb6d8e3b05c352a4cbd0b80a044f1018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides an HTTP-specific implementation of the <a class="el" href="class_system_1_1_net_1_1_web_response.html" title="Provides a response from a Uniform Resource Identifier (URI) ">WebResponse</a> class </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a18c21a1c127d1e299c94a7383635e5fb"></a>
+<a class="anchor" id="a830635003a087f94b2598f25d312aac1"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void HttpResponse::Close </td>
+          <td class="memname">RLIB_DEPRECATED void System::Net::HttpResponse::Close </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>关闭响应流 </p>
@@ -239,7 +250,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a760e4cfcc1f1ef36f08c7da6dd15cce9"></a>
+<a class="anchor" id="a71f07c6be848bb0201f1b8e5da6f4ce3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -255,7 +266,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="namespace_system_1_1_net.html#a4b9393d0c2858850701255dad3f85fbe">DecompressionMethod</a>&#160;</td>
           <td class="paramname"><em>automaticDecompression</em>, </td>
         </tr>
         <tr>
@@ -446,7 +457,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_system_1_1_net_1_1_web_header_collection.html">WebHeaderCollection</a> System::Net::HttpResponse::Headers</td>
+          <td class="memname"><a class="el" href="class_system_1_1_net_1_1_web_header_collection.html">WebHeaderCollection</a> System::Net::HttpResponse::Headers</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -474,7 +485,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_system_1_1_net.html#a18482d519ba35578512c0a49d401da45">LPURI</a> System::Net::HttpResponse::ResponseUri</td>
+          <td class="memname"><a class="el" href="namespace_system_1_1_net.html#abed6ade211fa023457323310450fd135">LPURI</a> System::Net::HttpResponse::ResponseUri</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -521,7 +532,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_net.html">Net</a></li><li class="navelem"><a class="el" href="class_system_1_1_net_1_1_http_response.html">HttpResponse</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:37 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:41 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

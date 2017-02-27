@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['protocolver',['ProtocolVer',['../class_system_1_1_net_1_1_http_request.html#aa573b8eef743c81bb0c34e79930fc9dc',1,'System::Net::HttpRequest::ProtocolVer()'],['../class_system_1_1_net_1_1_http_response.html#a03df4415462f76e7eaad015e912f4c67',1,'System::Net::HttpResponse::ProtocolVer()']]]
+  ['recvtimeout',['RecvTimeout',['../class_system_1_1_net_1_1_http_request.html#ad307b3380fe586ebd311224cc5bb00ca',1,'System::Net::HttpRequest']]],
+  ['referer',['Referer',['../class_system_1_1_net_1_1_http_request.html#a9dda03fe298f9925260832bb46d82d5d',1,'System::Net::HttpRequest']]],
+  ['responseuri',['ResponseUri',['../class_system_1_1_net_1_1_http_response.html#abb6d8e3b05c352a4cbd0b80a044f1018',1,'System::Net::HttpResponse']]]
 ];

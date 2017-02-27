@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -109,6 +109,7 @@ $(document).ready(function(){initNavTree('class_system_1_1_managed_object.html',
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="class_system_1_1_managed_object-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">System::ManagedObject&lt; R &gt; Class Template Reference</div>  </div>
@@ -117,10 +118,15 @@ $(document).ready(function(){initNavTree('class_system_1_1_managed_object.html',
 
 <p>提供对象指针的自动释放方法  
  <a href="class_system_1_1_managed_object.html#details">More...</a></p>
-
-<p>Inherits <a class="el" href="class_system_1_1_object.html">System::Object&lt; R &gt;</a>.</p>
-
-<p>Inherited by <a class="el" href="class_system_1_1_local_object.html">System::LocalObject&lt; R &gt;</a>.</p>
+<div class="dynheader">
+Inheritance diagram for System::ManagedObject&lt; R &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_system_1_1_managed_object.png" usemap="#System::ManagedObject&lt; R &gt;_map" alt=""/>
+  <map id="System::ManagedObject&lt; R &gt;_map" name="System::ManagedObject&lt; R &gt;_map">
+<area href="class_system_1_1_object.html" title="表示封装对象基类 " alt="System::Object&lt; R &gt;" shape="rect" coords="0,0,180,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -153,11 +159,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9d2bf2febe0e21519a6eb4a00189a9f4 inherit pub_methods_class_system_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断关联的指针是否不为 nullptr  <a href="#a9d2bf2febe0e21519a6eb4a00189a9f4">More...</a><br /></td></tr>
 <tr class="separator:a9d2bf2febe0e21519a6eb4a00189a9f4 inherit pub_methods_class_system_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aac84a6badc30d9a434f153a1f0e18b46"><td class="memTemplParams" colspan="2"><a class="anchor" id="aac84a6badc30d9a434f153a1f0e18b46"></a>
+template&lt;class... Args&gt; </td></tr>
+<tr class="memitem:aac84a6badc30d9a434f153a1f0e18b46"><td class="memTemplItemLeft" align="right" valign="top">static R *&#160;</td><td class="memTemplItemRight" valign="bottom"><b>construct</b> (Args &amp;&amp;...args)</td></tr>
+<tr class="separator:aac84a6badc30d9a434f153a1f0e18b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c6c4035c8dba14ee18adebcac03ef50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c6c4035c8dba14ee18adebcac03ef50"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> (const R *obj)</td></tr>
+<tr class="separator:a3c6c4035c8dba14ee18adebcac03ef50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_attribs_class_system_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_system_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_system_1_1_object.html">System::Object&lt; R &gt;</a></td></tr>
-<tr class="memitem:a9761d95d7709faebf9ec3ab2eff5f33b inherit pub_attribs_class_system_1_1_object"><td class="memItemLeft" align="right" valign="top">R *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_object.html#a9761d95d7709faebf9ec3ab2eff5f33b">ObjectPtr</a></td></tr>
-<tr class="memdesc:a9761d95d7709faebf9ec3ab2eff5f33b inherit pub_attribs_class_system_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取实例关联的指针  <a href="#a9761d95d7709faebf9ec3ab2eff5f33b">More...</a><br /></td></tr>
+<tr class="memitem:a9761d95d7709faebf9ec3ab2eff5f33b inherit pub_attribs_class_system_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9761d95d7709faebf9ec3ab2eff5f33b"></a>
+R *&#160;</td><td class="memItemRight" valign="bottom"><b>ObjectPtr</b></td></tr>
 <tr class="separator:a9761d95d7709faebf9ec3ab2eff5f33b inherit pub_attribs_class_system_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -231,7 +247,7 @@ template&lt;class R &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="class_system_1_1_managed_object.html">ManagedObject</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:32 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:37 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['waitstatus',['WaitStatus',['../namespace_system_1_1_threading.html#a53c0551aaaf249c46365fa9d874b20e4',1,'System::Threading']]]
+  ['threadpriority',['ThreadPriority',['../namespace_system_1_1_threading.html#a83634aacdafb7b4ab90ee31aec98c99e',1,'System::Threading']]],
+  ['threadstate',['ThreadState',['../namespace_system_1_1_threading.html#ae6d4ac191e1230216d32695727dc8840',1,'System::Threading']]]
 ];

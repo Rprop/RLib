@@ -16,5 +16,6 @@ var class_system_1_1_i_o_1_1_compression_1_1_compression_stream =
     [ "m_external_struct", "class_system_1_1_i_o_1_1_compression_1_1_compression_stream.html#a124a5969c86402a90b2c79f8740fbbfc", null ],
     [ "m_gzip_header_flag", "class_system_1_1_i_o_1_1_compression_1_1_compression_stream.html#a0eac622a1dbfbf3d78cccbbe0e7dcdb5", null ],
     [ "m_mode", "class_system_1_1_i_o_1_1_compression_1_1_compression_stream.html#a06230ccb8c7d4214b65c1db8a7812ef4", null ],
-    [ "m_underlying_stream", "class_system_1_1_i_o_1_1_compression_1_1_compression_stream.html#ad499fef76120c5a97678eae17c577de8", null ]
+    [ "m_underlying_stream", "class_system_1_1_i_o_1_1_compression_1_1_compression_stream.html#ad499fef76120c5a97678eae17c577de8", null ],
+    [ "RLIB_DECLARE_DYNCREATE", "class_system_1_1_i_o_1_1_compression_1_1_compression_stream.html#a0a4c232a13912a4c7621d3ff13582f47", null ]
 ];

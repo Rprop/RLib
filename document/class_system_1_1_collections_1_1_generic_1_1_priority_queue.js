@@ -8,7 +8,6 @@ var class_system_1_1_collections_1_1_generic_1_1_priority_queue =
     [ "pqueue_set_pri_f", "class_system_1_1_collections_1_1_generic_1_1_priority_queue.html#a95224ef4e519ce85db6d055f4908f478", null ],
     [ "PriorityQueue", "class_system_1_1_collections_1_1_generic_1_1_priority_queue.html#a021cdd6bc6e55fa390491ddbf3a1170d", null ],
     [ "~PriorityQueue", "class_system_1_1_collections_1_1_generic_1_1_priority_queue.html#a1b009c39531ce9397cec53134e138daf", null ],
-    [ "_get_allocator", "class_system_1_1_collections_1_1_generic_1_1_priority_queue.html#acaaee70978e708336c91254060f7e65b", null ],
     [ "bubble_up", "class_system_1_1_collections_1_1_generic_1_1_priority_queue.html#a0d1b2df0c71152aeb2e9dfcbfeaaa834", null ],
     [ "maxchild", "class_system_1_1_collections_1_1_generic_1_1_priority_queue.html#ab3d2ee0dd47069c7222b0f9416976957", null ],
     [ "percolate_down", "class_system_1_1_collections_1_1_generic_1_1_priority_queue.html#a590655f1c9dd00f5daab224a510f211e", null ],

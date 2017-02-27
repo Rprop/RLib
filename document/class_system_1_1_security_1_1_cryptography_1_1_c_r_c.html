@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -123,14 +123,20 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a13098530263fe5ad17826698fc401748"><td class="memItemLeft" align="right" valign="top">static unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_security_1_1_cryptography_1_1_c_r_c.html#a13098530263fe5ad17826698fc401748">crc32_get_initial_value</a> ()</td></tr>
 <tr class="memdesc:a13098530263fe5ad17826698fc401748"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function returns the required initial value for the crc.  <a href="#a13098530263fe5ad17826698fc401748">More...</a><br /></td></tr>
 <tr class="separator:a13098530263fe5ad17826698fc401748"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2838ff8715db7328822f4b9cd1abeea"><td class="memItemLeft" align="right" valign="top">static unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_security_1_1_cryptography_1_1_c_r_c.html#ad2838ff8715db7328822f4b9cd1abeea">crc32_byte</a> (unsigned long crc, const void *p, unsigned int bytelength)</td></tr>
-<tr class="memdesc:ad2838ff8715db7328822f4b9cd1abeea"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate a checksum on a buffer &ndash; start address = p, length = bytelength CRC32 is a checksum/hashing algorithm that is very commonly used in kernels, and for Internet checksums.  <a href="#ad2838ff8715db7328822f4b9cd1abeea">More...</a><br /></td></tr>
-<tr class="separator:ad2838ff8715db7328822f4b9cd1abeea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb36e7de937d55164bc20c60b43838a5"><td class="memItemLeft" align="right" valign="top">static unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_security_1_1_cryptography_1_1_c_r_c.html#afb36e7de937d55164bc20c60b43838a5">crc32_block</a> (_In_ unsigned long initialCrc, _In_reads_bytes_(sizeInBytes) const void *buffer, _In_ size_t sizeInBytes)</td></tr>
+<tr class="memdesc:afb36e7de937d55164bc20c60b43838a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate a checksum on a buffer &ndash; start address = p, length = bytelength CRC32 is a checksum/hashing algorithm that is very commonly used in kernels, and for Internet checksums.  <a href="#afb36e7de937d55164bc20c60b43838a5">More...</a><br /></td></tr>
+<tr class="separator:afb36e7de937d55164bc20c60b43838a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057a7c39dfcc4e7fd2a4a5d024759e83"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a057a7c39dfcc4e7fd2a4a5d024759e83"></a>
+static unsigned long&#160;</td><td class="memItemRight" valign="bottom"><b>native_crc32</b> (_In_ unsigned long initialCrc, _In_reads_bytes_(sizeInBytes) const void *buffer, _In_ size_t sizeInBytes)</td></tr>
+<tr class="separator:a057a7c39dfcc4e7fd2a4a5d024759e83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75b255102c22dec79489d82b6b3467c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75b255102c22dec79489d82b6b3467c2"></a>
+static unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><b>native_crc64</b> (_In_ unsigned long long initialCrc, _In_reads_bytes_(sizeInBytes) const void *buffer, _In_ size_t sizeInBytes)</td></tr>
+<tr class="separator:a75b255102c22dec79489d82b6b3467c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Cyclic redundancy check algorithm </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ad2838ff8715db7328822f4b9cd1abeea"></a>
+<a class="anchor" id="afb36e7de937d55164bc20c60b43838a5"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -138,22 +144,22 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned long CRC::crc32_byte </td>
+          <td class="memname">unsigned long CRC::crc32_block </td>
           <td>(</td>
-          <td class="paramtype">unsigned long&#160;</td>
-          <td class="paramname"><em>crc</em>, </td>
+          <td class="paramtype">_In_ unsigned long&#160;</td>
+          <td class="paramname"><em>initialCrc</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const void *&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
+          <td class="paramtype">_In_reads_bytes_(sizeInBytes) const void *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>bytelength</em>&#160;</td>
+          <td class="paramtype">_In_ size_t&#160;</td>
+          <td class="paramname"><em>sizeInBytes</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -207,7 +213,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_security.html">Security</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_security_1_1_cryptography.html">Cryptography</a></li><li class="navelem"><a class="el" href="class_system_1_1_security_1_1_cryptography_1_1_c_r_c.html">CRC</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:38 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:42 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

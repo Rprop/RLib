@@ -8,5 +8,6 @@ var searchData=
   ['queryunsignedattribute',['QueryUnsignedAttribute',['../class_system_1_1_xml_1_1_xml_element.html#ae3c42351506a76eeabb5e88a24354b8c',1,'System::Xml::XmlElement']]],
   ['queue',['Queue',['../class_system_1_1_collections_1_1_generic_1_1_queue.html',1,'System::Collections::Generic']]],
   ['queue_3c_20threadpooltask_20_3e',['Queue&lt; ThreadPoolTask &gt;',['../class_system_1_1_collections_1_1_generic_1_1_queue.html',1,'System::Collections::Generic']]],
-  ['queueuserworkitem',['QueueUserWorkItem',['../class_system_1_1_threading_1_1_thread_pool.html#ada806ffc22cce1ac9d3f04243839298f',1,'System::Threading::ThreadPool']]]
+  ['queueuserworkitem',['QueueUserWorkItem',['../class_system_1_1_threading_1_1_thread_pool.html#ada806ffc22cce1ac9d3f04243839298f',1,'System::Threading::ThreadPool']]],
+  ['quotespaces',['QuoteSpaces',['../struct_system_1_1_i_o_1_1_path.html#a662b3a8ff29c49304d06986cf369d225',1,'System::IO::Path']]]
 ];

@@ -9,6 +9,6 @@ var namespace_system_1_1_net =
     [ "Sockets", "class_system_1_1_net_1_1_sockets.html", "class_system_1_1_net_1_1_sockets" ],
     [ "Uri", "struct_system_1_1_net_1_1_uri.html", "struct_system_1_1_net_1_1_uri" ],
     [ "WebClient", "class_system_1_1_net_1_1_web_client.html", null ],
-    [ "WebHeaderCollection", "struct_system_1_1_net_1_1_web_header_collection.html", "struct_system_1_1_net_1_1_web_header_collection" ],
+    [ "WebHeaderCollection", "class_system_1_1_net_1_1_web_header_collection.html", "class_system_1_1_net_1_1_web_header_collection" ],
     [ "WebResponse", "class_system_1_1_net_1_1_web_response.html", null ]
 ];

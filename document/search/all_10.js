@@ -1,11 +1,10 @@
 var searchData=
 [
   ['paddingmode',['PaddingMode',['../namespace_system_1_1_security_1_1_cryptography.html#ae9547f6e80557391094b459bc2b62340',1,'System::Security::Cryptography']]],
-  ['padleft',['PadLeft',['../class_system_1_1_string.html#aa5dca3cfa0bd4351f6833dc20d086686',1,'System::String::PadLeft(intptr_t totalWidth, TCHAR paddingChar=_T(&apos; &apos;)) const '],['../class_system_1_1_string.html#a9f4cdcd0ef3bf7cc27d115a2c7d1351c',1,'System::String::padLeft(intptr_t totalWidth, TCHAR paddingChar=_T(&apos; &apos;))']]],
+  ['padleft',['padLeft',['../class_system_1_1_string.html#a9f4cdcd0ef3bf7cc27d115a2c7d1351c',1,'System::String::padLeft(intptr_t totalWidth, TCHAR paddingChar=_T(&apos; &apos;))'],['../class_system_1_1_string.html#aa5dca3cfa0bd4351f6833dc20d086686',1,'System::String::PadLeft(intptr_t totalWidth, TCHAR paddingChar=_T(&apos; &apos;)) const ']]],
   ['padright',['PadRight',['../class_system_1_1_string.html#a79d5e587b440c4907d436c4fb0c74bc9',1,'System::String::PadRight(intptr_t totalWidth, TCHAR paddingChar=_T(&apos; &apos;)) const '],['../class_system_1_1_string.html#a794985ab80ad58553dd3fa0c6e616138',1,'System::String::padRight(intptr_t totalWidth, TCHAR paddingChar=_T(&apos; &apos;))']]],
   ['parent',['Parent',['../class_system_1_1_xml_1_1_xml_node.html#a86be722752fc36ed7a9e385318355bf5',1,'System::Xml::XmlNode']]],
   ['parseipv4host',['ParseIpv4Host',['../class_system_1_1_net_1_1_sockets.html#a745bd577225272d25306bcae696874ee',1,'System::Net::Sockets']]],
-  ['path',['Path',['../struct_system_1_1_i_o_1_1_path.html#ae7641f6e020f8b4af6e14c0a6bf15c8b',1,'System::IO::Path']]],
   ['path',['Path',['../struct_system_1_1_i_o_1_1_path.html',1,'System::IO']]],
   ['pathinfo',['PathInfo',['../struct_system_1_1_i_o_1_1_path_info.html',1,'System::IO']]],
   ['pause',['Pause',['../class_system_1_1_microsoft_1_1_text_speaker.html#a4155c5a5672f4e293bdf75a42ac86c87',1,'System::Microsoft::TextSpeaker']]],
@@ -25,7 +24,6 @@ var searchData=
   ['pqueue_5fpop',['pqueue_pop',['../class_system_1_1_collections_1_1_generic_1_1_priority_queue.html#acfc4dbc409eb3692d5422fc4b26a0a56',1,'System::Collections::Generic::PriorityQueue']]],
   ['pqueue_5fremove',['pqueue_remove',['../class_system_1_1_collections_1_1_generic_1_1_priority_queue.html#af49ad56927c93d1c95e43bf708ea3e59',1,'System::Collections::Generic::PriorityQueue']]],
   ['pqueue_5fsize',['pqueue_size',['../class_system_1_1_collections_1_1_generic_1_1_priority_queue.html#af80e442e0900cac771da97bd86426096',1,'System::Collections::Generic::PriorityQueue']]],
-  ['pre_5fallocate',['pre_allocate',['../class_system_1_1_string.html#ab42d787c2899b8de11df1c97e529dd25',1,'System::String']]],
   ['previous',['Previous',['../class_system_1_1_xml_1_1_xml_attribute.html#a3db9a1c309fbced5116e1ad0649c11f8',1,'System::Xml::XmlAttribute']]],
   ['previoussibling',['PreviousSibling',['../class_system_1_1_xml_1_1_xml_node.html#a0a643657c47cca6f8dbd716a698a5d37',1,'System::Xml::XmlNode::PreviousSibling() const '],['../class_system_1_1_xml_1_1_xml_node.html#ac5e5127ac86df569f0ef55e03f5b10ba',1,'System::Xml::XmlNode::PreviousSibling(const TCHAR *) const ']]],
   ['print',['Print',['../class_system_1_1_xml_1_1_xml_document.html#a20e537b46de3afcfc7399ca7bbdb9498',1,'System::Xml::XmlDocument']]],
@@ -35,6 +33,6 @@ var searchData=
   ['processuri',['ProcessUri',['../struct_system_1_1_net_1_1_uri.html#af8e02a974f7da6e5c464a84b845ed722',1,'System::Net::Uri']]],
   ['protect',['Protect',['../class_system_1_1_i_o_1_1_memory_allocator.html#aeb47d55058b2f33c2746d4c15ec96434',1,'System::IO::MemoryAllocator']]],
   ['protocolver',['ProtocolVer',['../class_system_1_1_net_1_1_http_request.html#aa573b8eef743c81bb0c34e79930fc9dc',1,'System::Net::HttpRequest::ProtocolVer()'],['../class_system_1_1_net_1_1_http_response.html#a03df4415462f76e7eaad015e912f4c67',1,'System::Net::HttpResponse::ProtocolVer()']]],
-  ['pulse',['Pulse',['../class_system_1_1_threading_1_1_event.html#a38ef472b212e9b2e14b78f1380cd8927',1,'System::Threading::Event']]],
+  ['pulse',['Pulse',['../class_system_1_1_threading_1_1_event.html#ad2ccccdbd35adff3e07c33f12b52f00c',1,'System::Threading::Event']]],
   ['push',['Push',['../class_system_1_1_collections_1_1_generic_1_1_stack.html#a6ad131374576bb3618eddb49f0038465',1,'System::Collections::Generic::Stack']]]
 ];

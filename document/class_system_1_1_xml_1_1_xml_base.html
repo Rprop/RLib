@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -123,12 +123,26 @@ $(document).ready(function(){initNavTree('class_system_1_1_xml_1_1_xml_base.html
 
 <p><a class="el" href="class_system_1_1_xml_1_1_xml_base.html" title="XmlBase is a base class for every class in TinyXml. It does little except to establish that TinyXml c...">XmlBase</a> is a base class for every class in TinyXml. It does little except to establish that TinyXml classes can be printed and provide some utility functions.  
  <a href="class_system_1_1_xml_1_1_xml_base.html#details">More...</a></p>
-
-<p>Inherited by <a class="el" href="class_system_1_1_xml_1_1_xml_attribute.html">System::Xml::XmlAttribute</a>, and <a class="el" href="class_system_1_1_xml_1_1_xml_node.html">System::Xml::XmlNode</a>.</p>
+<div class="dynheader">
+Inheritance diagram for System::Xml::XmlBase:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_system_1_1_xml_1_1_xml_base.png" usemap="#System::Xml::XmlBase_map" alt=""/>
+  <map id="System::Xml::XmlBase_map" name="System::Xml::XmlBase_map">
+<area href="class_system_1_1_xml_1_1_xml_attribute.html" title="An attribute is a name-value pair. Elements have an arbitrary number of attributes, each with a unique name. " alt="System::Xml::XmlAttribute" shape="rect" coords="0,56,171,80"/>
+<area href="class_system_1_1_xml_1_1_xml_node.html" title="The parent class for everything in the Document Object Model. (Except for attributes). Nodes have siblings, a parent, and children. A node can be in a document, or stand on its own. The type of a XmlNode can be queried, and it can be cast to its more defined type. " alt="System::Xml::XmlNode" shape="rect" coords="452,56,623,80"/>
+<area href="class_system_1_1_xml_1_1_xml_comment.html" title="表示XML注释 " alt="System::Xml::XmlComment" shape="rect" coords="0,112,171,136"/>
+<area href="class_system_1_1_xml_1_1_xml_declaration.html" title="In correct XML the declaration is the first entry in the file. " alt="System::Xml::XmlDeclaration" shape="rect" coords="181,112,352,136"/>
+<area href="class_system_1_1_xml_1_1_xml_document.html" title="Always the top level node. A document binds together all the XML pieces. It can be saved..." alt="System::Xml::XmlDocument" shape="rect" coords="362,112,533,136"/>
+<area href="class_system_1_1_xml_1_1_xml_element.html" title="The element is a container class. It has a value, the element name, and can contain other elements..." alt="System::Xml::XmlElement" shape="rect" coords="543,112,714,136"/>
+<area href="class_system_1_1_xml_1_1_xml_text.html" title="XML text. A text node can have 2 ways to output the next. "normal" output and CDATA. It will default to the mode it was parsed from the XML file and you generally want to leave it alone, but you can change the output mode with SetCDATA() and query it with CDATA(). " alt="System::Xml::XmlText" shape="rect" coords="724,112,895,136"/>
+<area href="class_system_1_1_xml_1_1_xml_unknown.html" title="Any tag that tinyXml doesn&#39;t recognize is saved as an unknown. It is a tag of text, but should not be modified. It will be written back to the XML, unchanged, when the file is saved. " alt="System::Xml::XmlUnknown" shape="rect" coords="905,112,1076,136"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a37f381a71be49914b9ab1190d672d197"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37f381a71be49914b9ab1190d672d197"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+<tr class="memitem:ab0e73d232a2c2701d32a365275d7f56d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0e73d232a2c2701d32a365275d7f56d"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
 &#160;&#160;<b>RLIBXML_NO_ERROR</b> = 0, 
 <b>RLIBXML_ERROR</b>, 
 <b>RLIBXML_ERROR_OPENING_FILE</b>, 
@@ -154,7 +168,7 @@ Public Types</h2></td></tr>
 <b>RLIBXML_ERROR_STRING_COUNT</b>
 <br />
  }</td></tr>
-<tr class="separator:a37f381a71be49914b9ab1190d672d197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ab0e73d232a2c2701d32a365275d7f56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -245,15 +259,15 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cl
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ab0605c4a1e1b19d49c8a8d700567db0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0605c4a1e1b19d49c8a8d700567db0f"></a>
-class export&#160;</td><td class="memItemRight" valign="bottom"><b>XmlNode</b></td></tr>
-<tr class="separator:ab0605c4a1e1b19d49c8a8d700567db0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63396a203b743fe6f6e13e06f86ad8aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63396a203b743fe6f6e13e06f86ad8aa"></a>
-class export&#160;</td><td class="memItemRight" valign="bottom"><b>XmlElement</b></td></tr>
-<tr class="separator:a63396a203b743fe6f6e13e06f86ad8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afab33fbe74e5625a131859f20e081d5d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afab33fbe74e5625a131859f20e081d5d"></a>
-class export&#160;</td><td class="memItemRight" valign="bottom"><b>XmlDocument</b></td></tr>
-<tr class="separator:afab33fbe74e5625a131859f20e081d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe5f758b324870ae909f2ccb05eaec22"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe5f758b324870ae909f2ccb05eaec22"></a>
+class RLIB_API&#160;</td><td class="memItemRight" valign="bottom"><b>XmlNode</b></td></tr>
+<tr class="separator:afe5f758b324870ae909f2ccb05eaec22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8eb39ceb4553b460f93d4c7f99bf348"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8eb39ceb4553b460f93d4c7f99bf348"></a>
+class RLIB_API&#160;</td><td class="memItemRight" valign="bottom"><b>XmlElement</b></td></tr>
+<tr class="separator:aa8eb39ceb4553b460f93d4c7f99bf348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec6c0c748146c017d22ea1533ff06f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ec6c0c748146c017d22ea1533ff06f4"></a>
+class RLIB_API&#160;</td><td class="memItemRight" valign="bottom"><b>XmlDocument</b></td></tr>
+<tr class="separator:a5ec6c0c748146c017d22ea1533ff06f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_system_1_1_xml_1_1_xml_base.html" title="XmlBase is a base class for every class in TinyXml. It does little except to establish that TinyXml c...">XmlBase</a> is a base class for every class in TinyXml. It does little except to establish that TinyXml classes can be printed and provide some utility functions. </p>
@@ -281,7 +295,7 @@ class export&#160;</td><td class="memItemRight" valign="bottom"><b>XmlDocument</
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_xml.html">Xml</a></li><li class="navelem"><a class="el" href="class_system_1_1_xml_1_1_xml_base.html">XmlBase</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:40 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:44 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

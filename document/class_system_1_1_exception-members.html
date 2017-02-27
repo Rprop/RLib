@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -114,27 +114,28 @@ $(document).ready(function(){initNavTree('class_system_1_1_exception.html','');}
 
 <p>This is the complete list of members for <a class="el" href="class_system_1_1_exception.html">System::Exception</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_system_1_1_exception.html#a1b78336bb26edf8e784783cc150c5801">Exception</a>()</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_system_1_1_exception.html#ad5603f6ec188d5a4f4a1cfb30917197a">Exception</a>(const TCHAR *)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_system_1_1_exception.html#ae42dba98fc242b1b40ad9d0f0937e48c">Exception</a>(int, const TCHAR *)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_system_1_1_exception.html#a3517b1f8a7aa6f873047843499bc6a56">FormatErrorMessage</a>(OUT LPTSTR lptstr, DWORD nchar, IN DWORD err_code=0)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_system_1_1_exception.html#aacf47daaea477dfeee2485cab8a31b84">FormatException</a>(OUT Exception *lpex, IN DWORD err_code=0)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>ErrorNo</b> (defined in <a class="el" href="class_system_1_1_exception.html">System::Exception</a>)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_system_1_1_exception.html#a1b78336bb26edf8e784783cc150c5801">Exception</a>()</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_system_1_1_exception.html#a237705ad971b0001d5dbfec05e5b0b67">Exception</a>(const TCHAR *lpmsg, INT id=-1)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_system_1_1_exception.html#adc356bbc68a95285380f1dd91bd5bef0">FormatErrorMessage</a>(OUT LPTSTR lptstr, DWORD nchar, IN DWORD err_code)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_system_1_1_exception.html#aa3b63f8ff3ffd32f9a962f516f2ae96f">FormatException</a>(OUT Exception *lpex, IN DWORD err_code)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="class_system_1_1_exception.html#a11c93998d2836f14918545afb7f98e55">GetLastErrorId</a>()</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_system_1_1_exception.html#aaee4d575e654764ae230b69c70e82c41">GetLastException</a>()</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="class_system_1_1_exception.html#afbd98f430624bdba3a4f4bb7fd9713c2">GetLastException</a>(IN int hResult)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_system_1_1_exception.html#a561f6ad21866c60dd32d5834e6933701">HResult</a></td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_system_1_1_exception.html#aab2834d99020a37b2d7d067af8bde3da">GetLastException</a>(DWORD err_code)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>HResult</b> (defined in <a class="el" href="class_system_1_1_exception.html">System::Exception</a>)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_system_1_1_exception.html#af6c702738509f27191eaedc80c1d7361">Message</a></td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_system_1_1_exception.html#a32beab824a3bdf500cd695843d39036a">Ref</a>(const Exception &amp;)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_system_1_1_exception.html#a991cd06cadde58a10b31cedb3fca9123">Ref</a>(const class Exception &amp;)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>RLIB_DECLARE_DYNCREATE</b> (defined in <a class="el" href="class_system_1_1_exception.html">System::Exception</a>)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_system_1_1_exception.html#a0d428a3e8e03622c8b64d67f86508e2b">Set</a>(int HResult, const TCHAR *Message)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_system_1_1_exception.html#a504b57db27b7d311d78f0bb1e8ba259d">Set</a>(INT HResult, const TCHAR *Message)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>SetDebugInfo</b>(const TCHAR *, const TCHAR *) (defined in <a class="el" href="class_system_1_1_exception.html">System::Exception</a>)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_system_1_1_exception.html#a4bb41850950d4d60f0f73d1050f05e34">SetLastErrorId</a>(DWORD err_code)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_system_1_1_exception.html#abe9d727454f6e475888e519716cf5791">SetLastException</a>(NTSTATUS status, bool bAlertInDebug=true)</td><td class="entry"><a class="el" href="class_system_1_1_exception.html">System::Exception</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:31 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:37 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -109,6 +109,7 @@ $(document).ready(function(){initNavTree('class_system_1_1_managed_memory_block.
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_system_1_1_managed_memory_block-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -118,14 +119,24 @@ $(document).ready(function(){initNavTree('class_system_1_1_managed_memory_block.
 
 <p>提供内存块的自动释放方法  
  <a href="class_system_1_1_managed_memory_block.html#details">More...</a></p>
-
-<p>Inherits <a class="el" href="class_system_1_1_object.html">System::Object&lt; R &gt;</a>.</p>
+<div class="dynheader">
+Inheritance diagram for System::ManagedMemoryBlock&lt; R &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_system_1_1_managed_memory_block.png" usemap="#System::ManagedMemoryBlock&lt; R &gt;_map" alt=""/>
+  <map id="System::ManagedMemoryBlock&lt; R &gt;_map" name="System::ManagedMemoryBlock&lt; R &gt;_map">
+<area href="class_system_1_1_object.html" title="表示封装对象基类 " alt="System::Object&lt; R &gt;" shape="rect" coords="0,0,220,24"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af38d7e6ac794c5f25f5e2239986095a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_managed_memory_block.html#af38d7e6ac794c5f25f5e2239986095a1">ManagedMemoryBlock</a> (intptr_t count)</td></tr>
-<tr class="memdesc:af38d7e6ac794c5f25f5e2239986095a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">分配指定数量的 R  <a href="#af38d7e6ac794c5f25f5e2239986095a1">More...</a><br /></td></tr>
+<tr class="memitem:af38d7e6ac794c5f25f5e2239986095a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af38d7e6ac794c5f25f5e2239986095a1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ManagedMemoryBlock</b> (intptr_t count)</td></tr>
 <tr class="separator:af38d7e6ac794c5f25f5e2239986095a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15a608374d7ab2425b3f4bc601c840e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15a608374d7ab2425b3f4bc601c840e6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ManagedMemoryBlock</b> (uintptr_t count)</td></tr>
+<tr class="separator:a15a608374d7ab2425b3f4bc601c840e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab66fbbbe1ea5b1b74c563ccf2564fc67"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab66fbbbe1ea5b1b74c563ccf2564fc67"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>ManagedMemoryBlock</b> (class <a class="el" href="class_system_1_1_managed_memory_block.html">ManagedMemoryBlock</a> &amp;src)</td></tr>
 <tr class="separator:ab66fbbbe1ea5b1b74c563ccf2564fc67"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,56 +176,36 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a9d2bf2febe0e21519a6eb4a00189a9f4 inherit pub_methods_class_system_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">判断关联的指针是否不为 nullptr  <a href="#a9d2bf2febe0e21519a6eb4a00189a9f4">More...</a><br /></td></tr>
 <tr class="separator:a9d2bf2febe0e21519a6eb4a00189a9f4 inherit pub_methods_class_system_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ad69ebfb56f05a165bc96a0aae3520fe6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad69ebfb56f05a165bc96a0aae3520fe6"></a>
+static R *&#160;</td><td class="memItemRight" valign="bottom"><b>construct</b> (intptr_t count)</td></tr>
+<tr class="separator:ad69ebfb56f05a165bc96a0aae3520fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e6aefa70b109d3c0cc9248250018ed0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e6aefa70b109d3c0cc9248250018ed0"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>destroy</b> (const R *obj)</td></tr>
+<tr class="separator:a3e6aefa70b109d3c0cc9248250018ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a28c7171d4e04ea0ce0e74315be16033c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28c7171d4e04ea0ce0e74315be16033c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>RLIB_DECLARE_DYNCREATE</b></td></tr>
 <tr class="separator:a28c7171d4e04ea0ce0e74315be16033c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_system_1_1_object"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_system_1_1_object')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_system_1_1_object.html">System::Object&lt; R &gt;</a></td></tr>
-<tr class="memitem:a9761d95d7709faebf9ec3ab2eff5f33b inherit pub_attribs_class_system_1_1_object"><td class="memItemLeft" align="right" valign="top">R *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_object.html#a9761d95d7709faebf9ec3ab2eff5f33b">ObjectPtr</a></td></tr>
-<tr class="memdesc:a9761d95d7709faebf9ec3ab2eff5f33b inherit pub_attribs_class_system_1_1_object"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取实例关联的指针  <a href="#a9761d95d7709faebf9ec3ab2eff5f33b">More...</a><br /></td></tr>
+<tr class="memitem:a9761d95d7709faebf9ec3ab2eff5f33b inherit pub_attribs_class_system_1_1_object"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9761d95d7709faebf9ec3ab2eff5f33b"></a>
+R *&#160;</td><td class="memItemRight" valign="bottom"><b>ObjectPtr</b></td></tr>
 <tr class="separator:a9761d95d7709faebf9ec3ab2eff5f33b inherit pub_attribs_class_system_1_1_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><h3>template&lt;typename R = byte&gt;<br />
+<div class="textblock"><h3>template&lt;typename R = unsigned char&gt;<br />
 class System::ManagedMemoryBlock&lt; R &gt;</h3>
 
 <p>提供内存块的自动释放方法 </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="af38d7e6ac794c5f25f5e2239986095a1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename R  = byte&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_system_1_1_managed_memory_block.html">System::ManagedMemoryBlock</a>&lt; R &gt;::<a class="el" href="class_system_1_1_managed_memory_block.html">ManagedMemoryBlock</a> </td>
-          <td>(</td>
-          <td class="paramtype">intptr_t&#160;</td>
-          <td class="paramname"><em>count</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>分配指定数量的 R </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a9daca5c17ac60d3d7b36ef9eeca87b51"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename R  = byte&gt; </div>
+template&lt;typename R  = unsigned char&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -241,7 +232,7 @@ template&lt;typename R  = byte&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename R  = byte&gt; </div>
+template&lt;typename R  = unsigned char&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -269,7 +260,7 @@ template&lt;typename R  = byte&gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename R  = byte&gt; </div>
+template&lt;typename R  = unsigned char&gt; </div>
 <div class="memtemplate">
 template&lt;typename T  = void&gt; </div>
 <table class="mlabels">
@@ -303,7 +294,7 @@ template&lt;typename T  = void&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="class_system_1_1_managed_memory_block.html">ManagedMemoryBlock</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:32 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:37 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

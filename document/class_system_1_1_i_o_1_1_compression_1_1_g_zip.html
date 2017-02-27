@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -120,17 +120,17 @@ $(document).ready(function(){initNavTree('class_system_1_1_i_o_1_1_compression_1
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2ddc793a194bc2f6c783ba7ec274a23c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_compression_1_1_g_zip.html#a2ddc793a194bc2f6c783ba7ec274a23c">Compress</a> (IN const unsigned char *data, unsigned long ndata, OUT unsigned char *zdata, unsigned long *nzdata, <a class="el" href="namespace_system_1_1_i_o_1_1_compression.html#a893de1c505bb182c7f2569c6efafe394">CompressionLevel</a> level, int windowBits=-RLIB_MAX_WBITS)</td></tr>
-<tr class="memdesc:a2ddc793a194bc2f6c783ba7ec274a23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">compress data with Z_BEST_COMPRESSION  <a href="#a2ddc793a194bc2f6c783ba7ec274a23c">More...</a><br /></td></tr>
-<tr class="separator:a2ddc793a194bc2f6c783ba7ec274a23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d07f8a2a62b8247e3cb985845b17baf"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_compression_1_1_g_zip.html#a0d07f8a2a62b8247e3cb985845b17baf">Decompress</a> (IN const unsigned char *zdata, unsigned long nzdata, OUT unsigned char *data, unsigned long *ndata, int windowBits=-RLIB_MAX_WBITS)</td></tr>
-<tr class="memdesc:a0d07f8a2a62b8247e3cb985845b17baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">decompress data  <a href="#a0d07f8a2a62b8247e3cb985845b17baf">More...</a><br /></td></tr>
-<tr class="separator:a0d07f8a2a62b8247e3cb985845b17baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b623139cfbf6fb0ede7e1c122d369d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_compression_1_1_g_zip.html#a40b623139cfbf6fb0ede7e1c122d369d">Compress</a> (IN const unsigned char *data, IN unsigned long ndata, OUT unsigned char *zdata, IN OUT unsigned long *nzdata, IN <a class="el" href="namespace_system_1_1_i_o_1_1_compression.html#a893de1c505bb182c7f2569c6efafe394">CompressionLevel</a> level, IN OPTIONAL int windowBits=-RLIB_MAX_WBITS)</td></tr>
+<tr class="memdesc:a40b623139cfbf6fb0ede7e1c122d369d"><td class="mdescLeft">&#160;</td><td class="mdescRight">compress data  <a href="#a40b623139cfbf6fb0ede7e1c122d369d">More...</a><br /></td></tr>
+<tr class="separator:a40b623139cfbf6fb0ede7e1c122d369d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87c0b0dca84602eb446ab16b8dea4d19"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_compression_1_1_g_zip.html#a87c0b0dca84602eb446ab16b8dea4d19">Decompress</a> (IN const unsigned char *zdata, IN unsigned long nzdata, OUT unsigned char *data, IN OUT unsigned long *ndata, IN OUT int windowBits=-RLIB_MAX_WBITS)</td></tr>
+<tr class="memdesc:a87c0b0dca84602eb446ab16b8dea4d19"><td class="mdescLeft">&#160;</td><td class="mdescRight">decompress data  <a href="#a87c0b0dca84602eb446ab16b8dea4d19">More...</a><br /></td></tr>
+<tr class="separator:a87c0b0dca84602eb446ab16b8dea4d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides static methods used to compress and decompress datas using the gzip data format, an industry-standard algorithm for lossless file compression and decompression(the same algorithm as the DeflateStream class) The format includes a cyclic redundancy check value for detecting data corruption </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2ddc793a194bc2f6c783ba7ec274a23c"></a>
+<a class="anchor" id="a40b623139cfbf6fb0ede7e1c122d369d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -146,7 +146,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramtype">IN unsigned long&#160;</td>
           <td class="paramname"><em>ndata</em>, </td>
         </tr>
         <tr>
@@ -158,19 +158,19 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned long *&#160;</td>
+          <td class="paramtype">IN OUT unsigned long *&#160;</td>
           <td class="paramname"><em>nzdata</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespace_system_1_1_i_o_1_1_compression.html#a893de1c505bb182c7f2569c6efafe394">CompressionLevel</a>&#160;</td>
+          <td class="paramtype">IN <a class="el" href="namespace_system_1_1_i_o_1_1_compression.html#a893de1c505bb182c7f2569c6efafe394">CompressionLevel</a>&#160;</td>
           <td class="paramname"><em>level</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">IN OPTIONAL int&#160;</td>
           <td class="paramname"><em>windowBits</em> = <code>-RLIB_MAX_WBITS</code>&#160;</td>
         </tr>
         <tr>
@@ -186,12 +186,12 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>compress data with Z_BEST_COMPRESSION </p>
+<p>compress data </p>
 <dl class="section return"><dt>Returns</dt><dd>0 if successful, -1 if failed, or a positive number if the output buffer is full</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a0d07f8a2a62b8247e3cb985845b17baf"></a>
+<a class="anchor" id="a87c0b0dca84602eb446ab16b8dea4d19"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -207,7 +207,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramtype">IN unsigned long&#160;</td>
           <td class="paramname"><em>nzdata</em>, </td>
         </tr>
         <tr>
@@ -219,13 +219,13 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned long *&#160;</td>
+          <td class="paramtype">IN OUT unsigned long *&#160;</td>
           <td class="paramname"><em>ndata</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">IN OUT int&#160;</td>
           <td class="paramname"><em>windowBits</em> = <code>-RLIB_MAX_WBITS</code>&#160;</td>
         </tr>
         <tr>
@@ -242,7 +242,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>decompress data </p>
-<dl class="section return"><dt>Returns</dt><dd>0 if successful, -1 if failed, or a positive number if the output buffer is full</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>0 if successful, -1 if failed, or a positive number if no more input data or the output buffer is full</dd></dl>
 
 </div>
 </div>
@@ -256,7 +256,7 @@ Static Public Member Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_i_o.html">IO</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_i_o_1_1_compression.html">Compression</a></li><li class="navelem"><a class="el" href="class_system_1_1_i_o_1_1_compression_1_1_g_zip.html">GZip</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:37 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:41 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

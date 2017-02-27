@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -129,12 +129,12 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6d099054e49271b9aa00bcb3146776d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d099054e49271b9aa00bcb3146776d2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Array</b> (intptr_t length=RLIB_ARRAY_LENGTH)</td></tr>
-<tr class="separator:a6d099054e49271b9aa00bcb3146776d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20a059a153662aa0c2352ba77b4092b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a20a059a153662aa0c2352ba77b4092b6">Array</a> (const std::initializer_list&lt; const R &gt; &amp;data)</td></tr>
-<tr class="memdesc:a20a059a153662aa0c2352ba77b4092b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; using initializer-list  <a href="#a20a059a153662aa0c2352ba77b4092b6">More...</a><br /></td></tr>
-<tr class="separator:a20a059a153662aa0c2352ba77b4092b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a367c3a0bf0ed983ddeca1d196e2feab0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a367c3a0bf0ed983ddeca1d196e2feab0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Array</b> (intptr_t length=RLIB_DEFAULT_CAPACITY)</td></tr>
+<tr class="separator:a367c3a0bf0ed983ddeca1d196e2feab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6d0fd1b64c70a79985cb85391aa0e72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#ab6d0fd1b64c70a79985cb85391aa0e72">Array</a> (const Standard::initializer_list&lt; const R &gt; &amp;data)</td></tr>
+<tr class="memdesc:ab6d0fd1b64c70a79985cb85391aa0e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; using initializer-list  <a href="#ab6d0fd1b64c70a79985cb85391aa0e72">More...</a><br /></td></tr>
+<tr class="separator:ab6d0fd1b64c70a79985cb85391aa0e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0d645ab0f495e89683de697d4928297"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0d645ab0f495e89683de697d4928297"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Array</b> (const R items[], intptr_t length)</td></tr>
 <tr class="separator:aa0d645ab0f495e89683de697d4928297"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -150,16 +150,24 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8aac9628e15b577388039a647ff16d37"><td class="memItemLeft" align="right" valign="top">RLIB_FORCE_INLINE R *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a8aac9628e15b577388039a647ff16d37">GetType</a> () const </td></tr>
 <tr class="memdesc:a8aac9628e15b577388039a647ff16d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Type of the current instance  <a href="#a8aac9628e15b577388039a647ff16d37">More...</a><br /></td></tr>
 <tr class="separator:a8aac9628e15b577388039a647ff16d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaad9442d2e0f1903e4fe39e42336546d"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#aaad9442d2e0f1903e4fe39e42336546d">Add</a> (const R &amp;item, intptr_t count=1)</td></tr>
-<tr class="memdesc:aaad9442d2e0f1903e4fe39e42336546d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds item specified times and returns the index of the first added.  <a href="#aaad9442d2e0f1903e4fe39e42336546d">More...</a><br /></td></tr>
-<tr class="separator:aaad9442d2e0f1903e4fe39e42336546d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c3f48a1fdb6b7aae42661505b4a3101"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:a3c3f48a1fdb6b7aae42661505b4a3101"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a3c3f48a1fdb6b7aae42661505b4a3101">AddRange</a> (const R &amp;item, const Args &amp;...args)</td></tr>
-<tr class="memdesc:a3c3f48a1fdb6b7aae42661505b4a3101"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the specified items and returns the index of the first added.  <a href="#a3c3f48a1fdb6b7aae42661505b4a3101">More...</a><br /></td></tr>
-<tr class="separator:a3c3f48a1fdb6b7aae42661505b4a3101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01a8da56f0515a4684b6be4e6f77c87b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a01a8da56f0515a4684b6be4e6f77c87b">InitStorage</a> (intptr_t n)</td></tr>
+<tr class="memdesc:a01a8da56f0515a4684b6be4e6f77c87b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requests that the <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; be at least enough to contain n elements  <a href="#a01a8da56f0515a4684b6be4e6f77c87b">More...</a><br /></td></tr>
+<tr class="separator:a01a8da56f0515a4684b6be4e6f77c87b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a496117a9df0c20e45893f5083efd9a5a"><td class="memTemplParams" colspan="2">template&lt;class... P&gt; </td></tr>
+<tr class="memitem:a496117a9df0c20e45893f5083efd9a5a"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a496117a9df0c20e45893f5083efd9a5a">Add</a> (P &amp;&amp;...args)</td></tr>
+<tr class="memdesc:a496117a9df0c20e45893f5083efd9a5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds specified item and returns the index of the added.  <a href="#a496117a9df0c20e45893f5083efd9a5a">More...</a><br /></td></tr>
+<tr class="separator:a496117a9df0c20e45893f5083efd9a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c9d1ffbcf0e70d7d7c01ad602aa0155"><td class="memTemplParams" colspan="2">template&lt;typename... P&gt; </td></tr>
+<tr class="memitem:a2c9d1ffbcf0e70d7d7c01ad602aa0155"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a2c9d1ffbcf0e70d7d7c01ad602aa0155">AddRange</a> (const R &amp;item, const P &amp;...args)</td></tr>
+<tr class="memdesc:a2c9d1ffbcf0e70d7d7c01ad602aa0155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the specified items and returns the index of the first added.  <a href="#a2c9d1ffbcf0e70d7d7c01ad602aa0155">More...</a><br /></td></tr>
+<tr class="separator:a2c9d1ffbcf0e70d7d7c01ad602aa0155"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2af274a5371e64db36cd9f669e7052b1"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a2af274a5371e64db36cd9f669e7052b1">AddRange</a> (const R items[], intptr_t count)</td></tr>
 <tr class="memdesc:a2af274a5371e64db36cd9f669e7052b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the specified items and returns the index of the first added.  <a href="#a2af274a5371e64db36cd9f669e7052b1">More...</a><br /></td></tr>
 <tr class="separator:a2af274a5371e64db36cd9f669e7052b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e22ba6c6626c09dda985e0dcc7eaba"><td class="memTemplParams" colspan="2">template&lt;intptr_t N&gt; </td></tr>
+<tr class="memitem:a61e22ba6c6626c09dda985e0dcc7eaba"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a61e22ba6c6626c09dda985e0dcc7eaba">AddRange</a> (const R(&amp;items)[N])</td></tr>
+<tr class="memdesc:a61e22ba6c6626c09dda985e0dcc7eaba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the specified items and returns the index of the first added.  <a href="#a61e22ba6c6626c09dda985e0dcc7eaba">More...</a><br /></td></tr>
+<tr class="separator:a61e22ba6c6626c09dda985e0dcc7eaba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22d3d79b52d5ee2516cec9346b87b8b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a22d3d79b52d5ee2516cec9346b87b8b7">Clear</a> ()</td></tr>
 <tr class="memdesc:a22d3d79b52d5ee2516cec9346b87b8b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all elements from the <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt;  <a href="#a22d3d79b52d5ee2516cec9346b87b8b7">More...</a><br /></td></tr>
 <tr class="separator:a22d3d79b52d5ee2516cec9346b87b8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,73 +180,69 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a263b15282ff75ef2124886c436a3b126"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a263b15282ff75ef2124886c436a3b126">Contains</a> (const R &amp;item) const </td></tr>
 <tr class="memdesc:a263b15282ff75ef2124886c436a3b126"><td class="mdescLeft">&#160;</td><td class="mdescRight">确定某元素是否在当前 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 中  <a href="#a263b15282ff75ef2124886c436a3b126">More...</a><br /></td></tr>
 <tr class="separator:a263b15282ff75ef2124886c436a3b126"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94e1871846dff8e2f464db8494d8fca4"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a94e1871846dff8e2f464db8494d8fca4">IndexOf</a> (const R &amp;item, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate comparer=<a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Compare, intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#ac73e8d8f6c961c5416a9b39d10a4ce99">begin</a>=0) const </td></tr>
-<tr class="memdesc:a94e1871846dff8e2f464db8494d8fca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索指定的对象，并返回整个 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 中第一个匹配项的索引  <a href="#a94e1871846dff8e2f464db8494d8fca4">More...</a><br /></td></tr>
-<tr class="separator:a94e1871846dff8e2f464db8494d8fca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee13e6b2d91a01595b490e331db207f0"><td class="memTemplParams" colspan="2">template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </td></tr>
+<tr class="memitem:a89a7c2570f125390a68c58d6028bc98a"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a89a7c2570f125390a68c58d6028bc98a">IndexOf</a> (const R &amp;item, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::EqualsDelegate equals, intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#ac73e8d8f6c961c5416a9b39d10a4ce99">begin</a>=0) const </td></tr>
+<tr class="memdesc:a89a7c2570f125390a68c58d6028bc98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索指定的对象，并返回整个 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 中第一个匹配项的索引  <a href="#a89a7c2570f125390a68c58d6028bc98a">More...</a><br /></td></tr>
+<tr class="separator:a89a7c2570f125390a68c58d6028bc98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee13e6b2d91a01595b490e331db207f0"><td class="memTemplParams" colspan="2">template&lt;typename IComparer&lt; R &gt;::EqualsDelegate equals = IComparer&lt;R&gt;::Equals&gt; </td></tr>
 <tr class="memitem:aee13e6b2d91a01595b490e331db207f0"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#aee13e6b2d91a01595b490e331db207f0">IndexOf</a> (const R &amp;item, intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#ac73e8d8f6c961c5416a9b39d10a4ce99">begin</a>=0) const </td></tr>
 <tr class="memdesc:aee13e6b2d91a01595b490e331db207f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索指定的对象，并返回整个 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 中第一个匹配项的索引  <a href="#aee13e6b2d91a01595b490e331db207f0">More...</a><br /></td></tr>
 <tr class="separator:aee13e6b2d91a01595b490e331db207f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abddf12cde98108aefc25048f6df1214a"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#abddf12cde98108aefc25048f6df1214a">LastIndexOf</a> (const R &amp;item, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate comparer=<a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Compare) const </td></tr>
-<tr class="memdesc:abddf12cde98108aefc25048f6df1214a"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索指定的对象，并返回整个 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 中最后一个匹配项的索引  <a href="#abddf12cde98108aefc25048f6df1214a">More...</a><br /></td></tr>
-<tr class="separator:abddf12cde98108aefc25048f6df1214a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fe7adfe09bc1d397aaa0999b977254f"><td class="memTemplParams" colspan="2">template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </td></tr>
-<tr class="memitem:a8fe7adfe09bc1d397aaa0999b977254f"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a8fe7adfe09bc1d397aaa0999b977254f">LastIndexOf</a> (const R &amp;item) const </td></tr>
-<tr class="memdesc:a8fe7adfe09bc1d397aaa0999b977254f"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索指定的对象，并返回整个 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 中最后一个匹配项的索引  <a href="#a8fe7adfe09bc1d397aaa0999b977254f">More...</a><br /></td></tr>
-<tr class="separator:a8fe7adfe09bc1d397aaa0999b977254f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5df05f2f1ccc5ca8c7e9acdc8baa2130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a5df05f2f1ccc5ca8c7e9acdc8baa2130">Sort</a> (typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate comparer=<a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Compare, intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#ac73e8d8f6c961c5416a9b39d10a4ce99">begin</a>=0, intptr_t count=-1)</td></tr>
-<tr class="memdesc:a5df05f2f1ccc5ca8c7e9acdc8baa2130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the elements in the entire <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; using the IComparable generic interface implementation. This method uses the QuickSort algorithm, which on average, is an O(n log n) operation; in the worst case it is an O(n ^ 2) operation  <a href="#a5df05f2f1ccc5ca8c7e9acdc8baa2130">More...</a><br /></td></tr>
-<tr class="separator:a5df05f2f1ccc5ca8c7e9acdc8baa2130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0553c84484b64b18ed7429c8d642b154"><td class="memTemplParams" colspan="2">template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </td></tr>
-<tr class="memitem:a0553c84484b64b18ed7429c8d642b154"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a0553c84484b64b18ed7429c8d642b154">Sort</a> (intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#ac73e8d8f6c961c5416a9b39d10a4ce99">begin</a>=0, intptr_t count=-1)</td></tr>
-<tr class="memdesc:a0553c84484b64b18ed7429c8d642b154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the elements in the entire <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; using the <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html" title="Defines a method that a type implements to compare two objects ">IComparer</a> generic interface implementation. This method uses the QuickSort algorithm, which on average, is an O(n log n) operation; in the worst case it is an O(n ^ 2) operation  <a href="#a0553c84484b64b18ed7429c8d642b154">More...</a><br /></td></tr>
-<tr class="separator:a0553c84484b64b18ed7429c8d642b154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a016351c7994dff953d3455e4bf4ccd7e"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a016351c7994dff953d3455e4bf4ccd7e">BinarySearch</a> (const R &amp;item, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate comparer=<a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Compare, intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#ac73e8d8f6c961c5416a9b39d10a4ce99">begin</a>=0) const </td></tr>
-<tr class="memdesc:a016351c7994dff953d3455e4bf4ccd7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches an entire one-dimensional sorted array for a value using the specified <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html" title="Defines a method that a type implements to compare two objects ">IComparer</a> interface.  <a href="#a016351c7994dff953d3455e4bf4ccd7e">More...</a><br /></td></tr>
-<tr class="separator:a016351c7994dff953d3455e4bf4ccd7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1a5f06bb503fbf1b9c8eac4fa07740c"><td class="memTemplParams" colspan="2">template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </td></tr>
-<tr class="memitem:af1a5f06bb503fbf1b9c8eac4fa07740c"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#af1a5f06bb503fbf1b9c8eac4fa07740c">BinarySearch</a> (const R &amp;item, intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#ac73e8d8f6c961c5416a9b39d10a4ce99">begin</a>=0) const </td></tr>
-<tr class="memdesc:af1a5f06bb503fbf1b9c8eac4fa07740c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches an entire one-dimensional sorted array for a value using the specified <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html" title="Defines a method that a type implements to compare two objects ">IComparer</a> interface.  <a href="#af1a5f06bb503fbf1b9c8eac4fa07740c">More...</a><br /></td></tr>
-<tr class="separator:af1a5f06bb503fbf1b9c8eac4fa07740c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a39898aa6879a0cf9eb5bc8e1bfa2af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a6a39898aa6879a0cf9eb5bc8e1bfa2af">Unique</a> (typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate comparer=<a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Compare)</td></tr>
-<tr class="memdesc:a6a39898aa6879a0cf9eb5bc8e1bfa2af"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 中所有重复的相邻元素  <a href="#a6a39898aa6879a0cf9eb5bc8e1bfa2af">More...</a><br /></td></tr>
-<tr class="separator:a6a39898aa6879a0cf9eb5bc8e1bfa2af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86bfd2fe744062caed8d6146be47a934"><td class="memTemplParams" colspan="2">template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </td></tr>
-<tr class="memitem:a86bfd2fe744062caed8d6146be47a934"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a86bfd2fe744062caed8d6146be47a934">Unique</a> ()</td></tr>
-<tr class="memdesc:a86bfd2fe744062caed8d6146be47a934"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 中所有重复的相邻元素  <a href="#a86bfd2fe744062caed8d6146be47a934">More...</a><br /></td></tr>
-<tr class="separator:a86bfd2fe744062caed8d6146be47a934"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a2938e758380acb46ea14f0b5494331"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a8a2938e758380acb46ea14f0b5494331">Remove</a> (const R &amp;item, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate comparer=<a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Compare)</td></tr>
-<tr class="memdesc:a8a2938e758380acb46ea14f0b5494331"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除特定元素的第一个匹配项  <a href="#a8a2938e758380acb46ea14f0b5494331">More...</a><br /></td></tr>
-<tr class="separator:a8a2938e758380acb46ea14f0b5494331"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f40abd06398c1985fe29f37b030e895"><td class="memTemplParams" colspan="2">template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </td></tr>
+<tr class="memitem:a25dd4d4b62182802012656a9cccc52c0"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a25dd4d4b62182802012656a9cccc52c0">LastIndexOf</a> (const R &amp;item, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::EqualsDelegate equals, intptr_t rbegin=0) const </td></tr>
+<tr class="memdesc:a25dd4d4b62182802012656a9cccc52c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索指定的对象，并返回整个 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 中最后一个匹配项的索引  <a href="#a25dd4d4b62182802012656a9cccc52c0">More...</a><br /></td></tr>
+<tr class="separator:a25dd4d4b62182802012656a9cccc52c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a926e20440e80409dfc79bac1a9d285ef"><td class="memTemplParams" colspan="2">template&lt;typename IComparer&lt; R &gt;::EqualsDelegate equals = IComparer&lt;R&gt;::Equals&gt; </td></tr>
+<tr class="memitem:a926e20440e80409dfc79bac1a9d285ef"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a926e20440e80409dfc79bac1a9d285ef">LastIndexOf</a> (const R &amp;item, intptr_t rbegin=0) const </td></tr>
+<tr class="memdesc:a926e20440e80409dfc79bac1a9d285ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">搜索指定的对象，并返回整个 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 中最后一个匹配项的索引  <a href="#a926e20440e80409dfc79bac1a9d285ef">More...</a><br /></td></tr>
+<tr class="separator:a926e20440e80409dfc79bac1a9d285ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e4dc3c6d793a72baea70c7d9af1e921"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a0e4dc3c6d793a72baea70c7d9af1e921">Remove</a> (const R &amp;item, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::EqualsDelegate equals)</td></tr>
+<tr class="memdesc:a0e4dc3c6d793a72baea70c7d9af1e921"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除特定元素的第一个匹配项  <a href="#a0e4dc3c6d793a72baea70c7d9af1e921">More...</a><br /></td></tr>
+<tr class="separator:a0e4dc3c6d793a72baea70c7d9af1e921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f40abd06398c1985fe29f37b030e895"><td class="memTemplParams" colspan="2">template&lt;typename IComparer&lt; R &gt;::EqualsDelegate equals = IComparer&lt;R&gt;::Equals&gt; </td></tr>
 <tr class="memitem:a1f40abd06398c1985fe29f37b030e895"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a1f40abd06398c1985fe29f37b030e895">Remove</a> (const R &amp;item)</td></tr>
 <tr class="memdesc:a1f40abd06398c1985fe29f37b030e895"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除特定元素的第一个匹配项  <a href="#a1f40abd06398c1985fe29f37b030e895">More...</a><br /></td></tr>
 <tr class="separator:a1f40abd06398c1985fe29f37b030e895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a33bd351eeed926869ae63a8e9e3580"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a0a33bd351eeed926869ae63a8e9e3580">RemoveAll</a> (const R &amp;item)</td></tr>
 <tr class="memdesc:a0a33bd351eeed926869ae63a8e9e3580"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除特定元素的所有匹配项  <a href="#a0a33bd351eeed926869ae63a8e9e3580">More...</a><br /></td></tr>
 <tr class="separator:a0a33bd351eeed926869ae63a8e9e3580"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a904af96a9208db0a1090091784ffc6c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a904af96a9208db0a1090091784ffc6c6">Insert</a> (intptr_t index, const R &amp;item)</td></tr>
-<tr class="memdesc:a904af96a9208db0a1090091784ffc6c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">插入新元素到指定位置  <a href="#a904af96a9208db0a1090091784ffc6c6">More...</a><br /></td></tr>
-<tr class="separator:a904af96a9208db0a1090091784ffc6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e28cf793791d17d6c269d3f3f10390a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a5e28cf793791d17d6c269d3f3f10390a">RemoveAt</a> (intptr_t index)</td></tr>
 <tr class="memdesc:a5e28cf793791d17d6c269d3f3f10390a"><td class="mdescLeft">&#160;</td><td class="mdescRight">移除指定索引处的元素  <a href="#a5e28cf793791d17d6c269d3f3f10390a">More...</a><br /></td></tr>
 <tr class="separator:a5e28cf793791d17d6c269d3f3f10390a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b84cb4cc5173a0d8271dfc36ea0f2c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a8b84cb4cc5173a0d8271dfc36ea0f2c6">Reverse</a> (intptr_t order=0, intptr_t count=0)</td></tr>
-<tr class="memdesc:a8b84cb4cc5173a0d8271dfc36ea0f2c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定范围中元素的顺序反转  <a href="#a8b84cb4cc5173a0d8271dfc36ea0f2c6">More...</a><br /></td></tr>
-<tr class="separator:a8b84cb4cc5173a0d8271dfc36ea0f2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91e3dfd1edc608202d76b54b9267c9b4"><td class="memItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a91e3dfd1edc608202d76b54b9267c9b4">BinarySearch</a> (const R &amp;item, typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate comparer, intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#ac73e8d8f6c961c5416a9b39d10a4ce99">begin</a>=0) const </td></tr>
+<tr class="memdesc:a91e3dfd1edc608202d76b54b9267c9b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches an entire one-dimensional sorted array for a value using the specified <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html" title="Defines a method that a type implements to compare two objects ">IComparer</a> interface.  <a href="#a91e3dfd1edc608202d76b54b9267c9b4">More...</a><br /></td></tr>
+<tr class="separator:a91e3dfd1edc608202d76b54b9267c9b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a5f06bb503fbf1b9c8eac4fa07740c"><td class="memTemplParams" colspan="2">template&lt;typename IComparer&lt; R &gt;::Delegate comparer = IComparer&lt;R&gt;::Compare&gt; </td></tr>
+<tr class="memitem:af1a5f06bb503fbf1b9c8eac4fa07740c"><td class="memTemplItemLeft" align="right" valign="top">intptr_t&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#af1a5f06bb503fbf1b9c8eac4fa07740c">BinarySearch</a> (const R &amp;item, intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#ac73e8d8f6c961c5416a9b39d10a4ce99">begin</a>=0) const </td></tr>
+<tr class="memdesc:af1a5f06bb503fbf1b9c8eac4fa07740c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches an entire one-dimensional sorted array for a value using the specified <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html" title="Defines a method that a type implements to compare two objects ">IComparer</a> interface.  <a href="#af1a5f06bb503fbf1b9c8eac4fa07740c">More...</a><br /></td></tr>
+<tr class="separator:af1a5f06bb503fbf1b9c8eac4fa07740c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7b5462ffc79e09247d0ca6108e14252"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#af7b5462ffc79e09247d0ca6108e14252">Sort</a> (typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate comparer, intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#ac73e8d8f6c961c5416a9b39d10a4ce99">begin</a>=0, intptr_t count=-1)</td></tr>
+<tr class="memdesc:af7b5462ffc79e09247d0ca6108e14252"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the elements in the entire <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; using the IComparable generic interface implementation. This method uses the QuickSort algorithm, which on average, is an O(n log n) operation; in the worst case it is an O(n ^ 2) operation  <a href="#af7b5462ffc79e09247d0ca6108e14252">More...</a><br /></td></tr>
+<tr class="separator:af7b5462ffc79e09247d0ca6108e14252"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669d342e87d9b0a18bce2b1d742306d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a669d342e87d9b0a18bce2b1d742306d9">Sort</a> (intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#ac73e8d8f6c961c5416a9b39d10a4ce99">begin</a>=0, intptr_t count=-1)</td></tr>
+<tr class="memdesc:a669d342e87d9b0a18bce2b1d742306d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorts the elements in the entire <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; O(N·log(N))  <a href="#a669d342e87d9b0a18bce2b1d742306d9">More...</a><br /></td></tr>
+<tr class="separator:a669d342e87d9b0a18bce2b1d742306d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dbada55e2abe16d951f7914cbf011de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a2dbada55e2abe16d951f7914cbf011de">Unique</a> (typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::EqualsDelegate equals)</td></tr>
+<tr class="memdesc:a2dbada55e2abe16d951f7914cbf011de"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 中所有重复的相邻元素  <a href="#a2dbada55e2abe16d951f7914cbf011de">More...</a><br /></td></tr>
+<tr class="separator:a2dbada55e2abe16d951f7914cbf011de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86bfd2fe744062caed8d6146be47a934"><td class="memTemplParams" colspan="2">template&lt;typename IComparer&lt; R &gt;::EqualsDelegate equals = IComparer&lt;R&gt;::Equals&gt; </td></tr>
+<tr class="memitem:a86bfd2fe744062caed8d6146be47a934"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a86bfd2fe744062caed8d6146be47a934">Unique</a> ()</td></tr>
+<tr class="memdesc:a86bfd2fe744062caed8d6146be47a934"><td class="mdescLeft">&#160;</td><td class="mdescRight">删除 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 中所有重复的相邻元素  <a href="#a86bfd2fe744062caed8d6146be47a934">More...</a><br /></td></tr>
+<tr class="separator:a86bfd2fe744062caed8d6146be47a934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a904af96a9208db0a1090091784ffc6c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a904af96a9208db0a1090091784ffc6c6">Insert</a> (intptr_t index, const R &amp;item)</td></tr>
+<tr class="memdesc:a904af96a9208db0a1090091784ffc6c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">插入新元素到指定位置  <a href="#a904af96a9208db0a1090091784ffc6c6">More...</a><br /></td></tr>
+<tr class="separator:a904af96a9208db0a1090091784ffc6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070dfb62067d8176c73d29b44f3cb6a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a070dfb62067d8176c73d29b44f3cb6a3">Reverse</a> (intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#ac73e8d8f6c961c5416a9b39d10a4ce99">begin</a>=0)</td></tr>
+<tr class="memdesc:a070dfb62067d8176c73d29b44f3cb6a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定范围中元素的顺序反转  <a href="#a070dfb62067d8176c73d29b44f3cb6a3">More...</a><br /></td></tr>
+<tr class="separator:a070dfb62067d8176c73d29b44f3cb6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1757571fd6634aa91da3c898c55228aa"><td class="memTemplParams" colspan="2">template&lt;class collection_t &gt; </td></tr>
 <tr class="memitem:a1757571fd6634aa91da3c898c55228aa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a1757571fd6634aa91da3c898c55228aa">CopyTo</a> (collection_t &amp;obj) const </td></tr>
 <tr class="memdesc:a1757571fd6634aa91da3c898c55228aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 完全拷贝至指定集合处  <a href="#a1757571fd6634aa91da3c898c55228aa">More...</a><br /></td></tr>
 <tr class="separator:a1757571fd6634aa91da3c898c55228aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a789570db9d39e9388f4b031cbdfbc158"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a789570db9d39e9388f4b031cbdfbc158">MoveTo</a> (<a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html">Array</a>&lt; R &gt; &amp;obj)</td></tr>
-<tr class="memdesc:a789570db9d39e9388f4b031cbdfbc158"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 完全转移至另一 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 处  <a href="#a789570db9d39e9388f4b031cbdfbc158">More...</a><br /></td></tr>
-<tr class="separator:a789570db9d39e9388f4b031cbdfbc158"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c814077cca0ad42c0f8ccf22dee0243"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a8c814077cca0ad42c0f8ccf22dee0243">WriteToEnd</a> (const R *ptr, intptr_t count)</td></tr>
-<tr class="memdesc:a8c814077cca0ad42c0f8ccf22dee0243"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定数组浅拷贝至当前 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt;  <a href="#a8c814077cca0ad42c0f8ccf22dee0243">More...</a><br /></td></tr>
-<tr class="separator:a8c814077cca0ad42c0f8ccf22dee0243"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a5fa4b4e3b0fc8c2990c61c80eede2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a9a5fa4b4e3b0fc8c2990c61c80eede2e">InitStorage</a> (intptr_t max_length)</td></tr>
-<tr class="memdesc:a9a5fa4b4e3b0fc8c2990c61c80eede2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">要求 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 具有容纳至少指定长度大小的能力  <a href="#a9a5fa4b4e3b0fc8c2990c61c80eede2e">More...</a><br /></td></tr>
-<tr class="separator:a9a5fa4b4e3b0fc8c2990c61c80eede2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44a4246ceabd8b4a7a989cfa5d2329f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#a44a4246ceabd8b4a7a989cfa5d2329f6">MoveTo</a> (<a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html">Array</a> &amp;obj)</td></tr>
+<tr class="memdesc:a44a4246ceabd8b4a7a989cfa5d2329f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">将 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 完全转移至另一 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 处  <a href="#a44a4246ceabd8b4a7a989cfa5d2329f6">More...</a><br /></td></tr>
+<tr class="separator:a44a4246ceabd8b4a7a989cfa5d2329f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae252e8a35e0c2318318fe276c146255a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#ae252e8a35e0c2318318fe276c146255a">WriteToEnd</a> (const R *data, intptr_t count)</td></tr>
+<tr class="memdesc:ae252e8a35e0c2318318fe276c146255a"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定数组浅拷贝至当前 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt;  <a href="#ae252e8a35e0c2318318fe276c146255a">More...</a><br /></td></tr>
+<tr class="separator:ae252e8a35e0c2318318fe276c146255a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adea673f4be4ad134cd83efb7c4de7696"><td class="memItemLeft" align="right" valign="top">R *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html#adea673f4be4ad134cd83efb7c4de7696">ToByteArray</a> ()</td></tr>
 <tr class="memdesc:adea673f4be4ad134cd83efb7c4de7696"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 数据存储区指针  <a href="#adea673f4be4ad134cd83efb7c4de7696">More...</a><br /></td></tr>
 <tr class="separator:adea673f4be4ad134cd83efb7c4de7696"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -305,7 +309,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a20a059a153662aa0c2352ba77b4092b6"></a>
+<a class="anchor" id="ab6d0fd1b64c70a79985cb85391aa0e72"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -317,7 +321,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
         <tr>
           <td class="memname"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html">System::Collections::Generic::Array</a>&lt; R, disposer, allocator &gt;::<a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html">Array</a> </td>
           <td>(</td>
-          <td class="paramtype">const std::initializer_list&lt; const R &gt; &amp;&#160;</td>
+          <td class="paramtype">const Standard::initializer_list&lt; const R &gt; &amp;&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
           <td></td>
         </tr>
@@ -334,11 +338,13 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aaad9442d2e0f1903e4fe39e42336546d"></a>
+<a class="anchor" id="a496117a9df0c20e45893f5083efd9a5a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
+<div class="memtemplate">
+template&lt;class... P&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -346,19 +352,9 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
         <tr>
           <td class="memname">intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html">System::Collections::Generic::Array</a>&lt; R, disposer, allocator &gt;::Add </td>
           <td>(</td>
-          <td class="paramtype">const R &amp;&#160;</td>
-          <td class="paramname"><em>item</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">P &amp;&amp;...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">intptr_t&#160;</td>
-          <td class="paramname"><em>count</em> = <code>1</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -368,17 +364,17 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 </table>
 </div><div class="memdoc">
 
-<p>Adds item specified times and returns the index of the first added. </p>
+<p>Adds specified item and returns the index of the added. </p>
 
 </div>
 </div>
-<a class="anchor" id="a3c3f48a1fdb6b7aae42661505b4a3101"></a>
+<a class="anchor" id="a2c9d1ffbcf0e70d7d7c01ad602aa0155"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
 <div class="memtemplate">
-template&lt;typename... Args&gt; </div>
+template&lt;typename... P&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -392,7 +388,7 @@ template&lt;typename... Args&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Args &amp;...&#160;</td>
+          <td class="paramtype">const P &amp;...&#160;</td>
           <td class="paramname"><em>args</em>&#160;</td>
         </tr>
         <tr>
@@ -450,6 +446,36 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 
 </div>
 </div>
+<a class="anchor" id="a61e22ba6c6626c09dda985e0dcc7eaba"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
+<div class="memtemplate">
+template&lt;intptr_t N&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html">System::Collections::Generic::Array</a>&lt; R, disposer, allocator &gt;::AddRange </td>
+          <td>(</td>
+          <td class="paramtype">const R(&amp;)&#160;</td>
+          <td class="paramname"><em>items</em>[N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds the specified items and returns the index of the first added. </p>
+
+</div>
+</div>
 <a class="anchor" id="ac73e8d8f6c961c5416a9b39d10a4ce99"></a>
 <div class="memitem">
 <div class="memproto">
@@ -477,7 +503,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 
 </div>
 </div>
-<a class="anchor" id="a016351c7994dff953d3455e4bf4ccd7e"></a>
+<a class="anchor" id="a91e3dfd1edc608202d76b54b9267c9b4"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -496,7 +522,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate&#160;</td>
-          <td class="paramname"><em>comparer</em> = <code><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt;R&gt;::Compare</code>, </td>
+          <td class="paramname"><em>comparer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -528,7 +554,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 <div class="memtemplate">
 template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
 <div class="memtemplate">
-template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </div>
+template&lt;typename IComparer&lt; R &gt;::Delegate comparer = IComparer&lt;R&gt;::Compare&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -813,7 +839,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 
 </div>
 </div>
-<a class="anchor" id="a94e1871846dff8e2f464db8494d8fca4"></a>
+<a class="anchor" id="a89a7c2570f125390a68c58d6028bc98a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -831,8 +857,8 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate&#160;</td>
-          <td class="paramname"><em>comparer</em> = <code><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt;R&gt;::Compare</code>, </td>
+          <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::EqualsDelegate&#160;</td>
+          <td class="paramname"><em>equals</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -864,7 +890,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 <div class="memtemplate">
 template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
 <div class="memtemplate">
-template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </div>
+template&lt;typename IComparer&lt; R &gt;::EqualsDelegate equals = IComparer&lt;R&gt;::Equals&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -899,7 +925,7 @@ template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9a5fa4b4e3b0fc8c2990c61c80eede2e"></a>
+<a class="anchor" id="a01a8da56f0515a4684b6be4e6f77c87b"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -912,7 +938,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
           <td class="memname">void <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html">System::Collections::Generic::Array</a>&lt; R, disposer, allocator &gt;::InitStorage </td>
           <td>(</td>
           <td class="paramtype">intptr_t&#160;</td>
-          <td class="paramname"><em>max_length</em></td><td>)</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -923,7 +949,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 </table>
 </div><div class="memdoc">
 
-<p>要求 <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; 具有容纳至少指定长度大小的能力 </p>
+<p>Requests that the <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; be at least enough to contain n elements </p>
 
 </div>
 </div>
@@ -965,7 +991,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 
 </div>
 </div>
-<a class="anchor" id="abddf12cde98108aefc25048f6df1214a"></a>
+<a class="anchor" id="a25dd4d4b62182802012656a9cccc52c0"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -983,8 +1009,14 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate&#160;</td>
-          <td class="paramname"><em>comparer</em> = <code><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt;R&gt;::Compare</code>&#160;</td>
+          <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::EqualsDelegate&#160;</td>
+          <td class="paramname"><em>equals</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">intptr_t&#160;</td>
+          <td class="paramname"><em>rbegin</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1004,13 +1036,13 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 
 </div>
 </div>
-<a class="anchor" id="a8fe7adfe09bc1d397aaa0999b977254f"></a>
+<a class="anchor" id="a926e20440e80409dfc79bac1a9d285ef"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
 <div class="memtemplate">
-template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </div>
+template&lt;typename IComparer&lt; R &gt;::EqualsDelegate equals = IComparer&lt;R&gt;::Equals&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1019,8 +1051,18 @@ template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </div>
           <td class="memname">intptr_t <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html">System::Collections::Generic::Array</a>&lt; R, disposer, allocator &gt;::LastIndexOf </td>
           <td>(</td>
           <td class="paramtype">const R &amp;&#160;</td>
-          <td class="paramname"><em>item</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">intptr_t&#160;</td>
+          <td class="paramname"><em>rbegin</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -1035,7 +1077,7 @@ template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a789570db9d39e9388f4b031cbdfbc158"></a>
+<a class="anchor" id="a44a4246ceabd8b4a7a989cfa5d2329f6"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1047,7 +1089,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
         <tr>
           <td class="memname">void <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html">System::Collections::Generic::Array</a>&lt; R, disposer, allocator &gt;::MoveTo </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html">Array</a>&lt; R &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html">Array</a>&lt; R, disposer, allocator &gt; &amp;&#160;</td>
           <td class="paramname"><em>obj</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1088,11 +1130,11 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 </div><div class="memdoc">
 
 <p>Gets the element at the specified location </p>
-<dl class="section warning"><dt>Warning</dt><dd>no overflow checking </dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>index is not validated against the number of elements in the array </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a8a2938e758380acb46ea14f0b5494331"></a>
+<a class="anchor" id="a0e4dc3c6d793a72baea70c7d9af1e921"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1110,8 +1152,8 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate&#160;</td>
-          <td class="paramname"><em>comparer</em> = <code><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt;R&gt;::Compare</code>&#160;</td>
+          <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::EqualsDelegate&#160;</td>
+          <td class="paramname"><em>equals</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1136,7 +1178,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 <div class="memtemplate">
 template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
 <div class="memtemplate">
-template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </div>
+template&lt;typename IComparer&lt; R &gt;::EqualsDelegate equals = IComparer&lt;R&gt;::Equals&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1216,7 +1258,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 
 </div>
 </div>
-<a class="anchor" id="a8b84cb4cc5173a0d8271dfc36ea0f2c6"></a>
+<a class="anchor" id="a070dfb62067d8176c73d29b44f3cb6a3"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1229,18 +1271,8 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
           <td class="memname">void <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html">System::Collections::Generic::Array</a>&lt; R, disposer, allocator &gt;::Reverse </td>
           <td>(</td>
           <td class="paramtype">intptr_t&#160;</td>
-          <td class="paramname"><em>order</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>begin</em> = <code>0</code></td><td>)</td>
           <td></td>
-          <td class="paramtype">intptr_t&#160;</td>
-          <td class="paramname"><em>count</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1254,14 +1286,13 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">order</td><td>从0开始的顺序位置</td></tr>
-    <tr><td class="paramname">count</td><td>交换次数, 默认0为全部</td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="a5df05f2f1ccc5ca8c7e9acdc8baa2130"></a>
+<a class="anchor" id="af7b5462ffc79e09247d0ca6108e14252"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1274,7 +1305,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
           <td class="memname">void <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html">System::Collections::Generic::Array</a>&lt; R, disposer, allocator &gt;::Sort </td>
           <td>(</td>
           <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate&#160;</td>
-          <td class="paramname"><em>comparer</em> = <code><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt;R&gt;::Compare</code>, </td>
+          <td class="paramname"><em>comparer</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1305,13 +1336,11 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 
 </div>
 </div>
-<a class="anchor" id="a0553c84484b64b18ed7429c8d642b154"></a>
+<a class="anchor" id="a669d342e87d9b0a18bce2b1d742306d9"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
-<div class="memtemplate">
-template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1341,7 +1370,7 @@ template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Sorts the elements in the entire <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; using the <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html" title="Defines a method that a type implements to compare two objects ">IComparer</a> generic interface implementation. This method uses the QuickSort algorithm, which on average, is an O(n log n) operation; in the worst case it is an O(n ^ 2) operation </p>
+<p>Sorts the elements in the entire <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html" title="Provides methods for creating, manipulating, searching, and sorting arrays, thereby serving as the ba...">Array</a>&lt;Of R&gt; O(N·log(N)) </p>
 
 </div>
 </div>
@@ -1373,7 +1402,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 
 </div>
 </div>
-<a class="anchor" id="a6a39898aa6879a0cf9eb5bc8e1bfa2af"></a>
+<a class="anchor" id="a2dbada55e2abe16d951f7914cbf011de"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1385,8 +1414,8 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
         <tr>
           <td class="memname">void <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html">System::Collections::Generic::Array</a>&lt; R, disposer, allocator &gt;::Unique </td>
           <td>(</td>
-          <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::Delegate&#160;</td>
-          <td class="paramname"><em>comparer</em> = <code><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt;R&gt;::Compare</code></td><td>)</td>
+          <td class="paramtype">typename <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_i_comparer.html">IComparer</a>&lt; R &gt;::EqualsDelegate&#160;</td>
+          <td class="paramname"><em>equals</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1407,7 +1436,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 <div class="memtemplate">
 template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator = IO::IAllocator&gt; </div>
 <div class="memtemplate">
-template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </div>
+template&lt;typename IComparer&lt; R &gt;::EqualsDelegate equals = IComparer&lt;R&gt;::Equals&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -1430,7 +1459,7 @@ template&lt;typename comparer  = IComparer&lt;R&gt;&gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a8c814077cca0ad42c0f8ccf22dee0243"></a>
+<a class="anchor" id="ae252e8a35e0c2318318fe276c146255a"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -1443,7 +1472,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
           <td class="memname">void <a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html">System::Collections::Generic::Array</a>&lt; R, disposer, allocator &gt;::WriteToEnd </td>
           <td>(</td>
           <td class="paramtype">const R *&#160;</td>
-          <td class="paramname"><em>ptr</em>, </td>
+          <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1510,7 +1539,7 @@ template&lt;class R, typename disposer = IDisposable&lt;R&gt;, class allocator =
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_collections.html">Collections</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_collections_1_1_generic.html">Generic</a></li><li class="navelem"><a class="el" href="class_system_1_1_collections_1_1_generic_1_1_array.html">Array</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:34 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:39 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

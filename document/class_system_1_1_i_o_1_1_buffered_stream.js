@@ -7,6 +7,8 @@ var class_system_1_1_i_o_1_1_buffered_stream =
     [ "ExChange", "class_system_1_1_i_o_1_1_buffered_stream.html#a66be8f1b2892e6da4b330065187fca2e", null ],
     [ "InheritFromBufferedStream", "class_system_1_1_i_o_1_1_buffered_stream.html#a030fb51d0871912b547f7ef12d1c4794", null ],
     [ "Move", "class_system_1_1_i_o_1_1_buffered_stream.html#af94ca5044c2425712bf2d3dbbf17f603", null ],
+    [ "RLIB_PROPERTY_GET_SET", "class_system_1_1_i_o_1_1_buffered_stream.html#ad4559dd421779fd1db4c48c16713d336", null ],
+    [ "RLIB_PROPERTY_GET_SET", "class_system_1_1_i_o_1_1_buffered_stream.html#ad9a527cefa77b8d9d18afa3cd6546251", null ],
     [ "SetLength", "class_system_1_1_i_o_1_1_buffered_stream.html#a774f6d183417ca1dd5c6359fb7bc5120", null ],
     [ "SetSize", "class_system_1_1_i_o_1_1_buffered_stream.html#ae45be92f6e4f04a3e0954f606a3b0365", null ],
     [ "Write", "class_system_1_1_i_o_1_1_buffered_stream.html#a4b9144c734e1fc70a6cf50d9e745af49", null ],

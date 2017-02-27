@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -111,73 +111,126 @@ $(document).ready(function(){initNavTree('struct_system_1_1_i_o_1_1_path.html','
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="struct_system_1_1_i_o_1_1_path-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">System::IO::Path Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>表示文件路径  
+<p>Represents filesystem path  
  <a href="struct_system_1_1_i_o_1_1_path.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae7641f6e020f8b4af6e14c0a6bf15c8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#ae7641f6e020f8b4af6e14c0a6bf15c8b">Path</a> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;)</td></tr>
-<tr class="memdesc:ae7641f6e020f8b4af6e14c0a6bf15c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">用指定 URI 初始化 <a class="el" href="struct_system_1_1_i_o_1_1_path.html" title="表示文件路径 ">Path</a> 类的新实例  <a href="#ae7641f6e020f8b4af6e14c0a6bf15c8b">More...</a><br /></td></tr>
+<tr class="memitem:ae7641f6e020f8b4af6e14c0a6bf15c8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7641f6e020f8b4af6e14c0a6bf15c8b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Path</b> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;)</td></tr>
 <tr class="separator:ae7641f6e020f8b4af6e14c0a6bf15c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7adb1aab15ebf2660c7590f291b7164d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#a7adb1aab15ebf2660c7590f291b7164d">operator const String &amp;</a> () const </td></tr>
+<tr class="memdesc:a7adb1aab15ebf2660c7590f291b7164d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the absolute NT path  <a href="#a7adb1aab15ebf2660c7590f291b7164d">More...</a><br /></td></tr>
+<tr class="separator:a7adb1aab15ebf2660c7590f291b7164d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26bb8ac6c0b8274e043dd839264826e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#a26bb8ac6c0b8274e043dd839264826e9">operator const PathInfo &amp;</a> () const </td></tr>
+<tr class="memdesc:a26bb8ac6c0b8274e043dd839264826e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the path info  <a href="#a26bb8ac6c0b8274e043dd839264826e9">More...</a><br /></td></tr>
+<tr class="separator:a26bb8ac6c0b8274e043dd839264826e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af53c3afc08cb6e842ef27464edca660e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#af53c3afc08cb6e842ef27464edca660e">GetDosPath</a> ()</td></tr>
-<tr class="memdesc:af53c3afc08cb6e842ef27464edca660e"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取该实例的绝对DOS路径  <a href="#af53c3afc08cb6e842ef27464edca660e">More...</a><br /></td></tr>
+<tr class="memdesc:af53c3afc08cb6e842ef27464edca660e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the absolute MS-DOS path  <a href="#af53c3afc08cb6e842ef27464edca660e">More...</a><br /></td></tr>
 <tr class="separator:af53c3afc08cb6e842ef27464edca660e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3aab0ad086e83434561e655c9eaa280"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#ac3aab0ad086e83434561e655c9eaa280">RLIB_PROPERTY_GET</a> (<a class="el" href="class_system_1_1_string.html">String</a> DosPath, <a class="el" href="struct_system_1_1_i_o_1_1_path.html#af53c3afc08cb6e842ef27464edca660e">GetDosPath</a>)</td></tr>
+<tr class="memdesc:ac3aab0ad086e83434561e655c9eaa280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the absolute MS-DOS path  <a href="#ac3aab0ad086e83434561e655c9eaa280">More...</a><br /></td></tr>
+<tr class="separator:ac3aab0ad086e83434561e655c9eaa280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ffda071411537220924f9692fd5cb6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#a9ffda071411537220924f9692fd5cb6c">GetDirectory</a> ()</td></tr>
-<tr class="memdesc:a9ffda071411537220924f9692fd5cb6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取该实例的目录, C:\  <a href="#a9ffda071411537220924f9692fd5cb6c">More...</a><br /></td></tr>
+<tr class="memdesc:a9ffda071411537220924f9692fd5cb6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the directory, eg. C:\  <a href="#a9ffda071411537220924f9692fd5cb6c">More...</a><br /></td></tr>
 <tr class="separator:a9ffda071411537220924f9692fd5cb6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d0ee571449af2dfb38f999272aa942"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#a16d0ee571449af2dfb38f999272aa942">RLIB_PROPERTY_GET</a> (<a class="el" href="class_system_1_1_string.html">String</a> <a class="el" href="class_system_1_1_i_o_1_1_directory.html">Directory</a>, <a class="el" href="struct_system_1_1_i_o_1_1_path.html#a9ffda071411537220924f9692fd5cb6c">GetDirectory</a>)</td></tr>
+<tr class="memdesc:a16d0ee571449af2dfb38f999272aa942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the directory, eg. C:\  <a href="#a16d0ee571449af2dfb38f999272aa942">More...</a><br /></td></tr>
+<tr class="separator:a16d0ee571449af2dfb38f999272aa942"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afac5cc901906846f34ad9f107157d1b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#afac5cc901906846f34ad9f107157d1b0">GetFileName</a> ()</td></tr>
-<tr class="memdesc:afac5cc901906846f34ad9f107157d1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取该实例的文件名, RLib.dll  <a href="#afac5cc901906846f34ad9f107157d1b0">More...</a><br /></td></tr>
+<tr class="memdesc:afac5cc901906846f34ad9f107157d1b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the file name, eg. RLib.dll  <a href="#afac5cc901906846f34ad9f107157d1b0">More...</a><br /></td></tr>
 <tr class="separator:afac5cc901906846f34ad9f107157d1b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb4dc6dc6d4024bb7eb535532d9706e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#addb4dc6dc6d4024bb7eb535532d9706e">RLIB_PROPERTY_GET</a> (<a class="el" href="class_system_1_1_string.html">String</a> FileName, <a class="el" href="struct_system_1_1_i_o_1_1_path.html#afac5cc901906846f34ad9f107157d1b0">GetFileName</a>)</td></tr>
+<tr class="memdesc:addb4dc6dc6d4024bb7eb535532d9706e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the file name, eg. RLib.dll  <a href="#addb4dc6dc6d4024bb7eb535532d9706e">More...</a><br /></td></tr>
+<tr class="separator:addb4dc6dc6d4024bb7eb535532d9706e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af328410124c3fa40f7cc51cea4d1d929"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#af328410124c3fa40f7cc51cea4d1d929">IsRoot</a> ()</td></tr>
+<tr class="memdesc:af328410124c3fa40f7cc51cea4d1d929"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if this path is a root path  <a href="#af328410124c3fa40f7cc51cea4d1d929">More...</a><br /></td></tr>
+<tr class="separator:af328410124c3fa40f7cc51cea4d1d929"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab042a1ab7fc30f2ac799b15aedc30e01"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#ab042a1ab7fc30f2ac799b15aedc30e01">GetNtPath</a> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;path)</td></tr>
-<tr class="memdesc:ab042a1ab7fc30f2ac799b15aedc30e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定路径转换为绝对NT路径  <a href="#ab042a1ab7fc30f2ac799b15aedc30e01">More...</a><br /></td></tr>
-<tr class="separator:ab042a1ab7fc30f2ac799b15aedc30e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac57b615769bbf74c5500abbc9825aa76"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#ac57b615769bbf74c5500abbc9825aa76">GetDosPath</a> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;path, bool processed=false)</td></tr>
-<tr class="memdesc:ac57b615769bbf74c5500abbc9825aa76"><td class="mdescLeft">&#160;</td><td class="mdescRight">将指定路径转换为绝对DOS路径  <a href="#ac57b615769bbf74c5500abbc9825aa76">More...</a><br /></td></tr>
-<tr class="separator:ac57b615769bbf74c5500abbc9825aa76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aeb7c0c454430d1d82c463c61a326a8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#a9aeb7c0c454430d1d82c463c61a326a8">ToBackslash</a> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;path)</td></tr>
+<tr class="memdesc:a9aeb7c0c454430d1d82c463c61a326a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts forward slash to backslash in path  <a href="#a9aeb7c0c454430d1d82c463c61a326a8">More...</a><br /></td></tr>
+<tr class="separator:a9aeb7c0c454430d1d82c463c61a326a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a0bc71d24850149505ac85ac1c1be30"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#a1a0bc71d24850149505ac85ac1c1be30">ToForwardslash</a> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;path)</td></tr>
+<tr class="memdesc:a1a0bc71d24850149505ac85ac1c1be30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts forward slash to backslash in path  <a href="#a1a0bc71d24850149505ac85ac1c1be30">More...</a><br /></td></tr>
+<tr class="separator:a1a0bc71d24850149505ac85ac1c1be30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03aa97522b8742be2e2660debfdf40bb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#a03aa97522b8742be2e2660debfdf40bb">ToNtPath</a> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;path)</td></tr>
+<tr class="memdesc:a03aa97522b8742be2e2660debfdf40bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts path to absolute NT path  <a href="#a03aa97522b8742be2e2660debfdf40bb">More...</a><br /></td></tr>
+<tr class="separator:a03aa97522b8742be2e2660debfdf40bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea430686ef534c7886bde4dea5c1320e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#aea430686ef534c7886bde4dea5c1320e">ToDosPath</a> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;path, bool nt_processed=false)</td></tr>
+<tr class="memdesc:aea430686ef534c7886bde4dea5c1320e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts path to absolute MS-DOS path  <a href="#aea430686ef534c7886bde4dea5c1320e">More...</a><br /></td></tr>
+<tr class="separator:aea430686ef534c7886bde4dea5c1320e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1a346cbdcea25440f923956b68945e9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#ab1a346cbdcea25440f923956b68945e9">AddBackslash</a> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;path)</td></tr>
+<tr class="memdesc:ab1a346cbdcea25440f923956b68945e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a backslash _T('\') to a path if one doesn't exist  <a href="#ab1a346cbdcea25440f923956b68945e9">More...</a><br /></td></tr>
+<tr class="separator:ab1a346cbdcea25440f923956b68945e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed113903168f1f2b6a9198bab508c47"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#aaed113903168f1f2b6a9198bab508c47">RemoveBackslash</a> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;path)</td></tr>
+<tr class="memdesc:aaed113903168f1f2b6a9198bab508c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a trailing backslash from a path  <a href="#aaed113903168f1f2b6a9198bab508c47">More...</a><br /></td></tr>
+<tr class="separator:aaed113903168f1f2b6a9198bab508c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a662b3a8ff29c49304d06986cf369d225"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#a662b3a8ff29c49304d06986cf369d225">QuoteSpaces</a> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;path)</td></tr>
+<tr class="memdesc:a662b3a8ff29c49304d06986cf369d225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Surround a path containing spaces in quotes. The path is not changed if it has no spaces  <a href="#a662b3a8ff29c49304d06986cf369d225">More...</a><br /></td></tr>
+<tr class="separator:a662b3a8ff29c49304d06986cf369d225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e069ea2aca29217ea7d21c35845ff2"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#ae0e069ea2aca29217ea7d21c35845ff2">IsRoot</a> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;path)</td></tr>
+<tr class="memdesc:ae0e069ea2aca29217ea7d21c35845ff2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a path is a root path. If path is relative path, this method returns false immediately  <a href="#ae0e069ea2aca29217ea7d21c35845ff2">More...</a><br /></td></tr>
+<tr class="separator:ae0e069ea2aca29217ea7d21c35845ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff89760777dd8bcb0de1382e03de264"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#a9ff89760777dd8bcb0de1382e03de264">IsRelative</a> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;path)</td></tr>
+<tr class="memdesc:a9ff89760777dd8bcb0de1382e03de264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if a path is a relative path  <a href="#a9ff89760777dd8bcb0de1382e03de264">More...</a><br /></td></tr>
+<tr class="separator:a9ff89760777dd8bcb0de1382e03de264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa976558bc5238ec6ef6178fbf531f91d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#aa976558bc5238ec6ef6178fbf531f91d">RelativePathTo</a> (const <a class="el" href="class_system_1_1_string.html">String</a> &amp;path_from, const <a class="el" href="class_system_1_1_string.html">String</a> &amp;path_to)</td></tr>
+<tr class="memdesc:aa976558bc5238ec6ef6178fbf531f91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a relative path from one path to another. If the paths do not share a common prefix, this method returns absolute path of path_to  <a href="#aa976558bc5238ec6ef6178fbf531f91d">More...</a><br /></td></tr>
+<tr class="separator:aa976558bc5238ec6ef6178fbf531f91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa73a15c21d0af1e711ff7145e9c41dd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_system_1_1_i_o_1_1_path_info.html">PathInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#aa73a15c21d0af1e711ff7145e9c41dd3">m_PathInfo</a></td></tr>
-<tr class="memdesc:aa73a15c21d0af1e711ff7145e9c41dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 <a class="el" href="struct_system_1_1_i_o_1_1_path.html" title="表示文件路径 ">Path</a> 类的所表示路径的结构信息  <a href="#aa73a15c21d0af1e711ff7145e9c41dd3">More...</a><br /></td></tr>
-<tr class="separator:aa73a15c21d0af1e711ff7145e9c41dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1912889f1eb9ff205077f92c5b58201a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#a1912889f1eb9ff205077f92c5b58201a">m_FullPath</a></td></tr>
-<tr class="memdesc:a1912889f1eb9ff205077f92c5b58201a"><td class="mdescLeft">&#160;</td><td class="mdescRight">获取 <a class="el" href="struct_system_1_1_i_o_1_1_path.html" title="表示文件路径 ">Path</a> 类的所表示路径的NT绝对形式  <a href="#a1912889f1eb9ff205077f92c5b58201a">More...</a><br /></td></tr>
-<tr class="separator:a1912889f1eb9ff205077f92c5b58201a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa340f9f5f0d3310bb613f7657a3c5aa5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa340f9f5f0d3310bb613f7657a3c5aa5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>RLIB_DECLARE_DYNCREATE</b></td></tr>
 <tr class="separator:aa340f9f5f0d3310bb613f7657a3c5aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aa73a15c21d0af1e711ff7145e9c41dd3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa73a15c21d0af1e711ff7145e9c41dd3"></a>
+<a class="el" href="struct_system_1_1_i_o_1_1_path_info.html">PathInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_PathInfo</b></td></tr>
+<tr class="separator:aa73a15c21d0af1e711ff7145e9c41dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1912889f1eb9ff205077f92c5b58201a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1912889f1eb9ff205077f92c5b58201a"></a>
+<a class="el" href="class_system_1_1_string.html">String</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_FullPath</b></td></tr>
+<tr class="separator:a1912889f1eb9ff205077f92c5b58201a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>表示文件路径 </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="ae7641f6e020f8b4af6e14c0a6bf15c8b"></a>
+<div class="textblock"><p>Represents filesystem path </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ab1a346cbdcea25440f923956b68945e9"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Path::Path </td>
+          <td class="memname"><a class="el" href="class_system_1_1_string.html">String</a> Path::AddBackslash </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_system_1_1_string.html">String</a> &amp;&#160;</td>
           <td class="paramname"><em>path</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>用指定 URI 初始化 <a class="el" href="struct_system_1_1_i_o_1_1_path.html" title="表示文件路径 ">Path</a> 类的新实例 </p>
+<p>Append a backslash _T('\') to a path if one doesn't exist </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a9ffda071411537220924f9692fd5cb6c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -191,7 +244,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>获取该实例的目录, C:\ </p>
+<p>Gets the directory, eg. C:\ </p>
 
 </div>
 </div>
@@ -208,43 +261,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>获取该实例的绝对DOS路径 </p>
-
-</div>
-</div>
-<a class="anchor" id="ac57b615769bbf74c5500abbc9825aa76"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_system_1_1_string.html">String</a> Path::GetDosPath </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_system_1_1_string.html">String</a> &amp;&#160;</td>
-          <td class="paramname"><em>path</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>processed</em> = <code>false</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>将指定路径转换为绝对DOS路径 </p>
+<p>Gets the absolute MS-DOS path </p>
 
 </div>
 </div>
@@ -261,11 +278,11 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>获取该实例的文件名, RLib.dll </p>
+<p>Gets the file name, eg. RLib.dll </p>
 
 </div>
 </div>
-<a class="anchor" id="ab042a1ab7fc30f2ac799b15aedc30e01"></a>
+<a class="anchor" id="a9ff89760777dd8bcb0de1382e03de264"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -273,7 +290,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_system_1_1_string.html">String</a> Path::GetNtPath </td>
+          <td class="memname">bool Path::IsRelative </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="class_system_1_1_string.html">String</a> &amp;&#160;</td>
           <td class="paramname"><em>path</em></td><td>)</td>
@@ -287,36 +304,386 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>将指定路径转换为绝对NT路径 </p>
+<p>Determines if a path is a relative path </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a1912889f1eb9ff205077f92c5b58201a"></a>
+<a class="anchor" id="af328410124c3fa40f7cc51cea4d1d929"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_system_1_1_string.html">String</a> System::IO::Path::m_FullPath</td>
+          <td class="memname">bool Path::IsRoot </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>获取 <a class="el" href="struct_system_1_1_i_o_1_1_path.html" title="表示文件路径 ">Path</a> 类的所表示路径的NT绝对形式 </p>
+<p>Determines if this path is a root path </p>
 
 </div>
 </div>
-<a class="anchor" id="aa73a15c21d0af1e711ff7145e9c41dd3"></a>
+<a class="anchor" id="ae0e069ea2aca29217ea7d21c35845ff2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Path::IsRoot </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_system_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines if a path is a root path. If path is relative path, this method returns false immediately </p>
+
+</div>
+</div>
+<a class="anchor" id="a26bb8ac6c0b8274e043dd839264826e9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System::IO::Path::operator const <a class="el" href="struct_system_1_1_i_o_1_1_path_info.html">PathInfo</a> &amp; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the path info </p>
+
+</div>
+</div>
+<a class="anchor" id="a7adb1aab15ebf2660c7590f291b7164d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">System::IO::Path::operator const <a class="el" href="class_system_1_1_string.html">String</a> &amp; </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the absolute NT path </p>
+
+</div>
+</div>
+<a class="anchor" id="a662b3a8ff29c49304d06986cf369d225"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_system_1_1_string.html">String</a> Path::QuoteSpaces </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_system_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Surround a path containing spaces in quotes. The path is not changed if it has no spaces </p>
+
+</div>
+</div>
+<a class="anchor" id="aa976558bc5238ec6ef6178fbf531f91d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_system_1_1_string.html">String</a> Path::RelativePathTo </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_system_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path_from</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="class_system_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path_to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a relative path from one path to another. If the paths do not share a common prefix, this method returns absolute path of path_to </p>
+
+</div>
+</div>
+<a class="anchor" id="aaed113903168f1f2b6a9198bab508c47"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_system_1_1_string.html">String</a> Path::RemoveBackslash </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_system_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove a trailing backslash from a path </p>
+
+</div>
+</div>
+<a class="anchor" id="ac3aab0ad086e83434561e655c9eaa280"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="struct_system_1_1_i_o_1_1_path_info.html">PathInfo</a> System::IO::Path::m_PathInfo</td>
+          <td class="memname">System::IO::Path::RLIB_PROPERTY_GET </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_system_1_1_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>DosPath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#af53c3afc08cb6e842ef27464edca660e">GetDosPath</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>获取 <a class="el" href="struct_system_1_1_i_o_1_1_path.html" title="表示文件路径 ">Path</a> 类的所表示路径的结构信息 </p>
+<p>Gets the absolute MS-DOS path </p>
+
+</div>
+</div>
+<a class="anchor" id="a16d0ee571449af2dfb38f999272aa942"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">System::IO::Path::RLIB_PROPERTY_GET </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_system_1_1_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>Directory</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#a9ffda071411537220924f9692fd5cb6c">GetDirectory</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the directory, eg. C:\ </p>
+
+</div>
+</div>
+<a class="anchor" id="addb4dc6dc6d4024bb7eb535532d9706e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">System::IO::Path::RLIB_PROPERTY_GET </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_system_1_1_string.html">String</a>&#160;</td>
+          <td class="paramname"><em>FileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_system_1_1_i_o_1_1_path.html#afac5cc901906846f34ad9f107157d1b0">GetFileName</a>&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the file name, eg. RLib.dll </p>
+
+</div>
+</div>
+<a class="anchor" id="a9aeb7c0c454430d1d82c463c61a326a8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_system_1_1_string.html">String</a> Path::ToBackslash </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_system_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts forward slash to backslash in path </p>
+
+</div>
+</div>
+<a class="anchor" id="aea430686ef534c7886bde4dea5c1320e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_system_1_1_string.html">String</a> Path::ToDosPath </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_system_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>nt_processed</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts path to absolute MS-DOS path </p>
+
+</div>
+</div>
+<a class="anchor" id="a1a0bc71d24850149505ac85ac1c1be30"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_system_1_1_string.html">String</a> Path::ToForwardslash </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_system_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts forward slash to backslash in path </p>
+
+</div>
+</div>
+<a class="anchor" id="a03aa97522b8742be2e2660debfdf40bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_system_1_1_string.html">String</a> Path::ToNtPath </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_system_1_1_string.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts path to absolute NT path </p>
 
 </div>
 </div>
@@ -330,7 +697,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_i_o.html">IO</a></li><li class="navelem"><a class="el" href="struct_system_1_1_i_o_1_1_path.html">Path</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:36 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:41 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

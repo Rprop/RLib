@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['wait',['Wait',['../class_system_1_1_threading_1_1_thread.html#a7b07536db4d6b0bbd1515946d25bb792',1,'System::Threading::Thread::Wait()'],['../class_system_1_1_threading_1_1_wait_handle.html#a2a44592272624d7807e85e2430b38762',1,'System::Threading::WaitHandle::Wait()']]],
+  ['wait',['Wait',['../class_system_1_1_threading_1_1_thread.html#ab3ab3c8fec6850ed48d8d1549fb55125',1,'System::Threading::Thread::Wait()'],['../class_system_1_1_threading_1_1_wait_handle.html#a9d883c4b43f198e06a0900e18c4bef1c',1,'System::Threading::WaitHandle::Wait()']]],
   ['wait_5faccess_5fdenied',['WAIT_ACCESS_DENIED',['../namespace_system_1_1_threading.html#a53c0551aaaf249c46365fa9d874b20e4ab3d6e447d039dd747a1304e5d2cd55ba',1,'System::Threading']]],
   ['wait_5falerted',['WAIT_ALERTED',['../namespace_system_1_1_threading.html#a53c0551aaaf249c46365fa9d874b20e4a6c4587fdea0b5329c2ac901e7d1e3dfb',1,'System::Threading']]],
   ['wait_5finvalid_5fhandle',['WAIT_INVALID_HANDLE',['../namespace_system_1_1_threading.html#a53c0551aaaf249c46365fa9d874b20e4a61f4895d23a497ca688fa2e1dea09216',1,'System::Threading']]],
@@ -9,19 +9,20 @@ var searchData=
   ['wait_5fuser_5fapc',['WAIT_USER_APC',['../namespace_system_1_1_threading.html#a53c0551aaaf249c46365fa9d874b20e4a4c9a2a047e2ae69f07d7fee2e48828e6',1,'System::Threading']]],
   ['waitforfullgccomplete',['WaitForFullGCComplete',['../class_system_1_1_i_o_1_1_memory_pool.html#ad61191ffd2e0b60ab2d4e7de36a6fff5',1,'System::IO::MemoryPool']]],
   ['waithandle',['WaitHandle',['../class_system_1_1_threading_1_1_wait_handle.html',1,'System::Threading']]],
-  ['waitone',['WaitOne',['../class_system_1_1_threading_1_1_wait_handle.html#af7c3d807e2c98403bb488f572f394101',1,'System::Threading::WaitHandle::WaitOne(int millisecondsTimeout=0)'],['../class_system_1_1_threading_1_1_wait_handle.html#a9b8ba25f3bf96a6468f3126894426b6a',1,'System::Threading::WaitHandle::WaitOne(HANDLE Handle, Boolean Alertable, int millisecondsTimeout)']]],
+  ['waitone',['WaitOne',['../class_system_1_1_threading_1_1_wait_handle.html#ac6775d248ce0a777061d56709828e45b',1,'System::Threading::WaitHandle::WaitOne(DWORD millisecondsTimeout=INFINITE)'],['../class_system_1_1_threading_1_1_wait_handle.html#a908c9147df029974b68b899ebb4e60dc',1,'System::Threading::WaitHandle::WaitOne(HANDLE handle, bool bAlertable, DWORD millisecondsTimeout)']]],
   ['waitstatus',['WaitStatus',['../namespace_system_1_1_threading.html#a53c0551aaaf249c46365fa9d874b20e4',1,'System::Threading']]],
   ['webclient',['WebClient',['../class_system_1_1_net_1_1_web_client.html',1,'System::Net']]],
-  ['webheadercollection',['WebHeaderCollection',['../struct_system_1_1_net_1_1_web_header_collection.html',1,'System::Net']]],
+  ['webheadercollection',['WebHeaderCollection',['../class_system_1_1_net_1_1_web_header_collection.html',1,'System::Net']]],
   ['webproxy',['WebProxy',['../class_system_1_1_net_1_1_http_request.html#aab0d42f3a7b79ae2bbf730b6e3a1915a',1,'System::Net::HttpRequest']]],
   ['webresponse',['WebResponse',['../class_system_1_1_net_1_1_web_response.html',1,'System::Net']]],
   ['widecharto',['WideCharTo',['../class_system_1_1_text_1_1_encoder.html#af0334c8e095b3277095093ff3dbb01c2',1,'System::Text::Encoder::WideCharTo(LPCVOID pdata, intptr_t size, Encoding codepage)'],['../class_system_1_1_text_1_1_encoder.html#a0f89fde2e75da6b69c827792094e0cc4',1,'System::Text::Encoder::WideCharTo(Encoding codepage, const IO::Stream &amp;stream, intptr_t length=-1)']]],
+  ['windowsidentity',['WindowsIdentity',['../class_system_1_1_security_1_1_principal_1_1_windows_identity.html',1,'System::Security::Principal']]],
   ['write',['Write',['../class_system_1_1_i_o_1_1_buffered_stream.html#a4b9144c734e1fc70a6cf50d9e745af49',1,'System::IO::BufferedStream::Write()'],['../class_system_1_1_i_o_1_1_compression_1_1_compression_stream.html#a8fcafaa7fb0fbb99893bafb9895f7ecc',1,'System::IO::Compression::CompressionStream::Write()'],['../class_system_1_1_i_o_1_1_file_stream.html#ad156f64b38f8788477ee5497b623d27e',1,'System::IO::FileStream::Write()'],['../class_system_1_1_i_o_1_1_stream.html#a684262605da777a6398db08b178cf5ec',1,'System::IO::Stream::Write()'],['../class_system_1_1_i_o_1_1_unmanaged_memory_stream.html#a9433e02f80a670a78eea0df46debe0ec',1,'System::IO::UnmanagedMemoryStream::Write()']]],
   ['writealltext',['WriteAllText',['../class_system_1_1_i_o_1_1_file.html#a545d26c8a2ee70c351e00e3b0da3c2a3',1,'System::IO::File']]],
-  ['writebytearray',['WriteByteArray',['../struct_system_1_1_net_1_1_web_header_collection.html#a36bf35f7c913b199ea2cd64ca07dd20d',1,'System::Net::WebHeaderCollection']]],
+  ['writebytearray',['WriteByteArray',['../class_system_1_1_net_1_1_web_header_collection.html#a36bf35f7c913b199ea2cd64ca07dd20d',1,'System::Net::WebHeaderCollection']]],
   ['writebyteordermarks',['WriteByteOrderMarks',['../class_system_1_1_text_1_1_encoder.html#afa66fee0d14cd3b0b426c71502b649e7',1,'System::Text::Encoder']]],
   ['writerequeststream',['WriteRequestStream',['../class_system_1_1_net_1_1_web_client.html#abc00cd820aa0a752514fad688eae3e8d',1,'System::Net::WebClient']]],
   ['writetext',['WriteText',['../class_system_1_1_i_o_1_1_file.html#a668249f758b7b389203edb2338f05fac',1,'System::IO::File']]],
   ['writetextstream',['WriteTextStream',['../class_system_1_1_text_1_1_encoder.html#aae8007f221e5959efd021315ae5c9bac',1,'System::Text::Encoder::WriteTextStream(OUT IO::Stream &amp;outputStream, IN const IO::Stream &amp;textStream, intptr_t bytesToWrite=-1, bool useBOM=true, Text::Encoding codepage=Text::UnknownEncoding)'],['../class_system_1_1_text_1_1_encoder.html#aa1e8b2441e56296b074775a817c0fd04',1,'System::Text::Encoder::WriteTextStream(OUT IO::Stream &amp;outputStream, IN LPCVOID textData, intptr_t bytesToWrite, bool useBOM=true, Text::Encoding codepage=Text::UnknownEncoding)']]],
-  ['writetoend',['WriteToEnd',['../class_system_1_1_collections_1_1_generic_1_1_array.html#a8c814077cca0ad42c0f8ccf22dee0243',1,'System::Collections::Generic::Array']]]
+  ['writetoend',['WriteToEnd',['../class_system_1_1_collections_1_1_generic_1_1_array.html#ae252e8a35e0c2318318fe276c146255a',1,'System::Collections::Generic::Array']]]
 ];

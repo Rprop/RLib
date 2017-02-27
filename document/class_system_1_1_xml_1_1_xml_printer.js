@@ -7,7 +7,7 @@ var class_system_1_1_xml_1_1_xml_printer =
     [ "SetIndent", "class_system_1_1_xml_1_1_xml_printer.html#a9648a2115f8f7a1f01f8281e30e5f38c", null ],
     [ "SetLineBreak", "class_system_1_1_xml_1_1_xml_printer.html#a398fc862d8054b3419a9f186d95fa726", null ],
     [ "SetStreamPrinting", "class_system_1_1_xml_1_1_xml_printer.html#a628bc4e74af709ca3a3587d633682c5a", null ],
-    [ "Size", "class_system_1_1_xml_1_1_xml_printer.html#ab98d658028c29213fbc254593e4e20f5", null ],
+    [ "Size", "class_system_1_1_xml_1_1_xml_printer.html#aee9b5469ec8ed2807354860a0e110630", null ],
     [ "Visit", "class_system_1_1_xml_1_1_xml_printer.html#a620ffae5340b448de2fc4ee639d252ac", null ],
     [ "Visit", "class_system_1_1_xml_1_1_xml_printer.html#adb88238af665af1824c171a25783c2ac", null ],
     [ "Visit", "class_system_1_1_xml_1_1_xml_printer.html#a39f98aecab89bd87323706f44fb9a2c3", null ],

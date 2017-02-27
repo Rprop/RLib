@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -108,7 +108,6 @@ $(document).ready(function(){initNavTree('class_system_1_1_i_o_1_1_memory_page.h
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
@@ -125,11 +124,6 @@ $(document).ready(function(){initNavTree('class_system_1_1_i_o_1_1_memory_page.h
 <p>Provides a Memory Page class base on Double-Linked List, which is the core of <a class="el" href="class_system_1_1_i_o_1_1_memory_pool.html" title="A nonblocking thread-safe memory-pool implementation ">MemoryPool</a>  
  <a href="class_system_1_1_i_o_1_1_memory_page.html#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_system_1_1_i_o_1_1_memory_page_1_1_b_l_o_c_k___i_n_f_o.html">BLOCK_INFO</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a195ec6778d78fdbe79542b0bdf248157"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a195ec6778d78fdbe79542b0bdf248157"></a>
@@ -184,7 +178,7 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:aa9cbfae9d9268e3ee07cf5d3ac8a673d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9cbfae9d9268e3ee07cf5d3ac8a673d"></a>
-static intptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>PageSize</b> = <a class="el" href="class_system_1_1_i_o_1_1_memory_allocator.html#a627477db357d3a5a5bee37d3a9363320">MemoryAllocator::GetPageSize</a>()</td></tr>
+static intptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>PageSize</b> = static_cast&lt;intptr_t&gt;(MemoryAllocator::GetPageSize())</td></tr>
 <tr class="separator:aa9cbfae9d9268e3ee07cf5d3ac8a673d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
@@ -194,26 +188,41 @@ Protected Types</h2></td></tr>
 <b>PTR_LOW</b>
  }</td></tr>
 <tr class="separator:a03342893c75afad53515fdbb33fa9e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae68736399e83ba7fcf42c28c899fe102"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae68736399e83ba7fcf42c28c899fe102"></a>
-typedef struct <a class="el" href="struct_system_1_1_i_o_1_1_memory_page_1_1_b_l_o_c_k___i_n_f_o.html">System::IO::MemoryPage::BLOCK_INFO</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>PBLOCK_INFO</b></td></tr>
-<tr class="separator:ae68736399e83ba7fcf42c28c899fe102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c20ce03dc6c0e055aa9fef26ea2b78"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5c20ce03dc6c0e055aa9fef26ea2b78"></a>
+typedef struct BLOCK_INFO *&#160;</td><td class="memItemRight" valign="bottom"><b>PBLOCK_INFO</b></td></tr>
+<tr class="separator:ae5c20ce03dc6c0e055aa9fef26ea2b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:ac035fe13a4c91231de7da2e4c31b0957"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac035fe13a4c91231de7da2e4c31b0957"></a>
+PBLOCK_INFO&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (intptr_t)</td></tr>
+<tr class="separator:ac035fe13a4c91231de7da2e4c31b0957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb0ce5509d35187a76f43d0377e6c52"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8fb0ce5509d35187a76f43d0377e6c52"></a>
+LPVOID&#160;</td><td class="memItemRight" valign="bottom"><b>alloc_block</b> (intptr_t)</td></tr>
+<tr class="separator:a8fb0ce5509d35187a76f43d0377e6c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a065e3b07bf1c427403d7a769b83c8503"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a065e3b07bf1c427403d7a769b83c8503"></a>
+PBLOCK_INFO&#160;</td><td class="memItemRight" valign="bottom"><b>alloc_tail</b> (PBLOCK_INFO, intptr_t, PBLOCK_INFO)</td></tr>
+<tr class="separator:a065e3b07bf1c427403d7a769b83c8503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3919c7eb61f12264376476605a6f42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c3919c7eb61f12264376476605a6f42"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>extend</b> (intptr_t)</td></tr>
+<tr class="separator:a0c3919c7eb61f12264376476605a6f42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb36636fcb591ea95443ae98d2a6659"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fb36636fcb591ea95443ae98d2a6659"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> (intptr_t, intptr_t)</td></tr>
+<tr class="separator:a0fb36636fcb591ea95443ae98d2a6659"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0d7a278f5ba190142f1c706838b9774"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0d7a278f5ba190142f1c706838b9774"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>free_block</b> (<a class="el" href="struct_system_1_1_i_o_1_1_memory_page_1_1_b_l_o_c_k___i_n_f_o.html">PBLOCK_INFO</a>)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>free_block</b> (PBLOCK_INFO)</td></tr>
 <tr class="separator:aa0d7a278f5ba190142f1c706838b9774"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a8e42de4de7705a365f9fbaacdcbc30f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e42de4de7705a365f9fbaacdcbc30f4"></a>
-<a class="el" href="struct_system_1_1_i_o_1_1_memory_page_1_1_b_l_o_c_k___i_n_f_o.html">PBLOCK_INFO</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_base_ptr</b></td></tr>
+PBLOCK_INFO&#160;</td><td class="memItemRight" valign="bottom"><b>m_base_ptr</b></td></tr>
 <tr class="separator:a8e42de4de7705a365f9fbaacdcbc30f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3646523ce5d408cc735f67b93cb3c6cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3646523ce5d408cc735f67b93cb3c6cb"></a>
-<a class="el" href="struct_system_1_1_i_o_1_1_memory_page_1_1_b_l_o_c_k___i_n_f_o.html">PBLOCK_INFO</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_first_ptr</b></td></tr>
+PBLOCK_INFO&#160;</td><td class="memItemRight" valign="bottom"><b>m_first_ptr</b></td></tr>
 <tr class="separator:a3646523ce5d408cc735f67b93cb3c6cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae35e3deb4d5dcb5446f62fe419ffd97f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae35e3deb4d5dcb5446f62fe419ffd97f"></a>
-<a class="el" href="struct_system_1_1_i_o_1_1_memory_page_1_1_b_l_o_c_k___i_n_f_o.html">PBLOCK_INFO</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_last_ptr</b></td></tr>
+PBLOCK_INFO&#160;</td><td class="memItemRight" valign="bottom"><b>m_last_ptr</b></td></tr>
 <tr class="separator:ae35e3deb4d5dcb5446f62fe419ffd97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1260a46b3a1f8be9f92305b2e1789ce9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1260a46b3a1f8be9f92305b2e1789ce9"></a>
 intptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_now</b></td></tr>
@@ -227,8 +236,8 @@ intptr_t&#160;</td><td class="memItemRight" valign="bottom"><b>m_reserved</b></t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a270735d3eecf0a2a2abf0c5e6b252dd6"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_i_o_1_1_memory_page.html#a270735d3eecf0a2a2abf0c5e6b252dd6">MemoryPool</a></td></tr>
-<tr class="memdesc:a270735d3eecf0a2a2abf0c5e6b252dd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">线程安全的内存池类  <a href="#a270735d3eecf0a2a2abf0c5e6b252dd6">More...</a><br /></td></tr>
+<tr class="memitem:a270735d3eecf0a2a2abf0c5e6b252dd6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a270735d3eecf0a2a2abf0c5e6b252dd6"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>MemoryPool</b></td></tr>
 <tr class="separator:a270735d3eecf0a2a2abf0c5e6b252dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -487,31 +496,9 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a class="anchor" id="a270735d3eecf0a2a2abf0c5e6b252dd6"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="class_system_1_1_i_o_1_1_memory_pool.html">MemoryPool</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>线程安全的内存池类 </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>RLib_MemoryPage.h</li>
+<li>RLib_GlobalInit.h</li>
 <li>RLib_MemoryPage.cpp</li>
 <li>RLib_MemoryPage_Part.cpp</li>
 </ul>
@@ -521,7 +508,7 @@ Friends</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_i_o.html">IO</a></li><li class="navelem"><a class="el" href="class_system_1_1_i_o_1_1_memory_page.html">MemoryPage</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:36 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:40 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

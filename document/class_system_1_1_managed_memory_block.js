@@ -1,6 +1,7 @@
 var class_system_1_1_managed_memory_block =
 [
     [ "ManagedMemoryBlock", "class_system_1_1_managed_memory_block.html#af38d7e6ac794c5f25f5e2239986095a1", null ],
+    [ "ManagedMemoryBlock", "class_system_1_1_managed_memory_block.html#a15a608374d7ab2425b3f4bc601c840e6", null ],
     [ "~ManagedMemoryBlock", "class_system_1_1_managed_memory_block.html#ab9f74793df487f4671d2f1949f7eaba0", null ],
     [ "ManagedMemoryBlock", "class_system_1_1_managed_memory_block.html#ab66fbbbe1ea5b1b74c563ccf2564fc67", null ],
     [ "Finalize", "class_system_1_1_managed_memory_block.html#a9daca5c17ac60d3d7b36ef9eeca87b51", null ],

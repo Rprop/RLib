@@ -6,5 +6,6 @@ var searchData=
   ['queryfloatattribute',['QueryFloatAttribute',['../class_system_1_1_xml_1_1_xml_element.html#ad4ba51511e94142582e808587f70c00f',1,'System::Xml::XmlElement']]],
   ['queryintvalue',['QueryIntValue',['../class_system_1_1_xml_1_1_xml_attribute.html#aec3326499ee2b942c81e3bd72fe40457',1,'System::Xml::XmlAttribute']]],
   ['queryunsignedattribute',['QueryUnsignedAttribute',['../class_system_1_1_xml_1_1_xml_element.html#ae3c42351506a76eeabb5e88a24354b8c',1,'System::Xml::XmlElement']]],
-  ['queueuserworkitem',['QueueUserWorkItem',['../class_system_1_1_threading_1_1_thread_pool.html#ada806ffc22cce1ac9d3f04243839298f',1,'System::Threading::ThreadPool']]]
+  ['queueuserworkitem',['QueueUserWorkItem',['../class_system_1_1_threading_1_1_thread_pool.html#ada806ffc22cce1ac9d3f04243839298f',1,'System::Threading::ThreadPool']]],
+  ['quotespaces',['QuoteSpaces',['../struct_system_1_1_i_o_1_1_path.html#a662b3a8ff29c49304d06986cf369d225',1,'System::IO::Path']]]
 ];

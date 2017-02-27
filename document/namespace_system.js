@@ -1,11 +1,22 @@
 var namespace_system =
 [
     [ "Collections", "namespace_system_1_1_collections.html", "namespace_system_1_1_collections" ],
-    [ "Generic", "namespace_system_1_1_generic.html", "namespace_system_1_1_generic" ],
-    [ "Ini", "namespace_system_1_1_ini.html", "namespace_system_1_1_ini" ],
+    [ "Generic", null, [
+      [ "Arithmetic", "class_system_1_1_generic_1_1_arithmetic.html", "class_system_1_1_generic_1_1_arithmetic" ],
+      [ "Integral", "class_system_1_1_generic_1_1_integral.html", "class_system_1_1_generic_1_1_integral" ]
+    ] ],
+    [ "Ini", null, [
+      [ "IniComment", "class_system_1_1_ini_1_1_ini_comment.html", "class_system_1_1_ini_1_1_ini_comment" ],
+      [ "IniElement", "class_system_1_1_ini_1_1_ini_element.html", "class_system_1_1_ini_1_1_ini_element" ],
+      [ "IniElementCollection", "class_system_1_1_ini_1_1_ini_element_collection.html", "class_system_1_1_ini_1_1_ini_element_collection" ],
+      [ "IniFile", "class_system_1_1_ini_1_1_ini_file.html", "class_system_1_1_ini_1_1_ini_file" ],
+      [ "IniKey", "class_system_1_1_ini_1_1_ini_key.html", "class_system_1_1_ini_1_1_ini_key" ],
+      [ "IniSection", "class_system_1_1_ini_1_1_ini_section.html", "class_system_1_1_ini_1_1_ini_section" ]
+    ] ],
     [ "IO", "namespace_system_1_1_i_o.html", "namespace_system_1_1_i_o" ],
     [ "Microsoft", "namespace_system_1_1_microsoft.html", "namespace_system_1_1_microsoft" ],
     [ "Net", "namespace_system_1_1_net.html", "namespace_system_1_1_net" ],
+    [ "Runtime", "namespace_system_1_1_runtime.html", "namespace_system_1_1_runtime" ],
     [ "Security", "namespace_system_1_1_security.html", "namespace_system_1_1_security" ],
     [ "Text", "namespace_system_1_1_text.html", "namespace_system_1_1_text" ],
     [ "Threading", "namespace_system_1_1_threading.html", "namespace_system_1_1_threading" ],
@@ -21,15 +32,15 @@ var namespace_system =
     [ "GlobalizeString", "class_system_1_1_globalize_string.html", "class_system_1_1_globalize_string" ],
     [ "Int32", "class_system_1_1_int32.html", "class_system_1_1_int32" ],
     [ "Int64", "class_system_1_1_int64.html", "class_system_1_1_int64" ],
-    [ "LocalObject", "class_system_1_1_local_object.html", "class_system_1_1_local_object" ],
+    [ "InternalString", "struct_system_1_1_internal_string.html", "struct_system_1_1_internal_string" ],
     [ "Long", "class_system_1_1_long.html", "class_system_1_1_long" ],
     [ "LongLong", "class_system_1_1_long_long.html", "class_system_1_1_long_long" ],
     [ "ManagedMemoryBlock", "class_system_1_1_managed_memory_block.html", "class_system_1_1_managed_memory_block" ],
     [ "ManagedObject", "class_system_1_1_managed_object.html", "class_system_1_1_managed_object" ],
     [ "Object", "class_system_1_1_object.html", "class_system_1_1_object" ],
     [ "RA2WEX", "class_system_1_1_r_a2_w_e_x.html", "class_system_1_1_r_a2_w_e_x" ],
-    [ "Random", "class_system_1_1_random.html", null ],
-    [ "RTEX", "class_system_1_1_r_t_e_x.html", "class_system_1_1_r_t_e_x" ],
+    [ "Random", "class_system_1_1_random.html", "class_system_1_1_random" ],
+    [ "RT2", "class_system_1_1_r_t2.html", "class_system_1_1_r_t2" ],
     [ "RW2AEX", "class_system_1_1_r_w2_a_e_x.html", "class_system_1_1_r_w2_a_e_x" ],
     [ "STRInfoA", "struct_system_1_1_s_t_r_info_a.html", "struct_system_1_1_s_t_r_info_a" ],
     [ "STRInfoW", "struct_system_1_1_s_t_r_info_w.html", "struct_system_1_1_s_t_r_info_w" ],

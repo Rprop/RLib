@@ -33,7 +33,7 @@
   <td id="projectlogo"><img alt="Logo" src="rlib.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">RLib
-   &#160;<span id="projectnumber">5.3</span>
+   &#160;<span id="projectnumber">5.7</span>
    </div>
    <div id="projectbrief">RLib - an opensource, lightweight and multi-platform framework for cpp programming</div>
   </td>
@@ -120,23 +120,32 @@ $(document).ready(function(){initNavTree('class_system_1_1_threading_1_1_wait_ha
 
 <p>封装等待对共享资源的独占访问的操作系统特定的对象  
  <a href="class_system_1_1_threading_1_1_wait_handle.html#details">More...</a></p>
-
-<p>Inherited by <a class="el" href="class_system_1_1_threading_1_1_event.html">System::Threading::Event</a>, <a class="el" href="class_system_1_1_threading_1_1_mutex.html">System::Threading::Mutex</a>, and <a class="el" href="class_system_1_1_threading_1_1_semaphore.html">System::Threading::Semaphore</a>.</p>
+<div class="dynheader">
+Inheritance diagram for System::Threading::WaitHandle:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_system_1_1_threading_1_1_wait_handle.png" usemap="#System::Threading::WaitHandle_map" alt=""/>
+  <map id="System::Threading::WaitHandle_map" name="System::Threading::WaitHandle_map">
+<area href="class_system_1_1_threading_1_1_event.html" title="表示线程同步事件 " alt="System::Threading::Event" shape="rect" coords="0,56,185,80"/>
+<area href="class_system_1_1_threading_1_1_mutex.html" title="表示一个同步基元, 也可用于进程间同步 " alt="System::Threading::Mutex" shape="rect" coords="195,56,380,80"/>
+<area href="class_system_1_1_threading_1_1_semaphore.html" title="限制可同时访问某一资源或资源池的线程数 " alt="System::Threading::Semaphore" shape="rect" coords="390,56,575,80"/>
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af7c3d807e2c98403bb488f572f394101"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_system_1_1_threading.html#a53c0551aaaf249c46365fa9d874b20e4">WaitStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_threading_1_1_wait_handle.html#af7c3d807e2c98403bb488f572f394101">WaitOne</a> (int millisecondsTimeout=0)</td></tr>
-<tr class="memdesc:af7c3d807e2c98403bb488f572f394101"><td class="mdescLeft">&#160;</td><td class="mdescRight">阻止当前线程，直到当前 <a class="el" href="class_system_1_1_threading_1_1_mutex.html" title="表示一个同步基元, 也可用于进程间同步 ">Mutex</a> 收到信号，同时使用 32 位带符号整数指定时间间隔  <a href="#af7c3d807e2c98403bb488f572f394101">More...</a><br /></td></tr>
-<tr class="separator:af7c3d807e2c98403bb488f572f394101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6775d248ce0a777061d56709828e45b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_system_1_1_threading.html#a53c0551aaaf249c46365fa9d874b20e4">WaitStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_threading_1_1_wait_handle.html#ac6775d248ce0a777061d56709828e45b">WaitOne</a> (DWORD millisecondsTimeout=INFINITE)</td></tr>
+<tr class="memdesc:ac6775d248ce0a777061d56709828e45b"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a timeout is specified, and the object has not attained a state of signaled when the timeout expires, then the wait is automatically satisfied. An INFINITE timeout will never expire. If an explicit timeout value of zero is specified, then no wait occurs if the wait cannot be satisfied immediately.  <a href="#ac6775d248ce0a777061d56709828e45b">More...</a><br /></td></tr>
+<tr class="separator:ac6775d248ce0a777061d56709828e45b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2a44592272624d7807e85e2430b38762"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespace_system_1_1_threading.html#a53c0551aaaf249c46365fa9d874b20e4">WaitStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_threading_1_1_wait_handle.html#a2a44592272624d7807e85e2430b38762">Wait</a> (ULONG Count, HANDLE Handles[], Boolean WaitAll, Boolean Alertable, int Milliseconds)</td></tr>
-<tr class="memdesc:a2a44592272624d7807e85e2430b38762"><td class="mdescLeft">&#160;</td><td class="mdescRight">等待指定数组中的任一或者全部元素收到信号，使用 32 位带符号整数指定时间间隔  <a href="#a2a44592272624d7807e85e2430b38762">More...</a><br /></td></tr>
-<tr class="separator:a2a44592272624d7807e85e2430b38762"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b8ba25f3bf96a6468f3126894426b6a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespace_system_1_1_threading.html#a53c0551aaaf249c46365fa9d874b20e4">WaitStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_threading_1_1_wait_handle.html#a9b8ba25f3bf96a6468f3126894426b6a">WaitOne</a> (HANDLE <a class="el" href="class_system_1_1_threading_1_1_wait_handle.html#a279d1de770d8702f779d7e1aed35f018">Handle</a>, Boolean Alertable, int millisecondsTimeout)</td></tr>
-<tr class="memdesc:a9b8ba25f3bf96a6468f3126894426b6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">阻止当前线程，直到当前收到信号，同时使用 32 位带符号整数指定时间间隔  <a href="#a9b8ba25f3bf96a6468f3126894426b6a">More...</a><br /></td></tr>
-<tr class="separator:a9b8ba25f3bf96a6468f3126894426b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d883c4b43f198e06a0900e18c4bef1c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespace_system_1_1_threading.html#a53c0551aaaf249c46365fa9d874b20e4">WaitStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_threading_1_1_wait_handle.html#a9d883c4b43f198e06a0900e18c4bef1c">Wait</a> (ULONG nCount, HANDLE *pHandles, bool bWaitAll, bool bAlertable, DWORD millisecondsTimeout)</td></tr>
+<tr class="memdesc:a9d883c4b43f198e06a0900e18c4bef1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">等待指定数组中的任一或者全部元素收到信号，使用 32 位带符号整数指定时间间隔  <a href="#a9d883c4b43f198e06a0900e18c4bef1c">More...</a><br /></td></tr>
+<tr class="separator:a9d883c4b43f198e06a0900e18c4bef1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908c9147df029974b68b899ebb4e60dc"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespace_system_1_1_threading.html#a53c0551aaaf249c46365fa9d874b20e4">WaitStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_system_1_1_threading_1_1_wait_handle.html#a908c9147df029974b68b899ebb4e60dc">WaitOne</a> (HANDLE handle, bool bAlertable, DWORD millisecondsTimeout)</td></tr>
+<tr class="memdesc:a908c9147df029974b68b899ebb4e60dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">阻止当前线程，直到当前收到信号，同时使用 32 位带符号整数指定时间间隔  <a href="#a908c9147df029974b68b899ebb4e60dc">More...</a><br /></td></tr>
+<tr class="separator:a908c9147df029974b68b899ebb4e60dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -146,17 +155,17 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:af4fe7845ff612a88296ce8f3aaa51956"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4fe7845ff612a88296ce8f3aaa51956"></a>
-<a class="el" href="struct___o_b_j_e_c_t___a_t_t_r_i_b_u_t_e_s___s_t_r_u_c_t.html">OBJECT_ATTRIBUTES_STRUCT</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_obj</b></td></tr>
-<tr class="separator:af4fe7845ff612a88296ce8f3aaa51956"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a673d51351f5639b353b07216e8601bf7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a673d51351f5639b353b07216e8601bf7"></a>
-<a class="el" href="struct___u_n_i_c_o_d_e___s_t_r_i_n_g___s_t_r_u_c_t.html">UNICODE_STRING_STRUCT</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
-<tr class="separator:a673d51351f5639b353b07216e8601bf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173ab76c0f8fcf4ec27bf7f4952355de"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a173ab76c0f8fcf4ec27bf7f4952355de"></a>
+<a class="el" href="struct_r_l_i_b___o_b_j_e_c_t___a_t_t_r_i_b_u_t_e_s.html">RLIB_OBJECT_ATTRIBUTES</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_obj</b></td></tr>
+<tr class="separator:a173ab76c0f8fcf4ec27bf7f4952355de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab301e46c09fdf2c52252a1eb3837ffbb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab301e46c09fdf2c52252a1eb3837ffbb"></a>
+<a class="el" href="struct_r_l_i_b___u_n_i_c_o_d_e___s_t_r_i_n_g.html">RLIB_UNICODE_STRING</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_name</b></td></tr>
+<tr class="separator:ab301e46c09fdf2c52252a1eb3837ffbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>封装等待对共享资源的独占访问的操作系统特定的对象 </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a2a44592272624d7807e85e2430b38762"></a>
+<a class="anchor" id="a9d883c4b43f198e06a0900e18c4bef1c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -167,31 +176,31 @@ Protected Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="namespace_system_1_1_threading.html#a53c0551aaaf249c46365fa9d874b20e4">WaitStatus</a> WaitHandle::Wait </td>
           <td>(</td>
           <td class="paramtype">ULONG&#160;</td>
-          <td class="paramname"><em>Count</em>, </td>
+          <td class="paramname"><em>nCount</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">HANDLE&#160;</td>
-          <td class="paramname"><em>Handles</em>[], </td>
+          <td class="paramtype">HANDLE *&#160;</td>
+          <td class="paramname"><em>pHandles</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Boolean&#160;</td>
-          <td class="paramname"><em>WaitAll</em>, </td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bWaitAll</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Boolean&#160;</td>
-          <td class="paramname"><em>Alertable</em>, </td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bAlertable</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>Milliseconds</em>&#160;</td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>millisecondsTimeout</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -207,38 +216,28 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>等待指定数组中的任一或者全部元素收到信号，使用 32 位带符号整数指定时间间隔 </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">Count</td><td>句柄数目</td></tr>
-    <tr><td class="paramname">Handles</td><td>句柄数组</td></tr>
-    <tr><td class="paramname">WaitAll</td><td>是否等待全部</td></tr>
-    <tr><td class="paramname">Alertable</td><td>A boolean value that specifies whether the wait is alertable</td></tr>
-    <tr><td class="paramname">Milliseconds</td><td>等待超时值</td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
-<a class="anchor" id="af7c3d807e2c98403bb488f572f394101"></a>
+<a class="anchor" id="ac6775d248ce0a777061d56709828e45b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespace_system_1_1_threading.html#a53c0551aaaf249c46365fa9d874b20e4">WaitStatus</a> WaitHandle::WaitOne </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>millisecondsTimeout</em> = <code>0</code></td><td>)</td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>millisecondsTimeout</em> = <code>INFINITE</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>阻止当前线程，直到当前 <a class="el" href="class_system_1_1_threading_1_1_mutex.html" title="表示一个同步基元, 也可用于进程间同步 ">Mutex</a> 收到信号，同时使用 32 位带符号整数指定时间间隔 </p>
+<p>If a timeout is specified, and the object has not attained a state of signaled when the timeout expires, then the wait is automatically satisfied. An INFINITE timeout will never expire. If an explicit timeout value of zero is specified, then no wait occurs if the wait cannot be satisfied immediately. </p>
 
 </div>
 </div>
-<a class="anchor" id="a9b8ba25f3bf96a6468f3126894426b6a"></a>
+<a class="anchor" id="a908c9147df029974b68b899ebb4e60dc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -249,18 +248,18 @@ Protected Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="namespace_system_1_1_threading.html#a53c0551aaaf249c46365fa9d874b20e4">WaitStatus</a> WaitHandle::WaitOne </td>
           <td>(</td>
           <td class="paramtype">HANDLE&#160;</td>
-          <td class="paramname"><em>Handle</em>, </td>
+          <td class="paramname"><em>handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Boolean&#160;</td>
-          <td class="paramname"><em>Alertable</em>, </td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bAlertable</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">DWORD&#160;</td>
           <td class="paramname"><em>millisecondsTimeout</em>&#160;</td>
         </tr>
         <tr>
@@ -305,7 +304,7 @@ Protected Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="namespace_system.html">System</a></li><li class="navelem"><a class="el" href="namespace_system_1_1_threading.html">Threading</a></li><li class="navelem"><a class="el" href="class_system_1_1_threading_1_1_wait_handle.html">WaitHandle</a></li>
-    <li class="footer">Generated on Tue Jul 26 2016 21:20:40 for RLib by
+    <li class="footer">Generated on Mon Feb 27 2017 16:58:44 for RLib by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
