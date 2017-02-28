@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="RLib Files">
+      <UniqueIdentifier>{4d5a4eaf-b627-4827-9f32-ba28b2c57134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{fd9d64e3-351a-45a7-af54-5ea03d5cef8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{e4e6cec2-174e-492f-a46a-6198804d179a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib Files\IO">
+      <UniqueIdentifier>{7855c668-f67a-4f4e-8df4-ef155bc5ac59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib Files\Net">
+      <UniqueIdentifier>{cfc8fadc-4ab1-4102-8c04-ec35b95f5378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib Files\XML">
+      <UniqueIdentifier>{9c69fce6-f02f-4968-8ae8-8558958a7f13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib Files\Text">
+      <UniqueIdentifier>{fc186994-8037-4559-aa15-500e306cb97e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib Files\Collections">
+      <UniqueIdentifier>{799de3ed-f212-45af-9a4c-6554cb808255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib Files\Threading">
+      <UniqueIdentifier>{c2ade0a0-15f5-4281-8cf1-df74a4b5666a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib Files\Security">
+      <UniqueIdentifier>{c39f3bae-d03b-41a5-bc14-fc6bea174240}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Net">
+      <UniqueIdentifier>{15958262-38c3-4d58-9a61-a3910b3264a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IO">
+      <UniqueIdentifier>{2f8de120-9526-4ddd-9816-6ca46f6c9587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Threading">
+      <UniqueIdentifier>{ad24d8e2-8a03-44b8-8329-8c90a543eddc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Text">
+      <UniqueIdentifier>{d8831135-6fe1-4886-9e4f-9dc6e9c0aacb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Collections">
+      <UniqueIdentifier>{f5bcb125-eb5b-4c02-b332-a86d5291674e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Security">
+      <UniqueIdentifier>{7697fcbd-25ac-4740-9cec-21369fa43a98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\XML">
+      <UniqueIdentifier>{106377cd-3060-4ff3-bd61-b4a101bc5033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Microsoft">
+      <UniqueIdentifier>{e0c57adf-00f8-4efe-b044-0cd01dcec947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib Files\Microsoft">
+      <UniqueIdentifier>{f311b500-70e3-48ed-a47c-51f84f2d76dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib Files\IO\Compression">
+      <UniqueIdentifier>{631d0d2d-e10e-4c1e-b20d-c6fcc5a6943e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IO\Compression">
+      <UniqueIdentifier>{3a551821-a63e-46f9-a222-e0437025c5ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Security\Cryptography">
+      <UniqueIdentifier>{29dba236-f4c6-4a13-af80-011334f262c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib Files\Security\Cryptography">
+      <UniqueIdentifier>{5e542a7b-049b-4f54-8653-f3631cc31e49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib Files\Ini">
+      <UniqueIdentifier>{97ac43bb-7062-48fc-93ab-660dee05e48c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Ini">
+      <UniqueIdentifier>{d8a8f558-81bd-49b2-ae1e-da89846eda2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Collections\Generic">
+      <UniqueIdentifier>{83e546ec-7346-44f7-8c84-8dfd5a964cb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Generic">
+      <UniqueIdentifier>{a68bcad1-a37a-4a3b-9f21-b957002a5472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global Files">
+      <UniqueIdentifier>{b401b4d8-2ea6-4caa-8e45-56c14b2b99a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Runtime">
+      <UniqueIdentifier>{9f9edaa8-e9d0-41fb-b993-600001013a6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RLib Files\Generic">
+      <UniqueIdentifier>{e89fbfda-5181-4a49-b17b-5a6336fc651d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Runtime\Serialization">
+      <UniqueIdentifier>{4fee544e-ad9b-48b5-8ec9-eea94ccee809}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RLib_String.cpp">
+      <Filter>RLib Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Random.cpp">
+      <Filter>RLib Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Exception.cpp">
+      <Filter>RLib Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_StringArray.cpp">
+      <Filter>RLib Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_UnDNameEx.cpp">
+      <Filter>RLib Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_MemoryPage.cpp">
+      <Filter>RLib Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_MemoryAllocator.cpp">
+      <Filter>RLib Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_MemoryPage_Part.cpp">
+      <Filter>RLib Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_MemoryPool.cpp">
+      <Filter>RLib Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_File.cpp">
+      <Filter>RLib Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_FileStream.cpp">
+      <Filter>RLib Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_WebClient.cpp">
+      <Filter>RLib Files\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_HttpResponse.cpp">
+      <Filter>RLib Files\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_HttpRequest.cpp">
+      <Filter>RLib Files\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Path.cpp">
+      <Filter>RLib Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Winsock.cpp">
+      <Filter>RLib Files\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Thread.cpp">
+      <Filter>RLib Files\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Threading.cpp">
+      <Filter>RLib Files\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_ThreadPool.cpp">
+      <Filter>RLib Files\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Xml.cpp">
+      <Filter>RLib Files\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_XmlParser.cpp">
+      <Filter>RLib Files\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Text.cpp">
+      <Filter>RLib Files\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Ini.cpp">
+      <Filter>RLib Files\Ini</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_RegExp.cpp">
+      <Filter>RLib Files\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_MemoryStream.cpp">
+      <Filter>RLib Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_BufferedStream.cpp">
+      <Filter>RLib Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_UnmanagedStream.cpp">
+      <Filter>RLib Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Stream.cpp">
+      <Filter>RLib Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib.cpp">
+      <Filter>RLib Files</Filter>
+    </ClCompile>
+    <ClCompile Include="windows\RLib_FileRegistration.cpp">
+      <Filter>RLib Files\Microsoft</Filter>
+    </ClCompile>
+    <ClCompile Include="windows\RLib_UAC.cpp">
+      <Filter>RLib Files\Microsoft</Filter>
+    </ClCompile>
+    <ClCompile Include="windows\RLib_TextSpeaker.cpp">
+      <Filter>RLib Files\Microsoft</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Directory.cpp">
+      <Filter>RLib Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Tls.cpp">
+      <Filter>RLib Files\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_GlobalizeString.cpp">
+      <Filter>RLib Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Base64.cpp">
+      <Filter>RLib Files\Security\Cryptography</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Hex.cpp">
+      <Filter>RLib Files\Security\Cryptography</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_MD5.cpp">
+      <Filter>RLib Files\Security\Cryptography</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_DeflateStream.cpp">
+      <Filter>RLib Files\IO\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_GZipStream.cpp">
+      <Filter>RLib Files\IO\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Compression.cpp">
+      <Filter>RLib Files\IO\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_HttpUtility.cpp">
+      <Filter>RLib Files\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_IAllocator.cpp">
+      <Filter>RLib Files\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_CollectionGeneric.cpp">
+      <Filter>RLib Files\Collections</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_AES.cpp">
+      <Filter>RLib Files\Security\Cryptography</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Cipher.cpp">
+      <Filter>RLib Files\Security\Cryptography</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_CRC.cpp">
+      <Filter>RLib Files\Security\Cryptography</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_RSA.cpp">
+      <Filter>RLib Files\Security\Cryptography</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_HttpCookie.cpp">
+      <Filter>RLib Files\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_BitArray.cpp">
+      <Filter>RLib Files\Collections</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Monitor.cpp">
+      <Filter>RLib Files\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_IntrinsicLock.cpp">
+      <Filter>RLib Files\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_StringConvHelper.cpp">
+      <Filter>RLib Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Uri.cpp">
+      <Filter>RLib Files\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_WebHeader.cpp">
+      <Filter>RLib Files\Net</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_AccessControl.cpp">
+      <Filter>RLib Files\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_SecurityIdentifier.cpp">
+      <Filter>RLib Files\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_WindowsIdentity.cpp">
+      <Filter>RLib Files\Security</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_AppBase.cpp">
+      <Filter>RLib Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_AppBase_Part.cpp">
+      <Filter>RLib Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Search.cpp">
+      <Filter>RLib Files\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="RLib_Sort.cpp">
+      <Filter>RLib Files\Generic</Filter>
+    </ClCompile>
+    <ClCompile Include="windows\RLib_NativeModule.cpp">
+      <Filter>RLib Files\Microsoft</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RLib_String.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib.h">
+      <Filter>Global Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Macro.h">
+      <Filter>Global Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Import.h">
+      <Filter>Global Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_LibImport.h">
+      <Filter>Global Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_ExternDefine.h">
+      <Filter>Global Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_File.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_FileStream.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Exception.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_MemoryAllocator.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_MemoryPage.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Ini.h">
+      <Filter>Header Files\Ini</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Http.h">
+      <Filter>Header Files\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Net.h">
+      <Filter>Header Files\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Path.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="RLIB_Mail.h">
+      <Filter>Header Files\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_MemoryPool.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="native\RLib_Native.h">
+      <Filter>Global Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Stream.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_RegExp.h">
+      <Filter>Header Files\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Thread.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Threading.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_ThreadPool.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_WebClient.h">
+      <Filter>Header Files\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Winsock.h">
+      <Filter>Header Files\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Xml.h">
+      <Filter>Header Files\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Text.h">
+      <Filter>Header Files\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_MemoryStream.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_StringArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_BufferedStream.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_UnmanagedStream.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_DateTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="windows\RLib_TextSpeaker.h">
+      <Filter>Header Files\Microsoft</Filter>
+    </ClInclude>
+    <ClInclude Include="windows\RLib_UAC.h">
+      <Filter>Header Files\Microsoft</Filter>
+    </ClInclude>
+    <ClInclude Include="windows\RLib_FileRegistration.h">
+      <Filter>Header Files\Microsoft</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Config.h">
+      <Filter>Global Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_StringHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Directory.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Tls.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_GlobalizeString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Interlocked.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_CryptographyBase.h">
+      <Filter>Header Files\Security\Cryptography</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Hex.h">
+      <Filter>Header Files\Security\Cryptography</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Base64.h">
+      <Filter>Header Files\Security\Cryptography</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_MD5.h">
+      <Filter>Header Files\Security\Cryptography</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_DeflateStream.h">
+      <Filter>Header Files\IO\Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_GZipStream.h">
+      <Filter>Header Files\IO\Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Compression.h">
+      <Filter>Header Files\IO\Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_HttpUtility.h">
+      <Filter>Header Files\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Stack.h">
+      <Filter>Header Files\Collections\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_List.h">
+      <Filter>Header Files\Collections\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_PriorityQueue.h">
+      <Filter>Header Files\Collections\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Queue.h">
+      <Filter>Header Files\Collections\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Array.h">
+      <Filter>Header Files\Collections\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_IAllocator.h">
+      <Filter>Header Files\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_CollectionGeneric.h">
+      <Filter>Header Files\Collections\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Search.h">
+      <Filter>Header Files\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Hash.h">
+      <Filter>Header Files\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_HttpRequest.h">
+      <Filter>Header Files\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_HttpResponse.h">
+      <Filter>Header Files\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_AES.h">
+      <Filter>Header Files\Security\Cryptography</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Cipher.h">
+      <Filter>Header Files\Security\Cryptography</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_CRC.h">
+      <Filter>Header Files\Security\Cryptography</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_RSA.h">
+      <Filter>Header Files\Security\Cryptography</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_ExceptionHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_HttpCookie.h">
+      <Filter>Header Files\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_BitArray.h">
+      <Filter>Header Files\Collections</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Monitor.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_StringConvHelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_IntrinsicLock.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_SafeObject.h">
+      <Filter>Header Files\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_HashMap.h">
+      <Filter>Header Files\Collections\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_HashTable.h">
+      <Filter>Header Files\Collections</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Uri.h">
+      <Filter>Header Files\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_WebHeader.h">
+      <Filter>Header Files\Net</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_StringConv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_StringConvRtl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_AccessControl.h">
+      <Filter>Header Files\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_SecurityIdentifier.h">
+      <Filter>Header Files\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_WindowsIdentity.h">
+      <Filter>Header Files\Security</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_StringInternal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_NoCRT.h">
+      <Filter>Global Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_ClassInfo.h">
+      <Filter>Header Files\Runtime</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_AppBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_HashSet.h">
+      <Filter>Header Files\Collections\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Fundamental.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Arithmetic.h">
+      <Filter>Header Files\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Standard.h">
+      <Filter>Global Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Sort.h">
+      <Filter>Header Files\Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_Json.h">
+      <Filter>Header Files\Runtime\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="RLib_GlobalInit.h">
+      <Filter>Global Files</Filter>
+    </ClInclude>
+    <ClInclude Include="windows\RLib_NativeModule.h">
+      <Filter>Header Files\Microsoft</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RLib.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

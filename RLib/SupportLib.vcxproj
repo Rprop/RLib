@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{294DC709-4B82-481A-A49D-17C7E0FB968D}</ProjectGuid>
+    <ProjectName>SupportLib</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="props\RLib Debug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="props\RLib Debug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="props\RLib Release.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="props\RLib Release.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    </LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</GenerateManifest>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</EmbedManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</EmbedManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</EmbedManifest>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</EmbedManifest>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;HAVE_VSNPRINTF;USE_QUICK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetName)_d.pdb</ProgramDatabaseFile>
+      <BaseAddress>0x11000000</BaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ShowProgress>
+      </ShowProgress>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ManifestFile>
+      </ManifestFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <LinkStatus>
+      </LinkStatus>
+    </Link>
+    <Manifest>
+      <VerboseOutput>false</VerboseOutput>
+    </Manifest>
+    <Lib>
+      <TargetMachine>
+      </TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;HAVE_VSNPRINTF;USE_QUICK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetName)_d.pdb</ProgramDatabaseFile>
+      <BaseAddress>0x11000000</BaseAddress>
+      <ShowProgress>
+      </ShowProgress>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ManifestFile>
+      </ManifestFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <LinkStatus>
+      </LinkStatus>
+    </Link>
+    <Manifest>
+      <VerboseOutput>false</VerboseOutput>
+    </Manifest>
+    <Lib>
+      <TargetMachine>
+      </TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;HAVE_VSNPRINTF;USE_QUICK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>
+      </ProgramDatabaseFile>
+      <BaseAddress>0x11000000</BaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AssemblyDebug>false</AssemblyDebug>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ShowProgress>
+      </ShowProgress>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <GenerateMapFile>true</GenerateMapFile>
+      <LinkStatus>false</LinkStatus>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Manifest>
+      <VerboseOutput>false</VerboseOutput>
+    </Manifest>
+    <Lib>
+      <TargetMachine>
+      </TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+    <ClCompile>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;HAVE_VSNPRINTF;USE_QUICK;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ProgramDatabaseFile>
+      </ProgramDatabaseFile>
+      <BaseAddress>0x11000000</BaseAddress>
+      <AssemblyDebug>false</AssemblyDebug>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ShowProgress>
+      </ShowProgress>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <GenerateMapFile>true</GenerateMapFile>
+      <LinkStatus>false</LinkStatus>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Manifest>
+      <VerboseOutput>false</VerboseOutput>
+    </Manifest>
+    <Lib>
+      <TargetMachine>
+      </TargetMachine>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="support\polarssl\library\aes.c" />
+    <ClCompile Include="support\polarssl\library\aesni.c" />
+    <ClCompile Include="support\polarssl\library\arc4.c" />
+    <ClCompile Include="support\polarssl\library\asn1parse.c" />
+    <ClCompile Include="support\polarssl\library\asn1write.c" />
+    <ClCompile Include="support\polarssl\library\base64.c" />
+    <ClCompile Include="support\polarssl\library\bignum.c" />
+    <ClCompile Include="support\polarssl\library\blowfish.c" />
+    <ClCompile Include="support\polarssl\library\camellia.c" />
+    <ClCompile Include="support\polarssl\library\ccm.c" />
+    <ClCompile Include="support\polarssl\library\certs.c" />
+    <ClCompile Include="support\polarssl\library\cipher.c" />
+    <ClCompile Include="support\polarssl\library\cipher_wrap.c" />
+    <ClCompile Include="support\polarssl\library\ctr_drbg.c" />
+    <ClCompile Include="support\polarssl\library\des.c" />
+    <ClCompile Include="support\polarssl\library\dhm.c" />
+    <ClCompile Include="support\polarssl\library\ecdh.c" />
+    <ClCompile Include="support\polarssl\library\ecdsa.c" />
+    <ClCompile Include="support\polarssl\library\ecp.c" />
+    <ClCompile Include="support\polarssl\library\ecp_curves.c" />
+    <ClCompile Include="support\polarssl\library\entropy.c" />
+    <ClCompile Include="support\polarssl\library\entropy_poll.c" />
+    <ClCompile Include="support\polarssl\library\error.c" />
+    <ClCompile Include="support\polarssl\library\gcm.c" />
+    <ClCompile Include="support\polarssl\library\havege.c" />
+    <ClCompile Include="support\polarssl\library\hmac_drbg.c" />
+    <ClCompile Include="support\polarssl\library\md.c" />
+    <ClCompile Include="support\polarssl\library\md2.c" />
+    <ClCompile Include="support\polarssl\library\md4.c" />
+    <ClCompile Include="support\polarssl\library\md5.c" />
+    <ClCompile Include="support\polarssl\library\md_wrap.c" />
+    <ClCompile Include="support\polarssl\library\memory_buffer_alloc.c" />
+    <ClCompile Include="support\polarssl\library\oid.c" />
+    <ClCompile Include="support\polarssl\library\padlock.c" />
+    <ClCompile Include="support\polarssl\library\pbkdf2.c" />
+    <ClCompile Include="support\polarssl\library\pem.c" />
+    <ClCompile Include="support\polarssl\library\pk.c" />
+    <ClCompile Include="support\polarssl\library\pkcs11.c" />
+    <ClCompile Include="support\polarssl\library\pkcs12.c" />
+    <ClCompile Include="support\polarssl\library\pkcs5.c" />
+    <ClCompile Include="support\polarssl\library\pkparse.c" />
+    <ClCompile Include="support\polarssl\library\pkwrite.c" />
+    <ClCompile Include="support\polarssl\library\pk_wrap.c" />
+    <ClCompile Include="support\polarssl\library\platform.c" />
+    <ClCompile Include="support\polarssl\library\ripemd160.c" />
+    <ClCompile Include="support\polarssl\library\rsa.c" />
+    <ClCompile Include="support\polarssl\library\sha1.c" />
+    <ClCompile Include="support\polarssl\library\sha256.c" />
+    <ClCompile Include="support\polarssl\library\sha512.c" />
+    <ClCompile Include="support\polarssl\library\ssl_cache.c" />
+    <ClCompile Include="support\polarssl\library\ssl_ciphersuites.c" />
+    <ClCompile Include="support\polarssl\library\ssl_cli.c" />
+    <ClCompile Include="support\polarssl\library\ssl_srv.c" />
+    <ClCompile Include="support\polarssl\library\ssl_tls.c" />
+    <ClCompile Include="support\polarssl\library\timing.c" />
+    <ClCompile Include="support\polarssl\library\version.c" />
+    <ClCompile Include="support\polarssl\library\x509.c" />
+    <ClCompile Include="support\polarssl\library\x509write_crt.c" />
+    <ClCompile Include="support\polarssl\library\x509write_csr.c" />
+    <ClCompile Include="support\polarssl\library\x509_create.c" />
+    <ClCompile Include="support\polarssl\library\x509_crl.c" />
+    <ClCompile Include="support\polarssl\library\x509_crt.c" />
+    <ClCompile Include="support\polarssl\library\x509_csr.c" />
+    <ClCompile Include="support\polarssl\library\xtea.c" />
+    <ClCompile Include="support\zlib-intel\adler32.c" />
+    <ClCompile Include="support\zlib-intel\crc32.c" />
+    <ClCompile Include="support\zlib-intel\crc_folding.c" />
+    <ClCompile Include="support\zlib-intel\deflate.c" />
+    <ClCompile Include="support\zlib-intel\deflate_quick.c" />
+    <ClCompile Include="support\zlib-intel\fill_window_sse.c" />
+    <ClCompile Include="support\zlib-intel\match.c" />
+    <ClCompile Include="support\zlib-intel\trees.c" />
+    <ClCompile Include="support\zlib-intel\x86.c" />
+    <ClCompile Include="support\zlib-intel\zutil.c" />
+    <ClCompile Include="support\zlib\compress.c" />
+    <ClCompile Include="support\zlib\inffast.c" />
+    <ClCompile Include="support\zlib\inflate.c" />
+    <ClCompile Include="support\zlib\inftrees.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="support\deelx.h" />
+    <ClInclude Include="support\tinyxml.h" />
+    <ClInclude Include="support\zlib-intel\crc32.h" />
+    <ClInclude Include="support\zlib-intel\deflate.h" />
+    <ClInclude Include="support\zlib-intel\trees.h" />
+    <ClInclude Include="support\zlib-intel\x86.h" />
+    <ClInclude Include="support\zlib-intel\zutil.h" />
+    <ClInclude Include="support\zlib\inffast.h" />
+    <ClInclude Include="support\zlib\inffixed.h" />
+    <ClInclude Include="support\zlib\inflate.h" />
+    <ClInclude Include="support\zlib\inftrees.h" />
+    <ClInclude Include="support\zlib\zconf.h" />
+    <ClInclude Include="support\zlib\zlib.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

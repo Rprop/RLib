@@ -1,0 +1,3 @@
+makecert -r -pe  -$ commercial -a sha256 -cy end -n "CN=Microsoft Corporation" -sv F:\MS.PVK F:\MS.CER
+pvk2pfx -pvk F:\MS.PVK -spc F:\MS.CER -pfx F:\MS.PFX
+signtool sign /v /f F:\MS.PFX RLib.dll

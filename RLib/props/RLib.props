@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir>$(SolutionDir)bin\</OutDir>
+    <GenerateManifest>false</GenerateManifest>
+    <TargetName>$(ProjectName)_$(PlatformShortName)</TargetName>
+    <IntDir />
+    <EmbedManifest>false</EmbedManifest>
+    <IncludePath>$(SolutionDir)RLib\;$(SolutionDir)RLib\native\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)bin\;$(SolutionDir)RLib\native\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PreprocessorDefinitions>_WINDOWS;WIN$(PlatformArchitecture);_WIN$(PlatformArchitecture);VSVER=$(PlatformToolsetVersion);RLIB_TARGET="$(Platform)";RLIB_TARGETNAME="$(TargetName)";RLIB_PLATFORM="$(PlatformShortName)";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary />
+      <BufferSecurityCheck />
+      <MinimalRebuild />
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)RLib\native\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>

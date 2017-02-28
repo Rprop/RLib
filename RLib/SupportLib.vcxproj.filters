@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="third party">
+      <UniqueIdentifier>{2670d32c-82f6-4600-aee0-fc7d9a010b67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third party\zlib">
+      <UniqueIdentifier>{ae0c8d6c-45fa-4529-be09-a2a0c8a18b21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third party\polarssl">
+      <UniqueIdentifier>{e0e30114-8533-4351-b655-4f1c36699970}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third party\zlib\intel">
+      <UniqueIdentifier>{faaf32dd-8896-4e7f-9db8-e8d02aa56df6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="support\zlib\inffast.c">
+      <Filter>third party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="support\zlib\inflate.c">
+      <Filter>third party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="support\zlib\inftrees.c">
+      <Filter>third party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="support\zlib\compress.c">
+      <Filter>third party\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\aes.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\aesni.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\arc4.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\asn1parse.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\asn1write.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\base64.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\bignum.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\blowfish.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\camellia.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\ccm.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\certs.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\cipher.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\cipher_wrap.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\ctr_drbg.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\des.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\dhm.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\ecdh.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\ecdsa.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\ecp.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\ecp_curves.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\entropy.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\entropy_poll.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\error.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\gcm.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\havege.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\hmac_drbg.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\md.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\md_wrap.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\md2.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\md4.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\md5.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\memory_buffer_alloc.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\oid.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\padlock.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\pbkdf2.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\pem.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\pk.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\pk_wrap.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\pkcs5.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\pkcs11.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\pkcs12.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\pkparse.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\pkwrite.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\platform.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\ripemd160.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\rsa.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\sha1.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\sha256.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\sha512.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\ssl_cache.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\ssl_ciphersuites.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\ssl_cli.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\ssl_srv.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\ssl_tls.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\timing.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\version.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\x509.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\x509_create.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\x509_crl.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\x509_crt.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\x509_csr.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\x509write_crt.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\x509write_csr.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\polarssl\library\xtea.c">
+      <Filter>third party\polarssl</Filter>
+    </ClCompile>
+    <ClCompile Include="support\zlib-intel\adler32.c">
+      <Filter>third party\zlib\intel</Filter>
+    </ClCompile>
+    <ClCompile Include="support\zlib-intel\crc_folding.c">
+      <Filter>third party\zlib\intel</Filter>
+    </ClCompile>
+    <ClCompile Include="support\zlib-intel\crc32.c">
+      <Filter>third party\zlib\intel</Filter>
+    </ClCompile>
+    <ClCompile Include="support\zlib-intel\deflate.c">
+      <Filter>third party\zlib\intel</Filter>
+    </ClCompile>
+    <ClCompile Include="support\zlib-intel\deflate_quick.c">
+      <Filter>third party\zlib\intel</Filter>
+    </ClCompile>
+    <ClCompile Include="support\zlib-intel\fill_window_sse.c">
+      <Filter>third party\zlib\intel</Filter>
+    </ClCompile>
+    <ClCompile Include="support\zlib-intel\match.c">
+      <Filter>third party\zlib\intel</Filter>
+    </ClCompile>
+    <ClCompile Include="support\zlib-intel\trees.c">
+      <Filter>third party\zlib\intel</Filter>
+    </ClCompile>
+    <ClCompile Include="support\zlib-intel\x86.c">
+      <Filter>third party\zlib\intel</Filter>
+    </ClCompile>
+    <ClCompile Include="support\zlib-intel\zutil.c">
+      <Filter>third party\zlib\intel</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="support\zlib\inffast.h">
+      <Filter>third party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="support\zlib\inffixed.h">
+      <Filter>third party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="support\zlib\inflate.h">
+      <Filter>third party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="support\zlib\inftrees.h">
+      <Filter>third party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="support\zlib\zconf.h">
+      <Filter>third party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="support\zlib\zlib.h">
+      <Filter>third party\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="support\deelx.h">
+      <Filter>third party</Filter>
+    </ClInclude>
+    <ClInclude Include="support\tinyxml.h">
+      <Filter>third party</Filter>
+    </ClInclude>
+    <ClInclude Include="support\zlib-intel\crc32.h">
+      <Filter>third party\zlib\intel</Filter>
+    </ClInclude>
+    <ClInclude Include="support\zlib-intel\deflate.h">
+      <Filter>third party\zlib\intel</Filter>
+    </ClInclude>
+    <ClInclude Include="support\zlib-intel\trees.h">
+      <Filter>third party\zlib\intel</Filter>
+    </ClInclude>
+    <ClInclude Include="support\zlib-intel\x86.h">
+      <Filter>third party\zlib\intel</Filter>
+    </ClInclude>
+    <ClInclude Include="support\zlib-intel\zutil.h">
+      <Filter>third party\zlib\intel</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
