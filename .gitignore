@@ -16,6 +16,7 @@
 *.lib
 
 # Executables
+!RLib/native/*
 !Wizard/*
 *.exe
 *.out
