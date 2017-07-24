@@ -16,5 +16,7 @@
 *.lib
 
 # Executables
+!Wizard/*
+*.exe
 *.out
 *.app
